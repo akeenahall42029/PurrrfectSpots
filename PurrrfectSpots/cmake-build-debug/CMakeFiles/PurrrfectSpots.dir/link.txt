@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.4 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/PurrrfectSpots.dir/main.cpp.o CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o -o PurrrfectSpots 
-=======
-/usr/bin/c++ -g CMakeFiles/PurrrfectSpots.dir/main.cpp.o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -o PurrrfectSpots 
->>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961
+/Library/Developer/CommandLineTools/usr/bin/c++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.4 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/PurrrfectSpots.dir/main.cpp.o CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -o PurrrfectSpots  -lsqlite3 

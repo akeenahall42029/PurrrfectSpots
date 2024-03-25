@@ -26,11 +26,7 @@
 	"objects" : 
 	[
 		{
-<<<<<<<< HEAD:PurrrfectSpots/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-25T19-40-52-0523.json
-			"jsonFile" : "codemodel-v2-c055587c22b12c085dda.json",
-========
-			"jsonFile" : "codemodel-v2-3d6035a95ae3b67ab570.json",
->>>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961:PurrrfectSpots/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-25T19-08-27-0182.json
+			"jsonFile" : "codemodel-v2-354a5a56786dd578f25c.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -90,11 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-<<<<<<<< HEAD:PurrrfectSpots/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-25T19-40-52-0523.json
-			"jsonFile" : "codemodel-v2-c055587c22b12c085dda.json",
-========
-			"jsonFile" : "codemodel-v2-3d6035a95ae3b67ab570.json",
->>>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961:PurrrfectSpots/cmake-build-debug/.cmake/api/v1/reply/index-2024-03-25T19-08-27-0182.json
+			"jsonFile" : "codemodel-v2-354a5a56786dd578f25c.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
