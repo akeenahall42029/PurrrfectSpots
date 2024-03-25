@@ -44,20 +44,21 @@ std::string Reservations::getUserId() const {
     return std::string();
 }
 
+
 std::string Reservations::getStatus() {
     return std::string();
 }
 
 void Reservations::setNapSpotId(int napSpotId) {
-
+    napSpotId = napSpotId;
 }
 
 void Reservations::setUserName(std::string userName) {
-
+    userName = userName;
 }
 
 void Reservations::setUserId(std::string userId) {
-
+    userId = userId;
 }
 
 /* Bonds connection between userInput when a user creates a new reservation and adds
