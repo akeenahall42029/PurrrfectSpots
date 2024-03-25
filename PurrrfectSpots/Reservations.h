@@ -27,8 +27,8 @@ public:
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
     std::string getNapSpotId() const;
-    std::string getUserName() const;
-    std::string getUserId() const;
+    std::string getUserName() ;
+    std::string getUserId() ;
     int getTime();
     std::string getStatus();
 

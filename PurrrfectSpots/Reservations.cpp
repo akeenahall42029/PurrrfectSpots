@@ -28,7 +28,7 @@ std::string Reservations::getNapSpotId() const {
     return napSpotId;
 }
 
-std::string Reservations::getUserName() const {
+std::string Reservations::getUserName()  {
     return userName;
 }
 
@@ -40,7 +40,7 @@ int Reservations::getID() const {
     return id; // id is defined as a private variable in the header, return to this if this causes problems
 
 }
-std::string Reservations::getUserId() const {
+std::string Reservations::getUserId()  {
     return userId;
 }
 
@@ -49,7 +49,7 @@ std::string Reservations::getStatus() {
     return status;
 }
 
-void Reservations::setNapSpotId(int napSpotId) {
+void Reservations::setNapSpotId(int napSpotId)  {
     napSpotId = napSpotId;
 }
 
@@ -89,5 +89,5 @@ void storeData(const Reservations& reservation){
     // Bind paremeters to SQL statement NOTE: this is more secure than Sql insections
     sqlite3_bind_int(sql_statement,1,reservation.getID());
     sqlite3_bind_text(sql_statement,2,reservation.getNapSpotId().c_str(),-1,SQLITE_STATIC);
-
+    sqlite3_bind_int(sql_statement, 3, reservation.getUserId());
 }
