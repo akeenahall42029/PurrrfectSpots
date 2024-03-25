@@ -28,11 +28,9 @@ std::string Reservations::getNapSpotId() const {
     return napSpotId;
 }
 
-std::string Reservations::getUserName()  {
-    return userName;
-}
 
-int Reservations::getTime() {
+
+int Reservations::getTime() const{
     return time;
 }
 
@@ -40,7 +38,7 @@ int Reservations::getID() const {
     return id; // id is defined as a private variable in the header, return to this if this causes problems
 
 }
-std::string Reservations::getUserId()  {
+int Reservations::getUserId()  const{
     return userId;
 }
 
@@ -53,9 +51,7 @@ void Reservations::setNapSpotId(int napSpotId)  {
     napSpotId = napSpotId;
 }
 
-void Reservations::setUserName(std::string userName) {
-    userName = userName;
-}
+
 
 void Reservations::setUserId(std::string userId) {
     userId = userId;
@@ -90,4 +86,6 @@ void storeData(const Reservations& reservation){
     sqlite3_bind_int(sql_statement,1,reservation.getID());
     sqlite3_bind_text(sql_statement,2,reservation.getNapSpotId().c_str(),-1,SQLITE_STATIC);
     sqlite3_bind_int(sql_statement, 3, reservation.getUserId());
+    sqlite3_bind_int(sql_statement,4,reservation.getTime());
+
 }

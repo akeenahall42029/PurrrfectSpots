@@ -25,7 +25,6 @@ create table reservations
     id        INT   NOT NULL UNIQUE,
     napSpotId TEXT  NOT NULL,
     userId    INT   NOT NULL,
-    userName TEXT NOT NULL,
     time      INT NOT NULL, -- will be in minutes
     status    TEXT  NOT NULL,
     primary key (id),
