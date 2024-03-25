@@ -25,15 +25,15 @@ int Reservations::generateID() {
 }
 
 std::string Reservations::getNapSpotId() const {
-    return std::string();
+    return napSpotId;
 }
 
 std::string Reservations::getUserName() const {
-    return std::string();
+    return userName;
 }
 
 int Reservations::getTime() {
-    return 0;
+    return time;
 }
 
 int Reservations::getID() const {
@@ -41,11 +41,11 @@ int Reservations::getID() const {
 
 }
 std::string Reservations::getUserId() const {
-    return std::string();
+    return userId;
 }
 
 std::string Reservations::getStatus() {
-    return std::string();
+    return status;
 }
 
 void Reservations::setNapSpotId(int napSpotId) {
@@ -62,7 +62,7 @@ void Reservations::setUserId(std::string userId) {
 
 /* Bonds connection between userInput when a user creates a new reservation and adds
  * an entry to the reservations table.
- * @param reservation
+ * @param reservation object reservation
  * */
 
 
@@ -86,6 +86,7 @@ void storeData(const Reservations& reservation){
     }
 
     // Bind paremeters to SQL statement NOTE: this is more secure than Sql insections
-   //  sqlite3_bind_int(sql_statement,1,reservation.getID())
+    sqlite3_bind_int(sql_statement,1,reservation.getID());
+    sqlite3_bind_text(sql_statement,2,reservation.getNapSpotId().c_str(),-1,SQLITE_STATIC);
 
 }
