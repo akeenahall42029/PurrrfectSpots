@@ -20,6 +20,7 @@ private:
     void setNapSpotId(int napSpotId);
     void setUserName(std::string userName);
     void setUserId(std::string userId);
+   //void resTime();
 
 public:
     //Constructor
@@ -31,7 +32,7 @@ public:
     std::string getUserId() const;
     int getTime();
     std::string getStatus();
-
+    void resTime();
 
 
 
