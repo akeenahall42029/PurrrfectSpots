@@ -3,4 +3,6 @@ project(PurrrfectSpots)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(PurrrfectSpots main.cpp)
+add_executable(PurrrfectSpots main.cpp
+        Reservations.cpp
+        Reservations.h)
