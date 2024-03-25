@@ -129,6 +129,7 @@ PurrrfectSpots/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/build
 .PHONY : PurrrfectSpots/fast
 
+<<<<<<< HEAD
 Demo.o: Demo.cpp.o
 .PHONY : Demo.o
 
@@ -152,6 +153,31 @@ Demo.s: Demo.cpp.s
 Demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
+=======
+Reservations.o: Reservations.cpp.o
+.PHONY : Reservations.o
+
+# target to build an object file
+Reservations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
+.PHONY : Reservations.cpp.o
+
+Reservations.i: Reservations.cpp.i
+.PHONY : Reservations.i
+
+# target to preprocess a source file
+Reservations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i
+.PHONY : Reservations.cpp.i
+
+Reservations.s: Reservations.cpp.s
+.PHONY : Reservations.s
+
+# target to generate assembly for a file
+Reservations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s
+.PHONY : Reservations.cpp.s
+>>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -186,9 +212,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PurrrfectSpots"
+<<<<<<< HEAD
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
+=======
+	@echo "... Reservations.o"
+	@echo "... Reservations.i"
+	@echo "... Reservations.s"
+>>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

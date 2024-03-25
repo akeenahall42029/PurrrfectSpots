@@ -78,7 +78,17 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+<<<<<<< HEAD
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp">
+=======
+		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/Reservations.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/Reservations.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/main.cpp">
+>>>>>>> 57de89f70b4ef485d45288c437f8eda5fa19f961
 			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.h">
