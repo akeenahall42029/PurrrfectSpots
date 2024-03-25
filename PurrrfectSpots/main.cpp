@@ -2,15 +2,16 @@
 #include "Demo.cpp"
 
 int main() {
-    //std::cout << "Hello, World!" << std::endl;
-    //return 0;
-    // Prompt user for input
+    // prompt user for input
     std::string lineBreak = " ";
-    std::string reviews= "Reviews:";
-    std::string tags1= "#comfy #warm #chic";
-    std::string tags2= "#cool #cozy #cute";
-    std::string tags3= "#justokay #addictive";
-    std::string tags4= "#comfy #cozy";
+    std::string reviews= "\033[1;96mReviews:\033[0m";
+    std::string tags1= "\033[1;34m#comfy #warm #chic\033[0m";
+    std::string tags2= "\033[1;34m#cool #cozy #cute\033[0m";
+    std::string tags3= "\033[1;34m#justokay #addictive\033[0m";
+    std::string tags4= "\033[1;34m#comfy #cozy\033[0m";
+    std::string aveRating1= "\033[1;96mAverage Rating:\033[0m 3 Stars";
+    std::string aveRating2= "\033[1;96mAverage Rating:\033[0m 4 Stars";
+    std::string aveRating3= "\033[1;96mAverage Rating:\033[0m 5 Stars";
 
 
 //sunny spot (faliero palace)
@@ -54,10 +55,10 @@ int main() {
     std::string r9c = "kneading the soft fabrics, lost in a sea of blissful dreams. Who needs cat beds when you have a mountain of warm laundry to conquer?'";
 
 
-    std::string text = "To select a NapSpot, please type the number associated with the spot you would like to inspect:";
-    std::string suite = "1. The Hines Suite";
-    std::string saga = "2. The Hall Saga";
-    std::string palace = "3. The Faliero Palace";
+    std::string text = "\033[1;95mTo select a NapSpot, please type the number associated with the spot you would like to inspect:\033[0m";
+    std::string suite = "\033[1;32m1.\033[0m The Hines Suite";
+    std::string saga = "\033[1;32m2.\033[0m The Hall Saga";
+    std::string palace = "\033[1;32m3.\033[0m The Faliero Palace";
 
     std::cout << lineBreak << std::endl;
     std::cout << lineBreak << std::endl;
@@ -79,10 +80,11 @@ int main() {
     // Output result
     if (napSpot == 1) {
         std::cout << lineBreak << std::endl;
-        std::cout << "You have selected the Hines Suite!" << std::endl;
+        std::cout << "\033[1;95mYou have selected the Hines Suite!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
-        std::string hinesLoc = "Spot Specification: pile of freshly-washed laundry :)";
+        std::string hinesLoc = "\033[1;96mSpot Specification:\033[0m pile of freshly-washed laundry :)";
         std::cout << hinesLoc << std::endl;
+        std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << reviews << std::endl;
         std::cout << lineBreak << std::endl;
@@ -100,14 +102,18 @@ int main() {
         std::cout << r9b << std::endl;
         std::cout << r9c << std::endl;
         std::cout << tags2 << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << aveRating2 << std::endl;
     }
 
     if (napSpot == 2) {
         std::cout << lineBreak << std::endl;
-        std::cout << "You have selected the Hall Saga!" << std::endl;
+        std::cout << "\033[1;95mYou have selected the Hall Saga!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
-        std::string hallLoc = "Spot Specification: bookbag on the floor :)";
+        std::string hallLoc = "\033[1;96mSpot Specification:\033[0m bookbag on the floor :)";
         std::cout << hallLoc << std::endl;
+        std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << reviews << std::endl;
         std::cout << lineBreak << std::endl;
@@ -125,14 +131,18 @@ int main() {
         std::cout << r6b << std::endl;
         std::cout << r6c << std::endl;
         std::cout << tags3 << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << aveRating1 << std::endl;
     }
 
     if (napSpot == 3) {
         std::cout << lineBreak << std::endl;
-        std::cout << "You have selected the Faliero Palace!" << std::endl;
+        std::cout << "\033[1;95mYou have selected the Faliero Palace!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
-        std::string falieroLoc = "Spot Specification: sunny patch of hardwood :)";
+        std::string falieroLoc = "\033[1;96mSpot Specification:\033[0m sunny patch of hardwood :)";
         std::cout << falieroLoc << std::endl;
+        std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << reviews << std::endl;
         std::cout << lineBreak << std::endl;
@@ -150,6 +160,9 @@ int main() {
         std::cout << r3b << std::endl;
         std::cout << r3c << std::endl;
         std::cout << tags3 << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << lineBreak << std::endl;
+        std::cout << aveRating3 << std::endl;
     }
 
 
