@@ -27,6 +27,11 @@ int main() {
     std::string r3b = "'While Fluffy adores this sunny patch, I must say, the constant basking leads to relentless";
     std::string r3c = "demands for treats and belly rubs. I haven't had a moment's peace since she discovered it! Send help... and more treats.'";
 
+    std::string r10a="Available times (A) 1.pm,(B) 2p.m,(C) 3p.m (note all reservation last an Hour)";
+
+
+
+
 //bookbag (akeena saga)
     std::string r4a = "meowsalot09: Bagged My Heart-- ";
     std::string r4b = "'Who needs fancy beds when you have a cozy bookbag? My feline friend, Mittens, has claimed this humble spot";
@@ -69,13 +74,17 @@ int main() {
     std::cout << palace << std::endl;
     std::cout << lineBreak << std::endl;
 
+    //time method
 
     // Read user input
     int num;
+    //const char * abc;
     std::cin >> num;
+    //std::cin >> abc;
 
     // Process input
     int napSpot = num;
+    //const char * napSpotTime = abc;
 
     // Output result
     if (napSpot == 1) {
@@ -105,6 +114,29 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating2 << std::endl;
+        std::cout << lineBreak << std::endl;
+        int time;
+        // Print three different times
+        std::cout << "\033[34mSelect a reservation time\n\033[0m";
+        std::cout << "1. 1pm\n";
+        std::cout << "2. 2pm\n";
+        std::cout << "3. 3pm\n";
+
+        // Prompt user to enter their choice
+        std::cout << "Enter your choice (1, 2, or 3): ";
+        std::cin >> time;
+
+        // Validate user input
+        if (time >= 1 && time <= 3) {
+            // Process the selected time
+            std::cout << "You selected " << time << "pm.\n";
+            std::cout << lineBreak << std::endl;
+            std::cout <<"Reservation Summary : Hines Suite at"<< time<<"pm.";
+        } else {
+            // Invalid input
+            std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
+        }
+
     }
 
     if (napSpot == 2) {
@@ -134,6 +166,28 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating1 << std::endl;
+        std::cout << lineBreak << std::endl;
+        int time;
+        // Print three different times
+        std::cout << "\033[34mSelect a reservation time\n\033[0m";
+        std::cout << "1. 1pm\n";
+        std::cout << "2. 2pm\n";
+        std::cout << "3. 3pm\n";
+
+        // Prompt user to enter their choice
+        std::cout << "Enter your choice (1, 2, or 3): ";
+        std::cin >> time;
+
+        // Validate user input
+        if (time >= 1 && time <= 3) {
+            // Process the selected time
+            std::cout << "You selected " << time << "pm.\n";
+            std::cout <<"Reservation Summary : Hall Saga at"<< time<<"pm.";
+        } else {
+            // Invalid input
+            std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
+        }
+
     }
 
     if (napSpot == 3) {
@@ -163,9 +217,33 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating3 << std::endl;
+        std::cout << lineBreak << std::endl;
+        int time;
+        // Print three different times
+        std::cout << "\033[34mSelect a reservation time\n\033[0m";
+        std::cout << "1. 1pm\n";
+        std::cout << "2. 2pm\n";
+        std::cout << "3. 3pm\n";
+
+        // Prompt user to enter their choice
+        std::cout << "Enter your choice (1, 2, or 3): ";
+        std::cin >> time;
+
+        // Validate user input
+        if (time >= 1 && time <= 3) {
+            // Process the selected time
+            std::cout << "You selected " << time << "pm.\n";
+            std::cout <<"Reservation Summary : Faliero Palace at "<< time<<"pm.";
+
+        } else {
+            // Invalid input
+            std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
+        }
+
     }
 
 
 
 }
+
 

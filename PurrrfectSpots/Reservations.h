@@ -18,6 +18,7 @@ private:
     int generateID();
     void setNapSpotId(int napSpotId);
     void setUserId(std::string userId);
+   //void resTime();
 
 
 public:

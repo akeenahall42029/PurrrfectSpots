@@ -95,3 +95,5 @@ void storeData(const Reservations& reservation){
     sqlite3_bind_text(sql_statement, 5, status_str, -1, SQLITE_STATIC);
 
 }
+
+
