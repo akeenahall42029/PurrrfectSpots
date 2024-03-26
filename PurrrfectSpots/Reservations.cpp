@@ -7,10 +7,12 @@
 #include <sqlite3.h>
 #include "iostream"
 // constructor
-Reservations::Reservations(const std::string &napSpotID, const std::string &userName) {
-    id = generateID();
+Reservations::Reservations(int napSpotID, int userId, int time, const std::string& status)
+        : napSpotId(napSpotID), userId(userId), time(time), status(status) {
 
+    id = generateID(); // genereate a random 9 digit ID number
 }
+
 
 /* Creates a randomly generated 9-digit id number upon the creation of
  * a new reservation
@@ -24,7 +26,7 @@ int Reservations::generateID() {
     return distrib(gen);
 }
 
-std::string Reservations::getNapSpotId() const {
+int Reservations::getNapSpotId() const {
     return napSpotId;
 }
 
@@ -43,7 +45,7 @@ int Reservations::getUserId()  const{
 }
 
 
-std::string Reservations::getStatus() {
+std::string Reservations::getStatus() const {
     return status;
 }
 
@@ -57,8 +59,9 @@ void Reservations::setUserId(std::string userId) {
     userId = userId;
 }
 
-/* Bonds connection between userInput when a user creates a new reservation and adds
- * an entry to the reservations table.
+/* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
+ * the corresponding values obtained from provided Reservation object and executes statement to
+ * create a new entry in the 'reservations' table.
  * @param reservation object reservation
  * */
 
@@ -82,10 +85,13 @@ void storeData(const Reservations& reservation){
         return;
     }
 
-    // Bind paremeters to SQL statement NOTE: this is more secure than Sql insections
+    // Bind parameters to SQL statement NOTE: this is more secure than Sql injections
     sqlite3_bind_int(sql_statement,1,reservation.getID());
-    sqlite3_bind_text(sql_statement,2,reservation.getNapSpotId().c_str(),-1,SQLITE_STATIC);
+    sqlite3_bind_int(sql_statement, 2, reservation.getNapSpotId());
     sqlite3_bind_int(sql_statement, 3, reservation.getUserId());
     sqlite3_bind_int(sql_statement,4,reservation.getTime());
+    // creating a char pointer to the status to work around having to make status a constant variable
+    const char* status_str =  reservation.getStatus().c_str();
+    sqlite3_bind_text(sql_statement, 5, status_str, -1, SQLITE_STATIC);
 
 }

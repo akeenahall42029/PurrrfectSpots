@@ -9,7 +9,7 @@
 class Reservations {
 private:
     int id;
-    std::string napSpotId; // matches name in reservations database
+    int napSpotId;
     int userId;
     int time ;
     std::string status;
@@ -17,19 +17,19 @@ private:
     // Function to generate random id number for the reservation
     int generateID();
     void setNapSpotId(int napSpotId);
-    void setUserName(std::string userName);
     void setUserId(std::string userId);
 
 
 public:
     //Constructor
-    Reservations(const std:: string& napSpotID, const std::string& userName);
+    Reservations(int napSpotID, int userId, int time, const std::string& status);
+
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
-    std::string getNapSpotId() const;
+    int getNapSpotId() const;
     int getUserId() const ;
     int getTime() const;
-    std::string getStatus();
+    std::string getStatus() const;
 
 
 

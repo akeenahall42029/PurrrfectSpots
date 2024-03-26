@@ -1,1 +1,1 @@
-/usr/bin/c++ -g CMakeFiles/PurrrfectSpots.dir/main.cpp.o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -o PurrrfectSpots 
+/usr/bin/c++ -g CMakeFiles/PurrrfectSpots.dir/main.cpp.o CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -o PurrrfectSpots  -lsqlite3 

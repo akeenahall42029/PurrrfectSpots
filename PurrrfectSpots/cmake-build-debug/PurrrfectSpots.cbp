@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/Demo.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/Demo.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/Reservations.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
