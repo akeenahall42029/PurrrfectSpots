@@ -12,6 +12,7 @@ int main() {
     std::string aveRating1= "\033[1;96mAverage Rating:\033[0m 3 Stars";
     std::string aveRating2= "\033[1;96mAverage Rating:\033[0m 4 Stars";
     std::string aveRating3= "\033[1;96mAverage Rating:\033[0m 5 Stars";
+    std::string availableTimes = "Available Times:"
 
 
 //sunny spot (faliero palace)
@@ -134,6 +135,7 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating1 << std::endl;
+
     }
 
     if (napSpot == 3) {
@@ -164,8 +166,5 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << aveRating3 << std::endl;
     }
-
-
-
 }
 
