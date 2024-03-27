@@ -1,6 +1,11 @@
 #include <iostream>
 #include "Demo.cpp"
+#include "Reservations.h"
 
+void linkRes(int napSpotID, int userId, std::string& userName, int time, const std::string& status){
+    Reservations example_res(napSpotID,userId,userName,time,status);
+    example_res.storeData();
+}
 int main() {
     // prompt user for input
     std::string lineBreak = " ";
@@ -60,14 +65,21 @@ int main() {
     std::string r9c = "kneading the soft fabrics, lost in a sea of blissful dreams. Who needs cat beds when you have a mountain of warm laundry to conquer?'";
 
 
-    std::string text = "\033[1;95mTo select a NapSpot, please type the number associated with the spot you would like to inspect:\033[0m";
+    std::string napSpotSelection = "\033[1;95mTo select a NapSpot, please type the number associated with the spot you would like to inspect:\033[0m";
     std::string suite = "\033[1;32m1.\033[0m The Hines Suite";
     std::string saga = "\033[1;32m2.\033[0m The Hall Saga";
     std::string palace = "\033[1;32m3.\033[0m The Faliero Palace";
 
     std::cout << lineBreak << std::endl;
     std::cout << lineBreak << std::endl;
-    std::cout << text << std::endl;
+    // prompt for userName
+    std::cout <<"Hello Happy Napper, please enter your user name!: " <<std::endl;
+    std::cout << lineBreak << std::endl;
+    std::string userName;
+    std::cin >> userName; // store userName as user's input
+
+    // Display napSpot options
+    std::cout << napSpotSelection << std::endl;
     std::cout << lineBreak << std::endl;
     std::cout << suite << std::endl;
     std::cout << saga << std::endl;
@@ -84,10 +96,17 @@ int main() {
 
     // Process input
     int napSpot = num;
+
     //const char * napSpotTime = abc;
+
+    // Variables for reservation object parameters
+    int napSpotId;
+    int time;
+
 
     // Output result
     if (napSpot == 1) {
+        napSpotId = 999999999;
         std::cout << lineBreak << std::endl;
         std::cout << "\033[1;95mYou have selected the Hines Suite!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
@@ -115,7 +134,8 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << aveRating2 << std::endl;
         std::cout << lineBreak << std::endl;
-        int time;
+
+       // PROMPT TIME
         // Print three different times
         std::cout << "\033[34mSelect a reservation time\n\033[0m";
         std::cout << "1. 1pm\n";
@@ -130,16 +150,23 @@ int main() {
         if (time >= 1 && time <= 3) {
             // Process the selected time
             std::cout << "You selected " << time << "pm.\n";
+            std::cout << " "<< std::endl;
+            std::cout <<"Reservation Summary : Hines Suite at " << time<<"pm.";
             std::cout << lineBreak << std::endl;
-            std::cout <<"Reservation Summary : Hines Suite at"<< time<<"pm.";
         } else {
             // Invalid input
             std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
         }
 
+        // LINK EVERYTHING
+
+        linkRes(napSpotId,123456789,userName, time,"Booked");
+
+
     }
 
     if (napSpot == 2) {
+        napSpotId = 222222222;
         std::cout << lineBreak << std::endl;
         std::cout << "\033[1;95mYou have selected the Hall Saga!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
@@ -167,7 +194,7 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << aveRating1 << std::endl;
         std::cout << lineBreak << std::endl;
-        int time;
+
         // Print three different times
         std::cout << "\033[34mSelect a reservation time\n\033[0m";
         std::cout << "1. 1pm\n";
@@ -182,15 +209,21 @@ int main() {
         if (time >= 1 && time <= 3) {
             // Process the selected time
             std::cout << "You selected " << time << "pm.\n";
-            std::cout <<"Reservation Summary : Hall Saga at"<< time<<"pm.";
+            std::cout << " "<< std::endl;
+            std::cout <<"Reservation Summary : Hall Saga at "  << time<<"pm.";
+            std::cout << lineBreak << std::endl;
         } else {
             // Invalid input
             std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
         }
 
+        // LINK EVERYTHING
+        linkRes(napSpotId,123456789,userName, time,"Booked");
+
     }
 
     if (napSpot == 3) {
+        napSpotId = 333333333;
         std::cout << lineBreak << std::endl;
         std::cout << "\033[1;95mYou have selected the Faliero Palace!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
@@ -218,7 +251,10 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << aveRating3 << std::endl;
         std::cout << lineBreak << std::endl;
-        int time;
+
+        // PROMPT TIME
+
+
         // Print three different times
         std::cout << "\033[34mSelect a reservation time\n\033[0m";
         std::cout << "1. 1pm\n";
@@ -233,17 +269,24 @@ int main() {
         if (time >= 1 && time <= 3) {
             // Process the selected time
             std::cout << "You selected " << time << "pm.\n";
-            std::cout <<"Reservation Summary : Faliero Palace at "<< time<<"pm.";
-
+            std::cout << " "<< std::endl;
+            std::cout <<"Reservation Summary : Faliero Palace at "  << time<<"pm.";
+            std::cout << lineBreak << std::endl;
         } else {
             // Invalid input
             std::cout << "Invalid input. Please enter 1, 2, or 3.\n";
         }
 
+        // LINK EVERYTHING
+        linkRes(napSpotId,123456789,userName, time,"Booked");
     }
 
 
 
 }
+
+
+
+
 
 

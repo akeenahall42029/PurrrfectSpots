@@ -5,12 +5,16 @@
 #ifndef PURRRFECTSPOTS_RESERVATIONS_H
 #define PURRRFECTSPOTS_RESERVATIONS_H
 #include <string>
+#include <random>
+#include <sqlite3.h>
+#include "iostream"
 
 class Reservations {
 private:
     int id;
     int napSpotId;
     int userId;
+    std::string userName;
     int time ;
     std::string status;
 
@@ -18,12 +22,22 @@ private:
     int generateID();
     void setNapSpotId(int napSpotId);
     void setUserId(std::string userId);
+    sqlite3 *curr_db;
+    std::string sql;
+    int retCode = 0;
+    char *zErrMsg = 0;
    //void resTime();
 
 
 public:
     //Constructor
-    Reservations(int napSpotID, int userId, int time, const std::string& status);
+    /* id        INT   NOT NULL UNIQUE,
+    napSpotId INT  NOT NULL,
+    userId    INT   NOT NULL,
+    time      INT NOT NULL, -- will be in minutes
+    status
+     * */
+    Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status);
 
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
@@ -31,6 +45,7 @@ public:
     int getUserId() const ;
     int getTime() const;
     std::string getStatus() const;
+    void storeData();
 
 
 

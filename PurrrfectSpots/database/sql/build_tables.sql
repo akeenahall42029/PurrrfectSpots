@@ -25,7 +25,8 @@ create table reservations
     id        INT   NOT NULL UNIQUE,
     napSpotId INT  NOT NULL,
     userId    INT   NOT NULL,
-    time      INT NOT NULL, -- will be in minutes
+    userName TEXT NOT NULL,
+    time      INT NOT NULL, -- will be the hour
     status    TEXT  NOT NULL,
     primary key (id),
     foreign key (id) references users(reservation_id),
@@ -42,7 +43,7 @@ create table napSpots
     averageRating INT  NOT NULL,
     primary key (id),
     foreign key (id) references reports(napSpotId),
-    foreign key (id) references reservations(napSpotId)
+    foreign key (id) references reservations(napSpotId),
     foreign key (userId) references users(id)
 
 
