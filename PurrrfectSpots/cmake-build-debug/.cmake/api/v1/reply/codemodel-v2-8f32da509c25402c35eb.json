@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PurrrfectSpots::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PurrrfectSpots-Debug-d3bc67feee7b55e2cd2c.json",
+					"jsonFile" : "target-PurrrfectSpots-Debug-381e35a3290258943d4b.json",
 					"name" : "PurrrfectSpots",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug",
-		"source" : "/Users/summerfaliero/coral/PurrrfectSpots"
+		"build" : "/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug",
+		"source" : "/home/hallake/cs205/coral/PurrrfectSpots"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 3
 	}
 }

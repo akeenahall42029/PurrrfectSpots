@@ -3,14 +3,42 @@
 //
 
 #include "Reservations.h"
-#include <random>
-#include <sqlite3.h>
-#include "iostream"
-// constructor
-Reservations::Reservations(const std::string &napSpotID, const std::string &userName) {
-    id = generateID();
 
+
+
+#include <string>
+
+
+// constructor
+Reservations::Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status)
+        : napSpotId(napSpotID), userId(userId), userName(userName), time(time), status(status) {
+    // open the database to prepare to pass queries
+
+
+
+    //location and name of the datbase
+    std::string db_name = "example.sqlite";
+    std::string db_location = "../database";
+
+
+    std::string full_name = db_location + "/" + db_name;
+
+    // open the database and check return codes
+
+    retCode = sqlite3_open(full_name.c_str(),&curr_db);
+    if( retCode ){
+        std::cerr << "Database does not open -- "
+                  << sqlite3_errmsg(curr_db)
+                  << std::endl;
+        std::cerr << " File -- " << full_name << std::endl;
+        exit(0);
+    }else{
+        std::cerr << "Opened database successfully\n";
+    }
+
+    id = generateID(); // genereate a random 9 digit ID number
 }
+
 
 /* Creates a randomly generated 9-digit id number upon the creation of
  * a new reservation
@@ -24,69 +52,84 @@ int Reservations::generateID() {
     return distrib(gen);
 }
 
-std::string Reservations::getNapSpotId() const {
-    return std::string();
+int Reservations::getNapSpotId() const {
+    return napSpotId;
 }
 
-std::string Reservations::getUserName() const {
-    return std::string();
-}
 
-int Reservations::getTime() {
-    return 0;
+
+int Reservations::getTime() const{
+    return time;
 }
 
 int Reservations::getID() const {
     return id; // id is defined as a private variable in the header, return to this if this causes problems
 
 }
-std::string Reservations::getUserId() const {
-    return std::string();
+int Reservations::getUserId()  const{
+    return userId;
 }
 
 
-std::string Reservations::getStatus() {
-    return std::string();
+std::string Reservations::getStatus() const {
+    return status;
 }
 
-void Reservations::setNapSpotId(int napSpotId) {
+void Reservations::setNapSpotId(int napSpotId)  {
     napSpotId = napSpotId;
 }
 
-void Reservations::setUserName(std::string userName) {
-    userName = userName;
-}
+
 
 void Reservations::setUserId(std::string userId) {
     userId = userId;
 }
 
-/* Bonds connection between userInput when a user creates a new reservation and adds
- * an entry to the reservations table.
- * @param reservation
+/* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
+ * the corresponding values obtained from provided Reservation object and executes statement to
+ * create a new entry in the 'reservations' table.
+ * @param reservation object reservation
  * */
 
 
-void storeData(const Reservations& reservation){
-    sqlite3* db; // access sqlite database using a pointer
-    int rc = sqlite3_open("build_tables.sql", &db); // rc--> return code
-    if(rc) {
-        std::cerr << "Error opening SQlite database" << sqlite3_errmsg(db) << std::endl;
-        return;
+void Reservations::storeData() {
+   // sql = "INSERT INTO reservations(id, napSpotId, userId, userName, time, status) VALUES (?, ?, ?, ?, ?, ? )";
 
+   //Initialize local vars
+   retCode = 0;
+   zErrMsg = 0;
+
+   int size_value = 0;
+    // Construct the SQL query for INSERT INTO reservations
+    //std::string
+    sql = "INSERT INTO reservations";
+    sql += " (id, napSpotId, userId, userName, time, status) ";
+    sql += "VALUES (";
+    sql += std::to_string(id);
+    sql += ", ";
+    sql += std::to_string(napSpotId);
+    sql += ", ";
+    sql += std::to_string(userId);
+    sql += ", '";
+    sql += userName; // Enclose userName in single quotes
+    sql += "', ";
+    sql += std::to_string(time);
+    sql += ", '";
+    sql += status;
+    sql += "');";
+    // Execute the SQL query
+    retCode = sqlite3_exec(curr_db, sql.c_str(), 0, 0, &zErrMsg);
+    if (retCode != SQLITE_OK) {
+        std::cerr << "SQL error: " << zErrMsg << std::endl;
+        sqlite3_free(zErrMsg);
+    } else {
+        std::cout << "Record inserted successfully!" << std::endl;
     }
 
-    //Prepare the sqlite statement to add info to database
-    sqlite3_stmt* sql_statement;
-    const char* sql = "INSERT INTO reservations (id, napSpotId, userId, time, status) VALUES (?, ?, ?, ?, ?)";
-    rc = sqlite3_prepare_v2(db,sql,-1,&sql_statement,NULL); // prepare parameters: database handle, sql statement, max length of bytes, pointer to statement
-    if(rc !=SQLITE_OK){
-        std::cerr << "Error preparing SQL statement" << sqlite3_errmsg(db) << std::endl;
-        sqlite3_close(db);
-        return;
-    }
-
-    // Bind paremeters to SQL statement NOTE: this is more secure than Sql insections
-   //  sqlite3_bind_int(sql_statement,1,reservation.getID())
+    // Close the database
+    sqlite3_close(curr_db);
 
 }
+
+
+

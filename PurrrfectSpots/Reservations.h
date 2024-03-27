@@ -5,12 +5,15 @@
 #ifndef PURRRFECTSPOTS_RESERVATIONS_H
 #define PURRRFECTSPOTS_RESERVATIONS_H
 #include <string>
+#include <random>
+#include <sqlite3.h>
+#include "iostream"
 
 class Reservations {
 private:
     int id;
-    std::string napSpotId; // matches name in reservations database
-    std::string userId;
+    int napSpotId;
+    int userId;
     std::string userName;
     int time ;
     std::string status;
@@ -18,19 +21,31 @@ private:
     // Function to generate random id number for the reservation
     int generateID();
     void setNapSpotId(int napSpotId);
-    void setUserName(std::string userName);
     void setUserId(std::string userId);
+    sqlite3 *curr_db;
+    std::string sql;
+    int retCode = 0;
+    char *zErrMsg = 0;
+   //void resTime();
+
 
 public:
     //Constructor
-    Reservations(const std:: string& napSpotID, const std::string& userName);
+    /* id        INT   NOT NULL UNIQUE,
+    napSpotId INT  NOT NULL,
+    userId    INT   NOT NULL,
+    time      INT NOT NULL, -- will be in minutes
+    status
+     * */
+    Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status);
+
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
-    std::string getNapSpotId() const;
-    std::string getUserName() const;
-    std::string getUserId() const;
-    int getTime();
-    std::string getStatus();
+    int getNapSpotId() const;
+    int getUserId() const ;
+    int getTime() const;
+    std::string getStatus() const;
+    void storeData();
 
 
 

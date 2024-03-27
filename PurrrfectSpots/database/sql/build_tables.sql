@@ -8,7 +8,7 @@ create table users
     foreign key (id) references report (userId),
     foreign key (reservation_id) references reservations (id)
 
-)
+);
 
 create table reports
 (
@@ -18,21 +18,21 @@ create table reports
     userID      INT  NOT NULL,
     foreign key (napSpotId) references napSpots (id),
     foreign key (userID) references users (id)
-)
+);
 
 create table reservations
 (
     id        INT   NOT NULL UNIQUE,
-    napSpotId TEXT  NOT NULL,
+    napSpotId INT  NOT NULL,
     userId    INT   NOT NULL,
     userName TEXT NOT NULL,
-    time      INT NOT NULL, -- will be in minutes
+    time      INT NOT NULL, -- will be the hour
     status    TEXT  NOT NULL,
     primary key (id),
     foreign key (id) references users(reservation_id),
     foreign key (userId) references users (id)
 
-)
+);
 
 create table napSpots
 (
@@ -43,10 +43,11 @@ create table napSpots
     averageRating INT  NOT NULL,
     primary key (id),
     foreign key (id) references reports(napSpotId),
+    foreign key (id) references reservations(napSpotId),
     foreign key (userId) references users(id)
 
 
-)
+);
 
 create table reviews
 (
@@ -58,7 +59,7 @@ create table reviews
     primary key (id),
     foreign key (userId) references users(id)
 
-)
+);
 
 create table admins
 (
@@ -66,4 +67,4 @@ create table admins
     name TEXT NOT NULL,
     role TEXT NOT NULL
 
-)
+);
