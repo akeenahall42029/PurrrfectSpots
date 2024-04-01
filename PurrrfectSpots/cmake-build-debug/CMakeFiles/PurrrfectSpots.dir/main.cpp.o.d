@@ -1707,4 +1707,5 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treestore.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/uimanager.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/viewport.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/volumebutton.h
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/volumebutton.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h

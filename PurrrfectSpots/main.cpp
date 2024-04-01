@@ -2,6 +2,7 @@
 #include "Demo.cpp"
 #include "Reservations.h"
 #include <gtkmm.h>
+#include "MyButton.h"
 
 void linkRes(int napSpotID, int userId, std::string& userName, int time, const std::string& status){
     Reservations example_res(napSpotID,userId,userName,time,status);
@@ -15,10 +16,52 @@ int main(int argc, char *argv[]) {
     Gtk::Window window;
 // Set the widow size
     window.set_default_size(700, 500);
+    window.set_border_width(10);
+    window.set_resizable(false);
+
+    //creating stock buttons
+    MyButton button11("Button 11 -- PACK_EXPAND_PADDING");
+    MyButton button12("Button 12 -- PACK_EXPAND_WIDGET");
+    MyButton button13("Button 13 -- EXPAND");
+    MyButton button21("Button 21 -- EXPAND");
+    MyButton button22("Button 22 -- PACK_EXPAND_PADDING");
+    MyButton button23("Button 23 -- PACK_EXPAND_WIDGET");
+    MyButton button31("Button 31 -- PACK_EXPAND_WIDGET");
+    MyButton button32("Button 32 -- EXPAND");
+    MyButton button33("Button 33 -- PACK_EXPAND_PADDING");
+
+    Gtk::Box hbox1;
+    hbox1.pack_start(button11, Gtk::PACK_EXPAND_PADDING, 5);
+    hbox1.pack_start(button12,Gtk::PACK_EXPAND_WIDGET, 5);
+    hbox1.pack_start(button13,Gtk::EXPAND, 5);
+
+    Gtk::Box hbox2;
+    hbox2.pack_start(button21, Gtk::EXPAND, 5);
+    hbox2.pack_start(button22,Gtk::PACK_EXPAND_PADDING, 5);
+    hbox2.pack_start(button23,Gtk::PACK_EXPAND_WIDGET, 5);
+
+    Gtk::Box hbox3;
+    hbox3.pack_start(button31, Gtk::PACK_EXPAND_WIDGET, 5);
+    hbox3.pack_start(button32,Gtk::EXPAND, 5);
+    hbox3.pack_start(button33,Gtk::PACK_EXPAND_PADDING, 5);
+
+    // This creates a VBox and then packs in the Boxs created above.
+    Gtk::VBox vbox;
+    vbox.pack_start(hbox1);
+    vbox.pack_start(hbox2);
+    vbox.pack_start(hbox3);
+
+    // The VBox object is then packed into the window.
+    window.add(vbox);
+
+    // This call will for all children hanging off the window to
+// show themselves.
+    window.show_all_children();
+    
     return app->run(window);
 
 
-    std::string lineBreak = " ";
+  /*  std::string lineBreak = " ";
     std::string reviews= "\033[1;96mReviews:\033[0m";
     std::string tags1= "\033[1;34m#comfy #warm #chic\033[0m";
     std::string tags2= "\033[1;34m#cool #cozy #cute\033[0m";
@@ -290,7 +333,7 @@ int main(int argc, char *argv[]) {
 
         // LINK EVERYTHING
         linkRes(napSpotId,123456789,userName, time,"Booked");
-    }
+    }*/
 }
 
 
