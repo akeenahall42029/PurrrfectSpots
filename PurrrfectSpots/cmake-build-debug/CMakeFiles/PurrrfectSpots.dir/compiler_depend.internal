@@ -1759,6 +1759,18 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /opt/homebrew/opt/freetype/include/freetype2/freetype/fttypes.h
  /opt/homebrew/opt/freetype/include/freetype2/ft2build.h
 
+CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o
+ /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp
+ /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.h
+
+CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o
+ /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.cpp
+ /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h
+
+CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o
+ /Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp
+ /Users/summerfaliero/coral/PurrrfectSpots/MyValue.h
+
 CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/Availability.h
@@ -2647,6 +2659,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o
  /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp
  /Users/summerfaliero/coral/PurrrfectSpots/Demo.h
  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h
+ /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h
  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h
  /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-autocleanups.h
  /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-enum-types.h

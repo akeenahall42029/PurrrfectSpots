@@ -188,6 +188,24 @@
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyButton.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyValue.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>

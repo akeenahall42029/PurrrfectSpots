@@ -14,7 +14,14 @@ add_executable(PurrrfectSpots main.cpp
         Reservations.cpp
         Reservations.h
         MyButton.cpp
-        MyButton.h)
+        MyButton.h
+        MyNoteBook.cpp
+        MyNoteBook.h
+        MyValue.cpp
+        MyValue.h
+        MyDisplayBuffer.cpp
+        MyDisplayBuffer.h
+)
 
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 
