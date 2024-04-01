@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o"
   "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o.d"
+  "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o"
+  "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o.d"
   "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o"
   "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o.d"
   "CMakeFiles/PurrrfectSpots.dir/main.cpp.o"

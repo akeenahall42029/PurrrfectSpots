@@ -1,13 +1,23 @@
 #include <iostream>
 #include "Demo.cpp"
 #include "Reservations.h"
+#include <gtkmm.h>
 
 void linkRes(int napSpotID, int userId, std::string& userName, int time, const std::string& status){
     Reservations example_res(napSpotID,userId,userName,time,status);
     example_res.storeData();
 }
-int main() {
+int main(int argc, char *argv[]) {
     // prompt user for input
+    // Create the application.
+    auto app = Gtk::Application::create(argc, argv, "edu.lafayette.example01");
+// Generate a generic window.
+    Gtk::Window window;
+// Set the widow size
+    window.set_default_size(700, 500);
+    return app->run(window);
+
+
     std::string lineBreak = " ";
     std::string reviews= "\033[1;96mReviews:\033[0m";
     std::string tags1= "\033[1;34m#comfy #warm #chic\033[0m";
@@ -17,7 +27,7 @@ int main() {
     std::string aveRating1= "\033[1;96mAverage Rating:\033[0m 3 Stars";
     std::string aveRating2= "\033[1;96mAverage Rating:\033[0m 4 Stars";
     std::string aveRating3= "\033[1;96mAverage Rating:\033[0m 5 Stars";
-    std::string availableTimes = "Available Times:"
+    std::string availableTimes = "Available Times:";
 
 
 //sunny spot (faliero palace)
@@ -194,8 +204,6 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating1 << std::endl;
-<<<<<<< HEAD
-=======
         std::cout << lineBreak << std::endl;
 
         // Print three different times
@@ -222,7 +230,6 @@ int main() {
 
         // LINK EVERYTHING
         linkRes(napSpotId,123456789,userName, time,"Booked");
->>>>>>> d2bf24ed51c49571629e55d379f02f8bd6493e26
 
     }
 

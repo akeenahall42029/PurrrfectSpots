@@ -1,36 +1,47 @@
-CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
-  /Users/summerfaliero/coral/PurrrfectSpots/main.cpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
+CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
+  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.cpp \
+  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/ustring.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include/glibmmconfig.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/unicode.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/galloca.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtypes.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include/glibconfig.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmacros.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ios \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__locale \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__nullptr \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/float.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/float.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gversionmacros.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-visibility.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_clock_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h \
@@ -43,48 +54,31 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uintptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ct_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rune_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wchar_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdarg.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_ctermid.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_off_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ssize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_clock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_time_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_timespec.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/__wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wint_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctype_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/runetype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/garray.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gasyncqueue.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gthread.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gatomic.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-typeof.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/forward.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/addressof.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/exception \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gerror.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdarg.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gquark.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gutils.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h \
@@ -121,9 +115,162 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ct_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rune_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wchar_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/malloc/_malloc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mode_t.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbacktrace.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_t.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbase64.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbitlock.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbookmarkfile.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdatetime.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtimezone.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbytes.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gcharset.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gchecksum.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gconvert.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdataset.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdate.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdir.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dirent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/dirent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino_t.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/genviron.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gfileutils.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ggettext.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghash.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glist.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmem.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gnode.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghmac.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghook.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghostutils.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/giochannel.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmain.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpoll.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gslist.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstring.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gunicode.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstrfuncs.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gkeyfile.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmappedfile.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmarkup.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmessages.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gvariant.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gvarianttype.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/goption.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpathbuf.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpattern.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gprimes.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gqsort.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gqueue.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grand.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grcbox.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grefcount.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grefstring.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gregex.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gscanner.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gsequence.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gshell.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gslice.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gspawn.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstringchunk.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstrvbuilder.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtestutils.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/errno.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gthreadpool.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtimer.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtrashstack.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtree.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/guri.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/guuid.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gversion.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gallocator.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gcache.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gcompletion.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gmain.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/grel.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gthread.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_char.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_short.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_caddr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_blksize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_gid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_in_addr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_in_port_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_nlink_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_off_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_useconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_suseconds_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_def.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_setsize.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_set.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_clr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_zero.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_isset.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_copy.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/sched.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/pthread_impl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/qos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/qos.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mach_port_t.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-autocleanups.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cctype \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/runetype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wint_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_va_list.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_ctermid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/__wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctype_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iterator \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/addressof.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/typeinfo \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdint \
@@ -144,82 +291,16 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/to_underlying.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/initializer_list \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_negate.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind_front.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/tuple \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder1st.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder2nd.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/default_searcher.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/construct_at.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/compressed_pair.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/shared_ptr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocation_guard.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdexcept \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/hash.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/atomic \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/chrono \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctime \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ratio \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/climits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/syslimits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__threading_support \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/sched.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/pthread_impl.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_cond_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_key_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_mutexattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_once_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_rwlockattr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/qos.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/qos.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mach_port_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sched.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/memory \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_safety.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iterator \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/advance.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__function_like.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/concepts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iter_move.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/back_insert_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/common_iterator.h \
@@ -228,7 +309,10 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/__decay_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/variant \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/hash.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__variant/monostate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/counted_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/default_sentinel.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/data.h \
@@ -248,6 +332,44 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/reverse_access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/size.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/istream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_negate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind_front.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder1st.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder2nd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/default_searcher.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/construct_at.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/compressed_pair.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/shared_ptr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocation_guard.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdexcept \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/atomic \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/chrono \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctime \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ratio \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/climits \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__threading_support \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sched.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/memory \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/pointer_safety.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/temporary_buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cassert \
@@ -352,16 +474,18 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/enable_view.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwchar \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwctype \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ios \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mutex_base \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/system_error \
@@ -380,179 +504,11 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_wchar.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bitset \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/locale \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/streambuf \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/nl_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_char.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_short.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_caddr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_blkcnt_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_blksize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_gid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_in_addr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_in_port_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_key_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_nlink_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_useconds_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_suseconds_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_def.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_setsize.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_set.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_clr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_zero.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_isset.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fd_copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsblkcnt_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp \
-  /Users/summerfaliero/coral/PurrrfectSpots/Demo.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include/glibmmconfig.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/thread.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/galloca.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtypes.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include/glibconfig.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmacros.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/float.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gversionmacros.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-visibility.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/garray.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gasyncqueue.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gthread.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gatomic.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-typeof.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gerror.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gquark.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gutils.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbacktrace.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/signal.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbase64.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbitlock.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbookmarkfile.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdatetime.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtimezone.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gbytes.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gcharset.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gchecksum.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gconvert.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdataset.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdate.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gdir.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dirent.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/dirent.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/genviron.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gfileutils.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ggettext.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghash.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glist.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmem.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gnode.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghmac.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghook.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/ghostutils.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/giochannel.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmain.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpoll.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gslist.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstring.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gunicode.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstrfuncs.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gkeyfile.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmappedfile.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmarkup.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gmessages.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gvariant.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gvarianttype.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/goption.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpathbuf.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gpattern.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gprimes.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gqsort.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gqueue.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grand.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grcbox.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grefcount.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/grefstring.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gregex.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gscanner.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gsequence.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gshell.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gslice.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gspawn.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstringchunk.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gstrvbuilder.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtestutils.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gthreadpool.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtimer.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtrashstack.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gtree.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/guri.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/guuid.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/gversion.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gallocator.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gcache.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gcompletion.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gmain.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/grel.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gthread.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/glib-autocleanups.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/error.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/exception.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/ustring.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/unicode.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/refptr.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/enums.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib-object.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gbinding.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtype.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject-visibility.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvalue.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gparam.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gclosure.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsignal.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gmarshal.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gboxed.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/glib-types.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gbindinggroup.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/genums.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/glib-enumtypes.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gparamspecs.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsignalgroup.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsourceclosure.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtypemodule.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtypeplugin.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvaluearray.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvaluetypes.h \
-  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject-autocleanups.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value_custom.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value_basictypes.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/timeval.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/sigc++.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/signal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
@@ -582,82 +538,206 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/adaptors/exception_catch.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/adaptors/track_obj.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/functors/functors.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/threads.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/arrayhandle.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/containerhandle_shared.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variant.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/varianttype.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantiter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantdbusstring.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/object.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/objectbase.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/class.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib-object.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gbinding.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtype.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject-visibility.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvalue.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gparam.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gclosure.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsignal.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gmarshal.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gboxed.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/glib-types.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gbindinggroup.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/genums.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/glib-enumtypes.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gparamspecs.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsignalgroup.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gsourceclosure.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtypemodule.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gtypeplugin.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvaluearray.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gvaluetypes.h \
+  /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gobject/gobject-autocleanups.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/signalproxy.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/signalproxy_connectionnode.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/propertyproxy.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/propertyproxy_base.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/refptr.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/enums.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value_custom.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/value_basictypes.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/quark.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/debug.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variant_basictypes.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/wrap.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/objectbase.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/class.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/signalproxy.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/signalproxy_connectionnode.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/propertyproxy.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/propertyproxy_base.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/quark.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/debug.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/balancedtree.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/base64.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/binding.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/object.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/utility.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/bytearray.h \
-  /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/slot.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/bytes.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/checksum.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/convert.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/date.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/datetime.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/timezone.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/dispatcher.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/main.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/priorities.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/iochannel.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/exceptionhandler.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/fileutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/helperlist.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/containers.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/sarray.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/interface.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/init.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/keyfile.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/streamiochannel.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/containerhandle_shared.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variant.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/varianttype.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantiter.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantdbusstring.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/error.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/exception.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variant_basictypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widget.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include/gtkmmconfig.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include/gdkmmconfig.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include/pangommconfig.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/context.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/arrayhandle.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/listhandle.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/markup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/miscutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/module.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/nodetree.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stack \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/optioncontext.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/optionentry.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/optiongroup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/pattern.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/property.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/random.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/regex.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/shell.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontdescription.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-attributes.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-font.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-coverage.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-version-macros.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-features.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-blob.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-common.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/inttypes.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/inttypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/inttypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_inttypes.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-buffer.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-unicode.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-font.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-face.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-map.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-set.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-draw.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-paint.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-deprecated.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-shape.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-shape-plan.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-style.h \
+  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-version.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-types.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-gravity.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-matrix.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-script.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-language.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-bidi-type.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-direction.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-color.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-break.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-item.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-context.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontmap.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontset.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-engine.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-glyph.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-enum-types.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontset-simple.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-glyph-item.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-layout.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-tabs.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-markup.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-renderer.h \
+  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-utils.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontmetrics.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontset.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/language.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/font.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/rectangle.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/glyph.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/coverage.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontmap.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontfamily.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontface.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/item.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attributes.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/color.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/slisthandle.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/spawn.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/stringutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/threadpool.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/timer.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/uriutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/valuearray.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantdict.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/vectorutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/weakref.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/action.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include/giommconfig.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attrlist.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attriter.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/types.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/context.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/surface.h \
+  /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/slot.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/enums.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-version.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-features.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-deprecated.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-ft.h \
+  /opt/homebrew/opt/freetype/include/freetype2/ft2build.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftheader.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/freetype.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftconfig.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftoption.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftstdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/setjmp.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/setjmp.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/integer-types.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/public-macros.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/mac-support.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/fttypes.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftsystem.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftimage.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/fterrors.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftmoderr.h \
+  /opt/homebrew/opt/freetype/include/freetype2/freetype/fterrdef.h \
+  /opt/homebrew/Cellar/fontconfig/2.15.0/include/fontconfig/fontconfig.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/stat.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_filesec_t.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/exception.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include/cairommconfig.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/device.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/types.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/refptr.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/fontoptions.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-pdf.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-ps.h \
+  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-svg.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/fontface.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/matrix.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/pattern.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/path.h \
+  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/scaledfont.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/valarray \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layout.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/tabarray.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutline.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutiter.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutrun.h \
+  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/object.h \
+  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/component.h \
+  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include/atkmmconfig.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/interface.h \
+  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/relation.h \
+  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/implementor.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/object.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/base.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/buildable.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/event.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/types.h \
+  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdk.h \
+  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkconfig.h \
+  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkversionmacros.h \
+  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkapplaunchcontext.h \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/gio.h \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/giotypes.h \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/gioenums.h \
@@ -824,207 +904,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/gzlibcompressor.h \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/gzlibdecompressor.h \
   /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/gio/gio-autocleanups.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/actiongroup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/actionmap.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/simpleaction.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/appinfo.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/applaunchcontext.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/icon.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/asyncresult.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/cancellable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/application.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/applicationcommandline.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/file.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileattributeinfolist.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileattributeinfo.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileenumerator.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileinfo.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/seekable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileiostream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/iostream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/outputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filemonitor.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/mountoperation.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/drive.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/mount.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/error.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/initable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/asyncinitable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusauthobserver.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/credentials.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusmethodinvocation.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusmessage.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixfdlist.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusintrospection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbussubtreevtable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusinterfacevtable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/notification.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/bufferedinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filterinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/bufferedoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filteroutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/charsetconverter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/converter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/contenttype.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/converterinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/pollableinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/converteroutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/pollableoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/datainputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/enums.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dataoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusactiongroup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/remoteactiongroup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbuserror.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbuserrorutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusinterface.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusinterfaceskeleton.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusmenumodel.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menumodel.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobject.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobjectmanager.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobjectmanagerclient.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobjectproxy.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusproxy.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobjectmanagerserver.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusobjectskeleton.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusownname.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusserver.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusutils.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbuswatchname.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/emblem.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/emblemedicon.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileicon.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/loadableicon.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filenamecompleter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inetaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inetsocketaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketconnectable.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketaddressenumerator.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/init.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/wrap_init.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/listmodel.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/liststore.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/memoryinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/memoryoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menu.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menuitem.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menuattributeiter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menulinkiter.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/networkaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/networkmonitor.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/networkservice.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/permission.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/proxy.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/proxyaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/proxyresolver.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/resolver.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/srvtarget.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/resource.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/settings.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/settingsschema.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/settingsschemakey.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/settingsschemasource.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/simpleactiongroup.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/simpleiostream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/simplepermission.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socket.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketclient.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketcontrolmessage.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/set \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketlistener.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketservice.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/socketsource.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tcpconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tcpwrapperconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/themedicon.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/threadedsocketservice.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlscertificate.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlsclientconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlsconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlsdatabase.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlsinteraction.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlspassword.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/tlsserverconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixconnection.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixcredentialsmessage.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixfdmessage.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixinputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixoutputstream.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixsocketaddress.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/volume.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/volumemonitor.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/zlibcompressor.h \
-  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/zlibdecompressor.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/dragcontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/color.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include/gdkmmconfig.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include/pangommconfig.h \
-  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdk.h \
-  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkconfig.h \
-  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkversionmacros.h \
-  /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkapplaunchcontext.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdktypes.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-attributes.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-font.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-coverage.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-version-macros.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-features.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-blob.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-common.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/inttypes.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_inttypes.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-buffer.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-unicode.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-font.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-face.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-map.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-set.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-draw.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-paint.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-deprecated.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-shape.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-shape-plan.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-style.h \
-  /opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz/hb-version.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-types.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-gravity.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-matrix.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-script.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-language.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-bidi-type.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-direction.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-color.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-break.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-item.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-context.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontmap.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontset.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-engine.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-glyph.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-enum-types.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-fontset-simple.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-glyph-item.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-layout.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-tabs.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-markup.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-renderer.h \
-  /opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0/pango/pango-utils.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-version.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-features.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-deprecated.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkscreen.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkdisplay.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkevents.h \
@@ -1070,110 +950,30 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkthreads.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkvisual.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdk-autocleanup.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/screen.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/rectangle.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/window.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/dragcontext.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/color.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbuf.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufformat.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/types.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/surface.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/enums.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-ft.h \
-  /opt/homebrew/opt/freetype/include/freetype2/ft2build.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftheader.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/freetype.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftconfig.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftoption.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/ftstdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/setjmp.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/setjmp.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/integer-types.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/public-macros.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/config/mac-support.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/fttypes.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftsystem.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftimage.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/fterrors.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/ftmoderr.h \
-  /opt/homebrew/opt/freetype/include/freetype2/freetype/fterrdef.h \
-  /opt/homebrew/Cellar/fontconfig/2.15.0/include/fontconfig/fontconfig.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/stat.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_s_ifmt.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_filesec_t.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/exception.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include/cairommconfig.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/device.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/types.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/refptr.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/fontoptions.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-pdf.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-ps.h \
-  /opt/homebrew/Cellar/cairo/1.18.0/include/cairo/cairo-svg.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inputstream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/priorities.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/bytes.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/asyncresult.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include/giommconfig.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/cancellable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/icon.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/device.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/cursor.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/display.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/screen.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/rectangle.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/applaunchcontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/event.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/appinfo.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/applaunchcontext.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/timecoord.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/visual.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/window.h \
   /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/region.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/pattern.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/visual.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/rgba.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/context.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/fontface.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/matrix.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/path.h \
-  /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/scaledfont.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/valarray \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufanimation.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufanimationiter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufloader.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/drawingcontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/frameclock.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/frametimings.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/glcontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/displaymanager.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/devicemanager.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/seat.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/monitor.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/general.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toggleaction.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/action.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include/gtkmmconfig.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widget.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/context.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontdescription.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontmetrics.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontset.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/language.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/font.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/rectangle.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/glyph.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/coverage.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontmap.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontfamily.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontface.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/item.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attributes.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/color.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attrlist.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/attriter.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/types.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layout.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/tabarray.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutline.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutiter.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/layoutrun.h \
-  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/object.h \
-  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/component.h \
-  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include/atkmmconfig.h \
-  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/relation.h \
-  /opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6/atkmm/implementor.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/object.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/base.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/buildable.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/enums.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtk.h \
   /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtkaboutdialog.h \
@@ -1482,229 +1282,58 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconset.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stockid.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widgetpath.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelgroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/radioaction.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/radiobuttongroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/aboutdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/dialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/actiongroup.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy_base.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/application.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actiongroup.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/action.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelgroup.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelkey.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/application.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/actionmap.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/simpleaction.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/action.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/applicationcommandline.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/file.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileattributeinfolist.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileattributeinfo.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileenumerator.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileinfo.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/datetime.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/timezone.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/timeval.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileinputstream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/seekable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/iochannel.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileiostream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/iostream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/outputstream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filemonitor.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/fileoutputstream.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/mountoperation.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/drive.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/mount.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/error.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variantdict.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/optionentry.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/optiongroup.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusconnection.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/initable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/asyncinitable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusauthobserver.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/credentials.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusmethodinvocation.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusmessage.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/unixfdlist.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusintrospection.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbussubtreevtable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/dbusinterfacevtable.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/notification.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menumodel.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menu.h \
+  /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menuitem.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/windowgroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/box.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbox.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/button.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/activatable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/buttonbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbuttonbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/headerbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelmap.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actionable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actionbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/adjustment.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/alignment.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/appchooserbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/appchooser.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/combobox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/celllayout.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderer.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/celleditable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderer_generation.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderertext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendererpixbuf.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderertoggle.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendereraccel.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodel.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treeiter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodelcolumn.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellarea.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellareacontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treeview.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treeviewcolumn.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treeselection.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treepath.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/scrollable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entry.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/editable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menu.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menushell.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accellabel.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entrycompletion.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/image.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entrybuffer.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/tooltip.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/appchooserdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/appchooserwidget.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/applicationwindow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/arrow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/aspectframe.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/frame.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/assistant.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/builder.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellareabox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellview.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/checkbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/togglebutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/checkmenuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderercombo.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendererprogress.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendererspin.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendererspinner.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/colorbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/colorchooser.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/colorchooserdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/colorselection.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/comboboxtext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cssprovider.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/csssection.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/drawingarea.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/expander.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/eventbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/eventcontroller.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filechooser.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filefilter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filechooserbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filechooserdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filechoosernative.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/nativedialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/filechooserwidget.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fixed.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/flowbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/flowboxchild.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fontbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fontchooser.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fontchooserdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fontchooserwidget.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/fontselection.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesture.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturedrag.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturesingle.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturelongpress.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturemultipress.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturepan.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturerotate.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gestureswipe.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/gesturezoom.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/glarea.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/grid.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/handlebox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvpaned.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/paned.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvscale.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/scale.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/range.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvscrollbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/scrollbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvseparator.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/separator.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconfactory.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/icontheme.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconinfo.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconview.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/imagemenuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/infobar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/calendar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/invisible.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/layout.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/levelbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/listbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/listboxrow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/liststore.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treesortable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treedragdest.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treedragsource.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/listviewtext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/linkbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/main.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menubar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menubutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/popover.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/messagedialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/modelbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/notebook.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/numerableicon.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/offscreenwindow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/overlay.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/pagesetup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/papersize.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/pagesetupunixdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printsettings.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/placessidebar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/scrolledwindow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/popovermenu.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printcontext.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printer.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printjob.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printoperation.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printoperationpreview.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/printunixdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/progressbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/radiobutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/radiomenuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/radiotoolbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toggletoolbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/sizegroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentaction.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentchooser.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentinfo.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentfilter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentmanager.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentchooserdialog.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentchoosermenu.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/recentchooserwidget.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/revealer.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/scalebutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/searchbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/searchentry.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/separatormenuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/separatortoolitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/settings.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolshell.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/shortcutlabel.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/shortcutsgroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/shortcutssection.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/shortcutsshortcut.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/shortcutswindow.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/spinbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/spinner.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stack.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stacksidebar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stackswitcher.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/statusbar.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/statusicon.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stock.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stockitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/styleproperty.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/switch.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/table.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/tearoffmenuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textbuffer.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/texttagtable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/texttag.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textchildanchor.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textmark.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textiter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textattributes.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/textview.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolpalette.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toolitemgroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menutoolbutton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodelfilter.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodelsort.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treerowreference.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treestore.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/uimanager.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/viewport.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/volumebutton.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream
