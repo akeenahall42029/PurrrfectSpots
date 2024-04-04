@@ -10,15 +10,16 @@
 
 
 // constructor
-Reservations::Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status)
+Reservations::Reservations(int napSpotID, int userId, std::string& userName, int time,  std::string& status)
         : napSpotId(napSpotID), userId(userId), userName(userName), time(time), status(status) {
     // open the database to prepare to pass queries
 
 
 
+
     //location and name of the datbase
     std::string db_name = "example.sqlite";
-    std::string db_location = "../database";
+    std::string db_location = "./database";
 
 
     std::string full_name = db_location + "/" + db_name;
@@ -36,7 +37,7 @@ Reservations::Reservations(int napSpotID, int userId, std::string& userName, int
         std::cerr << "Opened database successfully\n";
     }
 
-    id = generateID(); // genereate a random 9 digit ID number
+    id = generateID(); // generate a random 9 digit ID number
 }
 
 

@@ -2,7 +2,7 @@
 #include "Demo.cpp"
 #include "Reservations.h"
 
-void linkRes(int napSpotID, int userId, std::string& userName, int time, const std::string& status){
+void linkRes(int napSpotID, int userId, std::string& userName, int time,  std::string& status){
     Reservations example_res(napSpotID,userId,userName,time,status);
     example_res.storeData();
 }
@@ -17,7 +17,7 @@ int main() {
     std::string aveRating1= "\033[1;96mAverage Rating:\033[0m 3 Stars";
     std::string aveRating2= "\033[1;96mAverage Rating:\033[0m 4 Stars";
     std::string aveRating3= "\033[1;96mAverage Rating:\033[0m 5 Stars";
-    std::string availableTimes = "Available Times:"
+    std::string availableTimes = "Available Times:";
 
 
 //sunny spot (faliero palace)
@@ -103,11 +103,12 @@ int main() {
     // Variables for reservation object parameters
     int napSpotId;
     int time;
-
+    std::string status = "Booked";
 
     // Output result
     if (napSpot == 1) {
         napSpotId = 999999999;
+
         std::cout << lineBreak << std::endl;
         std::cout << "\033[1;95mYou have selected the Hines Suite!\033[0m" << std::endl;
         std::cout << lineBreak << std::endl;
@@ -161,7 +162,7 @@ int main() {
 
         // LINK EVERYTHING
 
-        linkRes(napSpotId,123456789,userName, time,"Booked");
+        linkRes(napSpotId,123456789,userName, time,status );
 
 
     }
@@ -194,8 +195,6 @@ int main() {
         std::cout << lineBreak << std::endl;
         std::cout << lineBreak << std::endl;
         std::cout << aveRating1 << std::endl;
-<<<<<<< HEAD
-=======
         std::cout << lineBreak << std::endl;
 
         // Print three different times
@@ -221,8 +220,7 @@ int main() {
         }
 
         // LINK EVERYTHING
-        linkRes(napSpotId,123456789,userName, time,"Booked");
->>>>>>> d2bf24ed51c49571629e55d379f02f8bd6493e26
+        linkRes(napSpotId,123456789,userName, time,status);
 
     }
 
@@ -282,7 +280,7 @@ int main() {
         }
 
         // LINK EVERYTHING
-        linkRes(napSpotId,123456789,userName, time,"Booked");
+        linkRes(napSpotId,123456789,userName, time,status);
     }
 }
 
