@@ -153,6 +153,102 @@ Demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
 
+MyButton.o: MyButton.cpp.o
+.PHONY : MyButton.o
+
+# target to build an object file
+MyButton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
+.PHONY : MyButton.cpp.o
+
+MyButton.i: MyButton.cpp.i
+.PHONY : MyButton.i
+
+# target to preprocess a source file
+MyButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.i
+.PHONY : MyButton.cpp.i
+
+MyButton.s: MyButton.cpp.s
+.PHONY : MyButton.s
+
+# target to generate assembly for a file
+MyButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s
+.PHONY : MyButton.cpp.s
+
+MyDisplayBuffer.o: MyDisplayBuffer.cpp.o
+.PHONY : MyDisplayBuffer.o
+
+# target to build an object file
+MyDisplayBuffer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o
+.PHONY : MyDisplayBuffer.cpp.o
+
+MyDisplayBuffer.i: MyDisplayBuffer.cpp.i
+.PHONY : MyDisplayBuffer.i
+
+# target to preprocess a source file
+MyDisplayBuffer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.i
+.PHONY : MyDisplayBuffer.cpp.i
+
+MyDisplayBuffer.s: MyDisplayBuffer.cpp.s
+.PHONY : MyDisplayBuffer.s
+
+# target to generate assembly for a file
+MyDisplayBuffer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.s
+.PHONY : MyDisplayBuffer.cpp.s
+
+MyNoteBook.o: MyNoteBook.cpp.o
+.PHONY : MyNoteBook.o
+
+# target to build an object file
+MyNoteBook.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o
+.PHONY : MyNoteBook.cpp.o
+
+MyNoteBook.i: MyNoteBook.cpp.i
+.PHONY : MyNoteBook.i
+
+# target to preprocess a source file
+MyNoteBook.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.i
+.PHONY : MyNoteBook.cpp.i
+
+MyNoteBook.s: MyNoteBook.cpp.s
+.PHONY : MyNoteBook.s
+
+# target to generate assembly for a file
+MyNoteBook.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.s
+.PHONY : MyNoteBook.cpp.s
+
+MyValue.o: MyValue.cpp.o
+.PHONY : MyValue.o
+
+# target to build an object file
+MyValue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o
+.PHONY : MyValue.cpp.o
+
+MyValue.i: MyValue.cpp.i
+.PHONY : MyValue.i
+
+# target to preprocess a source file
+MyValue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.i
+.PHONY : MyValue.cpp.i
+
+MyValue.s: MyValue.cpp.s
+.PHONY : MyValue.s
+
+# target to generate assembly for a file
+MyValue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.s
+.PHONY : MyValue.cpp.s
+
 Reservations.o: Reservations.cpp.o
 .PHONY : Reservations.o
 
@@ -213,6 +309,18 @@ help:
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
+	@echo "... MyButton.o"
+	@echo "... MyButton.i"
+	@echo "... MyButton.s"
+	@echo "... MyDisplayBuffer.o"
+	@echo "... MyDisplayBuffer.i"
+	@echo "... MyDisplayBuffer.s"
+	@echo "... MyNoteBook.o"
+	@echo "... MyNoteBook.i"
+	@echo "... MyNoteBook.s"
+	@echo "... MyValue.o"
+	@echo "... MyValue.i"
+	@echo "... MyValue.s"
 	@echo "... Reservations.o"
 	@echo "... Reservations.i"
 	@echo "... Reservations.s"
