@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
+set(CMAKE_OSX_ARCHITECTURES arm64)
 project(PurrrfectSpots)
 
 set(CMAKE_CXX_STANDARD 17)

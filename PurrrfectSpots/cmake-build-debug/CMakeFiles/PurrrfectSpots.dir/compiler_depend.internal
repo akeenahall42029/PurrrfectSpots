@@ -24,14 +24,6 @@ CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_mcontext.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/signal.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h
@@ -291,11 +283,18 @@ CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/locale.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/arm/_structs.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h
@@ -443,14 +442,6 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_mcontext.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/signal.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h
@@ -699,8 +690,10 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/memory
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ratio
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/setjmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream
@@ -729,12 +722,19 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/float.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/gethostuuid.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/inttypes.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/locale.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/arm/_structs.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h
@@ -753,6 +753,7 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sched.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/setjmp.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/signal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdint.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h
@@ -874,6 +875,8 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stddef.h
  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h
  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h
+ /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp
+ /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h
  /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-autocleanups.h
  /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-enum-types.h
  /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk.h
@@ -1794,14 +1797,6 @@ CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_mcontext.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/signal.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h
@@ -2067,11 +2062,18 @@ CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/locale.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/arm/_structs.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h
@@ -2221,14 +2223,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_wctype.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_xlocale.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_mcontext.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/_types.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/arch.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/endian.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/limits.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/signal.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arm/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h
@@ -2511,12 +2505,19 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/errno.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/float.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/gethostuuid.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/limits.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/types.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/inttypes.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/arm/OSByteOrder.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/limits.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/locale.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/arm/_structs.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h

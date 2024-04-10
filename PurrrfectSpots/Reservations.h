@@ -11,6 +11,8 @@
 
 class Reservations {
 private:
+    Reservations(int napSpotID, int userId, std::string userName, int time, std::string status);
+
     int id;
     int napSpotId;
     int userId;
@@ -37,8 +39,8 @@ public:
     time      INT NOT NULL, -- will be in minutes
     status
      * */
-    Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status);
-
+    Reservations(int napSpotID, int userId, const char *userName, int time, const char *status);
+    Reservations(); // default constrtor
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
     int getNapSpotId() const;

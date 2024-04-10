@@ -9,7 +9,7 @@
 
 
 // constructor
-Reservations::Reservations(int napSpotID, int userId, std::string& userName, int time, const std::string& status)
+Reservations::Reservations(int napSpotID, int userId, std::string userName, int time,  std::string status)
         : napSpotId(napSpotID), userId(userId), userName(userName), time(time), status(status) {
     // open the database to prepare to pass queries
 
@@ -52,6 +52,7 @@ int Reservations::generateID() {
 }
 
 int Reservations::getNapSpotId() const {
+    std::cout << &"\033[1;95mYour nap spot ID is: \033[0m"[napSpotId] << std::endl;
     return napSpotId;
 }
 
