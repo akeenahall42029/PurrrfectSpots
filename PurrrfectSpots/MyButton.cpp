@@ -29,5 +29,7 @@ MyButton::~MyButton() { }
 void MyButton::on_button_clicked()
 {
     std::cout << button_label << " was clicked." << std::endl;
-    //this is where i change the page or code what happens after clicking a button
+//     Reservations tester (100, 1200, "summer", 30, "booked");
+//     tester.storeData();
+        //this is where i change the page or code what happens after clicking a button
 }

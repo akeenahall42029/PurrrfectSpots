@@ -2,15 +2,13 @@
 // Created by Akeena on 3/25/2024.
 //
 #include "Reservations.h"
-
-
-
 #include <string>
 
 
 // constructor
 Reservations::Reservations(int napSpotID, int userId, int time,  std::string status)
         : napSpotId(napSpotID), userId(userId), time(time), status(status) {
+
     // open the database to prepare to pass queries
 
 
@@ -52,6 +50,7 @@ int Reservations::generateID() {
 }
 
 int Reservations::getNapSpotId() const {
+    std::cout << &"\033[1;95mYour nap spot ID is: \033[0m"[napSpotId] << std::endl;
     return napSpotId;
 }
 

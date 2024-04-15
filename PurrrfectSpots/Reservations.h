@@ -7,28 +7,22 @@
 #include <string>
 #include <random>
 #include <sqlite3.h>
-#include "iostream"
+#include <iostream>
 
 class Reservations {
 private:
-    int id;
     int napSpotId;
     int userId;
     std::string userName;
-    int time ;
+    int time;
     std::string status;
-
-    // Function to generate random id number for the reservation
-    int generateID();
-    void setNapSpotId(int napSpotId);
-    void setUserId(std::string userId);
-    sqlite3 *curr_db;
+    int id;
+    sqlite3* curr_db;
+    int retCode;
+    char* zErrMsg;
     std::string sql;
-    int retCode = 0;
-    char *zErrMsg = 0;
-   //void resTime();
 
-
+    int generateID(); // Declare the method to generate ID
 public:
 
     Reservations(int napSpotID, int userId, int time, std::string status);
@@ -39,14 +33,12 @@ public:
     int getUserId() const ;
     int getTime() const;
     std::string getStatus() const;
+
+    void setNapSpotId(int napSpotId);
+
+    void setUserId(std::string userId);
+
     void storeData();
-
-
-
-
-
-
 };
-
 
 #endif //PURRRFECTSPOTS_RESERVATIONS_H
