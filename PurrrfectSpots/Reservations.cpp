@@ -49,7 +49,7 @@ int Reservations::generateID() {
 }
 
 int Reservations::getNapSpotId() const {
-    std::cout << &"\033[1;95mYour nap spot ID is: \033[0m"[napSpotId] << std::endl;
+    std::cout << "\033[1;95mYour nap spot ID is: \033[0m" << napSpotId << std::endl;
     return napSpotId;
 }
 

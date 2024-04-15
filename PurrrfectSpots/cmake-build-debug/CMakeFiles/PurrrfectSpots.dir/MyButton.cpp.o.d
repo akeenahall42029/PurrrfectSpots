@@ -1336,4 +1336,8 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/windowgroup.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/button.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/activatable.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
+  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h
