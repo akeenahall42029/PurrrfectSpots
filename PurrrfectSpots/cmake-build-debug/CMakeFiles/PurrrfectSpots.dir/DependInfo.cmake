@@ -11,7 +11,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hallake/cs205/coral/PurrrfectSpots/Demo.cpp" "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o.d"
   "/home/hallake/cs205/coral/PurrrfectSpots/MyButton.cpp" "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o.d"
   "/home/hallake/cs205/coral/PurrrfectSpots/MyDisplayBuffer.cpp" "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o.d"
-  "/home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.cpp" "CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o.d"
   "/home/hallake/cs205/coral/PurrrfectSpots/MyValue.cpp" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d"
   "/home/hallake/cs205/coral/PurrrfectSpots/Reservations.cpp" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o.d"
   "/home/hallake/cs205/coral/PurrrfectSpots/main.cpp" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o.d"

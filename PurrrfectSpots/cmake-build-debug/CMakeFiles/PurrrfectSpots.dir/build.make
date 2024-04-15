@@ -125,24 +125,10 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205/coral/PurrrfectSpots/MyButton.cpp -o CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o: ../MyNoteBook.cpp
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o -c /home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.cpp
-
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.cpp > CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.i
-
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.cpp -o CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.s
-
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: ../MyValue.cpp
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o -c /home/hallake/cs205/coral/PurrrfectSpots/MyValue.cpp
 
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: ../MyDisplayBuffer.cpp
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o -c /home/hallake/cs205/coral/PurrrfectSpots/MyDisplayBuffer.cpp
 
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.i: cmake_force
@@ -173,7 +159,6 @@ PurrrfectSpots_OBJECTS = \
 "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
 
@@ -184,12 +169,11 @@ PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/main.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/build.make
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable PurrrfectSpots"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable PurrrfectSpots"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PurrrfectSpots.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

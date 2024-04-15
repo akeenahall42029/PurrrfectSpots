@@ -36,7 +36,7 @@ void MyButton::on_button_clicked()
     int time = 30;
     std::string status = "booked";
 
-    Reservations tester(napSpotID, userId, userName, time, status);
+    Reservations tester(napSpotID, userId, time, status);
 
     // Call the storeData method on the created Reservations object
     tester.getNapSpotId();

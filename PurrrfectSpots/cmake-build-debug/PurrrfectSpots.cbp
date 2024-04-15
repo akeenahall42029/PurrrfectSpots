@@ -176,12 +176,6 @@
 		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/MyDisplayBuffer.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/MyNoteBook.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
 		<Unit filename="/home/hallake/cs205/coral/PurrrfectSpots/MyValue.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>

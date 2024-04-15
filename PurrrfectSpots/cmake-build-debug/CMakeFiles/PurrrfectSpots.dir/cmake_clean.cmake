@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o.d"
   "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
   "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o.d"
-  "CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o"
-  "CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o.d"
   "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o"
   "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d"
   "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o"
