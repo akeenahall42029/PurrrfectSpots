@@ -2477,8 +2477,10 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/setjmp.h \
@@ -2533,6 +2535,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/setjmp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
@@ -2656,6 +2659,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp \
   /Users/summerfaliero/coral/PurrrfectSpots/Demo.h \
   /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-autocleanups.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-enum-types.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk.h \

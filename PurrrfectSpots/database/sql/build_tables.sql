@@ -5,7 +5,7 @@ create table users
     reservation_id INT  NOT NULL,
     review_id      INT  NOT NULL,
     primary key (id),
-    foreign key (id) references report (userId),
+    foreign key (id) references reports (userId),
     foreign key (reservation_id) references reservations (id)
 
 );

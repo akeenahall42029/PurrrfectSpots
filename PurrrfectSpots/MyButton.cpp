@@ -61,7 +61,7 @@ void MyButton::on_button_clicked()
     int time = 30;
     std::string status = "booked";
 
-    Reservations tester(napSpotID, userId, userName, time, status);
+    Reservations tester(napSpotID, userId, time, status);
 
     tester.getNapSpotId();
         //this is where i change the page or code what happens after clicking a button

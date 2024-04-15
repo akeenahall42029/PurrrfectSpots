@@ -1,11 +1,27 @@
 #include "Demo.cpp"
+#include "Reservations.h"
+#include "MyButton.h"
 #include <gtkmm.h>
 #include "MyButton.h"
 #include <gtkmm/application.h>
+//#include <gtkmm-3.0/gtkmm.h>
+//#include <gtkmm-3.0/gtkmm/application.h>
 
-int main(int argc, char *argv[]){
-//creating the application
-auto app = Gtk::Application::create(argc, argv,"something.more");
+//void linkRes(int napSpotID, int userId, std::string& userName, int time,  std::string& status){
+//    Reservations example_res(napSpotID,userId,userName,time,status);
+//    example_res.storeData();
+//}
+
+
+int main(int argc, char *argv[])
+{
+// Create the application.
+    auto app =
+            Gtk::Application::create(argc, argv,
+                                     "something.more");
+// Generate the widow and configure it by setting a size and creating a border.
+
+
 
 //generating and configuring window
     Gtk::Window window;
@@ -35,8 +51,14 @@ auto app = Gtk::Application::create(argc, argv,"something.more");
 
     window.show_all_children();
 
+// Finally, this launches the program window.
+
 //launching program window
+
     return app->run(window);
+
+    // ---------------------------
+    // CODE FROM DEMO
 
 
 
@@ -303,6 +325,7 @@ auto app = Gtk::Application::create(argc, argv,"something.more");
 //        // LINK EVERYTHING
 //        linkRes(napSpotId,123456789,userName, time,"Booked");
 //    }*/
+
 }
 
 

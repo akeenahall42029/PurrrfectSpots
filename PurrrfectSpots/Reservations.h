@@ -24,15 +24,20 @@ private:
 
     int generateID(); // Declare the method to generate ID
 public:
-    Reservations(int napSpotID, int userId, std::string userName, int time, std::string status);
 
+    Reservations(int napSpotID, int userId, int time, std::string status);
+    Reservations(); // default constructor
+    // Getter functions, will be useful for SQL binding
+    int getID() const; // Change the return type to int
     int getNapSpotId() const;
+    int getUserId() const ;
     int getTime() const;
-    int getID() const;
-    int getUserId() const;
     std::string getStatus() const;
+
     void setNapSpotId(int napSpotId);
+
     void setUserId(std::string userId);
+
     void storeData();
 };
 

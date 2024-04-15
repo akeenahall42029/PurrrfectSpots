@@ -9,6 +9,9 @@ pkg_check_modules(GTKMM gtkmm-3.0)
 include_directories(${GTKMM_INCLUDE_DIRS})
 link_directories(${GTKMM_LIBRARY_DIRS})
 
+include_directories(/user/include)
+link_directories(/usr/lib)
+
 add_executable(PurrrfectSpots main.cpp
         Demo.cpp
         Demo.h
@@ -22,5 +25,6 @@ add_executable(PurrrfectSpots main.cpp
         MyDisplayBuffer.h
 )
 
+#target_link_libraries(PurrrfectSpots sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 

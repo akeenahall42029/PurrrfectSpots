@@ -73,6 +73,7 @@
 					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
 					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
+					<Add directory="/user/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
@@ -142,6 +143,7 @@
 					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
 					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
+					<Add directory="/user/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
