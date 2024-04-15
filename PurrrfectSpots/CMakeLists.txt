@@ -16,8 +16,6 @@ add_executable(PurrrfectSpots main.cpp
         Reservations.h
         MyButton.cpp
         MyButton.h
-        MyNoteBook.cpp
-        MyNoteBook.h
         MyValue.cpp
         MyValue.h
         MyDisplayBuffer.cpp

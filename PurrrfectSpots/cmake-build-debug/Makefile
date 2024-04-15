@@ -201,30 +201,6 @@ MyDisplayBuffer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.s
 .PHONY : MyDisplayBuffer.cpp.s
 
-MyNoteBook.o: MyNoteBook.cpp.o
-.PHONY : MyNoteBook.o
-
-# target to build an object file
-MyNoteBook.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o
-.PHONY : MyNoteBook.cpp.o
-
-MyNoteBook.i: MyNoteBook.cpp.i
-.PHONY : MyNoteBook.i
-
-# target to preprocess a source file
-MyNoteBook.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.i
-.PHONY : MyNoteBook.cpp.i
-
-MyNoteBook.s: MyNoteBook.cpp.s
-.PHONY : MyNoteBook.s
-
-# target to generate assembly for a file
-MyNoteBook.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.s
-.PHONY : MyNoteBook.cpp.s
-
 MyValue.o: MyValue.cpp.o
 .PHONY : MyValue.o
 
@@ -315,9 +291,6 @@ help:
 	@echo "... MyDisplayBuffer.o"
 	@echo "... MyDisplayBuffer.i"
 	@echo "... MyDisplayBuffer.s"
-	@echo "... MyNoteBook.o"
-	@echo "... MyNoteBook.i"
-	@echo "... MyNoteBook.s"
 	@echo "... MyValue.o"
 	@echo "... MyValue.i"
 	@echo "... MyValue.s"

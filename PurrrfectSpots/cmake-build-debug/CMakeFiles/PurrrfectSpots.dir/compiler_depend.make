@@ -1764,9 +1764,6 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: /Users/summerfaliero/coral/Purrrfe
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp \
   /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.h
 
-CMakeFiles/PurrrfectSpots.dir/MyNoteBook.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.cpp \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h
-
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp \
   /Users/summerfaliero/coral/PurrrfectSpots/MyValue.h
 
@@ -2474,10 +2471,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/mutex \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ratio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/setjmp.h \
@@ -2532,7 +2527,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/setjmp.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
@@ -2656,8 +2650,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
   /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp \
   /Users/summerfaliero/coral/PurrrfectSpots/Demo.h \
   /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/Reservations.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-autocleanups.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk-enum-types.h \
   /opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0/atk/atk.h \
@@ -4048,8 +4040,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/invisible.h:
 
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/infobar.h:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/tooltip.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/image.h:
@@ -4294,6 +4284,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/loadableicon.h:
 
+/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inetsocketaddress.h:
+
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/filteroutputstream.h:
 
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/emblem.h:
@@ -4353,12 +4345,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/set:
-
-/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/inetsocketaddress.h:
-
-/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtkapplicationwindow.h:
-
-/Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.h:
 
 /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtkcssprovider.h:
 
@@ -6278,8 +6264,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ostream:
 
-/Users/summerfaliero/coral/PurrrfectSpots/MyNoteBook.cpp:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/toggleaction.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partial_sort.h:
@@ -6632,6 +6616,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwchar:
 
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/infobar.h:
+
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/clipboard.h:
 
 /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/deprecated/gtkstatusicon.h:
@@ -6833,6 +6819,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 /opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0/glib/deprecated/gcache.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/identity.h:
+
+/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtkapplicationwindow.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/fill_n.h:
 
