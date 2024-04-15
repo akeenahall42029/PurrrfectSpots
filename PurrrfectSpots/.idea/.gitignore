@@ -8,4 +8,5 @@
 /dataSources.local.xml
 /.idea/
 /cmake-build-debug
-
+# manually removing the LastTest file because it keeps giving me issues --akeena
+/cmake-build-debug/Testing/Temporary/LastTest.log
