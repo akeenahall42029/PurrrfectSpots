@@ -3,6 +3,7 @@
 //
 
 #include "MyButton.h"
+#include "Reservations.h"
 
 MyButton::MyButton(Glib::ustring s) {
     button_label = s;
@@ -29,7 +30,15 @@ MyButton::~MyButton() { }
 void MyButton::on_button_clicked()
 {
     std::cout << button_label << " was clicked." << std::endl;
-//     Reservations tester (100, 1200, "summer", 30, "booked");
-//     tester.storeData();
+    int napSpotID = 100;
+    int userId = 1200;
+    std::string userName = "summer";
+    int time = 30;
+    std::string status = "booked";
+
+    Reservations tester(napSpotID, userId, userName, time, status);
+
+    // Call the storeData method on the created Reservations object
+    tester.getNapSpotId();
         //this is where i change the page or code what happens after clicking a button
 }
