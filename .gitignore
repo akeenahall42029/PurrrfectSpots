@@ -11,4 +11,4 @@ PurrrfectSpots/cmake-build-debug
 /cmake-build-debug
 # manually removing the LastTest file because it keeps giving me issues --akeena
 /cmake-build-debug/Testing/Temporary/LastTest.log
-
+**/.DS_Store
