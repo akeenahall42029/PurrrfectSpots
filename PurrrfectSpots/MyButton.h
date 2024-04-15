@@ -19,6 +19,8 @@ protected:
     void on_button_clicked();
 //Child widgets:
     Glib::ustring button_label;
+
+    void openSignUpPage();
 };
 
 

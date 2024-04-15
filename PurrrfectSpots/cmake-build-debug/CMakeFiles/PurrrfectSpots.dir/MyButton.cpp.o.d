@@ -1,7 +1,6 @@
 CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /Users/summerfaliero/coral/PurrrfectSpots/MyButton.cpp \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stack.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/ustring.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include/glibmmconfig.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/unicode.h \
@@ -538,8 +537,14 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/adaptors/exception_catch.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/adaptors/track_obj.h \
   /opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0/sigc++/functors/functors.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widget.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include/gtkmmconfig.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include/gdkmmconfig.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include/pangommconfig.h \
+  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/context.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/object.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/objectbase.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/class.h \
@@ -593,13 +598,6 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/exception.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/variant_basictypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widget.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include/gtkmmconfig.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include/gdkmmconfig.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include/pangommconfig.h \
-  /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/context.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/arrayhandle.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/listhandle.h \
   /opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4/pangomm/fontdescription.h \
@@ -1285,6 +1283,14 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/actiongroup.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy_base.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/box.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbox.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/application.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actiongroup.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/action.h \

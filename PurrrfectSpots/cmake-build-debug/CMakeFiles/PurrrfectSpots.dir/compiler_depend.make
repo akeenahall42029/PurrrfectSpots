@@ -1623,6 +1623,7 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: /Users/summerfaliero/coral/Purrrfe
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/base.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/border.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/box.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/buildable.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/button.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy.h \
@@ -1630,11 +1631,16 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: /Users/summerfaliero/coral/Purrrfe
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/clipboard.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/enums.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbox.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconset.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconsource.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/object.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/requisition.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/selectiondata.h \
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stack.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stockid.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stylecontext.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/styleprovider.h \
@@ -3950,8 +3956,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stackswitcher.h:
 
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stack.h:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/spinner.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/spinbutton.h:
@@ -4008,8 +4012,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/pagesetup.h:
 
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/notebook.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/nativedialog.h:
@@ -4036,9 +4038,9 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/linkbutton.h:
 
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/invisible.h:
+
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/infobar.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/tooltip.h:
 
@@ -4542,6 +4544,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/object.h:
 
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h:
 
 /opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0/cairomm/refptr.h:
@@ -4549,6 +4553,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconsource.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h:
+
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h:
 
@@ -5201,6 +5207,8 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/iostream.h:
 
 /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gdk/gdkcursor.h:
+
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stack.h:
 
 /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/credentials.h:
 
@@ -6412,6 +6420,10 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/gtkbbox.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
+
+/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h:
@@ -6616,8 +6628,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwchar:
 
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/infobar.h:
-
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/clipboard.h:
 
 /opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/gtk/deprecated/gtkstatusicon.h:
@@ -6783,10 +6793,6 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: /Users/summerfaliero/coral/PurrrfectSp
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/declval.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h:
-
-/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h:
-
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/raw_storage_iterator.h:
 
 /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/stockid.h:
 
