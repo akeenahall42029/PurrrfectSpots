@@ -31,8 +31,8 @@ private:
 
 public:
 
-    Reservations(int napSpotID, int userId, std::string& userName, int time, std::string& status);
-
+    Reservations(int napSpotID, int userId, int time, std::string status);
+    Reservations(); // default constructor
     // Getter functions, will be useful for SQL binding
     int getID() const; // Change the return type to int
     int getNapSpotId() const;
