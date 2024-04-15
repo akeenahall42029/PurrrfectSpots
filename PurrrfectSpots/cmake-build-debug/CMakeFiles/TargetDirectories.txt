@@ -1,3 +1,0 @@
-/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/PurrrfectSpots.dir
-/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/hallake/cs205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/rebuild_cache.dir
