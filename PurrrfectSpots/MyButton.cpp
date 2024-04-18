@@ -29,22 +29,41 @@ void MyButton::on_button_clicked() {
 }
 
 void MyButton::openSignUpPage() {
-    // creating sign up page content
+
+    // creating sign up page content!
+
+    //creating the sign-up page content container
     Gtk::Box* signup_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
+
+    // creating and add the back button to the top-left corner -- its centered :(
     Gtk::Button* backButton = Gtk::manage(new Gtk::Button("BACK"));
-    Gtk::Entry* username_entry = Gtk::manage(new Gtk::Entry()); // Add Gtk::Entry for username input
+    backButton->set_size_request(30, 30); // Set button size
+    signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
+
+    //creating and add the sign-up label to the center of the container
+    Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
+    signup_label->set_halign(Gtk::ALIGN_CENTER); // Center-align the label
+    signup_label->set_margin_top(50); // Add top margin for spacing
+    signup_label->set_margin_bottom(50); // Add bottom margin for spacing
+    signup_box->pack_start(*signup_label, Gtk::PACK_START, 0);
+
+    //creating and add the username entry centered within the container
+    Gtk::Entry* username_entry = Gtk::manage(new Gtk::Entry());
+    username_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
+    username_entry->set_placeholder_text("Username"); // Set placeholder text
+    username_entry->set_margin_bottom(20); // Add bottom margin for spacing
+    signup_box->pack_start(*username_entry, Gtk::PACK_START, 0);
 
 
-    // Connect back button click event
+    // connecting back button click event
     backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 
-    // Add widgets to the sign-up page content
+    // adding widgets to the sign-up page content
     signup_box->pack_start(*signup_label);
-    signup_box->pack_start(*username_entry); // Add the username entry field
+    signup_box->pack_start(*username_entry); // adding the username entry field
     signup_box->pack_start(*backButton);
 
-    // Clear existing content of the window
+    // clearing existing content of the window
     Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
     if (window) {
         Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
@@ -54,7 +73,7 @@ void MyButton::openSignUpPage() {
             for (auto& child : children) {
                 container->remove(*child);
             }
-            container->add(*signup_box); // Add sign-up page content
+            container->add(*signup_box); // adding sign-up page content
             window->show_all();
         }
     }
