@@ -4,23 +4,20 @@
 
 #ifndef PURRRFECTSPOTS_MYBUTTON_H
 #define PURRRFECTSPOTS_MYBUTTON_H
-#include <gtkmm/window.h>
+
 #include <gtkmm/button.h>
-#include <iostream>
 
-class MyButton : public Gtk::Button
-{
+class MyButton : public Gtk::Button {
 public:
-    MyButton();
-    MyButton(Glib::ustring s);
+    MyButton(const Glib::ustring& label);
     virtual ~MyButton();
-protected:
-//Signal handlers:
-    void on_button_clicked();
-//Child widgets:
-    Glib::ustring button_label;
 
+protected:
+    void on_button_clicked();
     void openSignUpPage();
+
+private:
+    Glib::ustring button_label;
 };
 
 

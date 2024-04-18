@@ -2,67 +2,56 @@
 // Created by Summer Faliero on 4/1/24.
 //
 
-#include <gtkmm/stack.h>
-#include <gtkmm/label.h>
-#include <gtkmm/box.h>
 #include "MyButton.h"
-#include "Reservations.h"
+#include <gtkmm/window.h>  // Add this include for Gtk::Window
+#include <gtkmm/container.h>  // Add this include for Gtk::Container
+#include <gtkmm/box.h>
+#include <gtkmm/label.h>
+#include <gtkmm/button.h>
 
-MyButton::MyButton(Glib::ustring s) {
-    button_label = s;
-// This function will add a label to the button using the passed value.
-    add_label(s);
-// This connects the button widget (referenced by this) to a pointer of
-// the on_button_clicked method.
-    signal_clicked().connect(
-            sigc::mem_fun(*this, &MyButton::on_button_clicked) );
+
+MyButton::MyButton(const Glib::ustring& label) : button_label(label) {
+    set_label(label);
+    signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 }
-MyButton::MyButton()
-{
-    button_label = "test Button";
-// This function will add a label to the button using a default value.
-    add_label(button_label);
-// This connects the button widget (referenced by this) to a pointer of
-// the on_button_clicked method.
-    signal_clicked().connect(
-            sigc::mem_fun(*this, &MyButton::on_button_clicked) );
+
+MyButton::~MyButton() {
+    // destructor implementation
 }
-// This is a destructor that does nothing in this case.
-MyButton::~MyButton() { }
-// A method that connected to the button by the command above.
+
+void MyButton::on_button_clicked() {
+    if (button_label == "SIGN UP") {
+        openSignUpPage();
+    } else if (button_label == "BACK") {
+        // Implement going back if needed
+    }
+}
 
 void MyButton::openSignUpPage() {
-    std::cout <<  " is this working" << std::endl;
-    // Create widgets for the sign-up page
-    Gtk::Window signup_window;
-    Gtk::Box signup_box;
-    Gtk::Label signup_label("Sign Up Page");
+    // Create the sign-up page content
+    Gtk::Box* signup_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
+    Gtk::Button* backButton = Gtk::manage(new Gtk::Button("BACK"));
 
-    // Add widgets to the sign-up page
-    signup_box.pack_start(signup_label);
+    // Connect back button click event
+    backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 
-    // Show the sign-up page and window
-    signup_window.add(signup_box);
-    signup_window.show_all();
-}
+    // Add widgets to the sign-up page content
+    signup_box->pack_start(*signup_label);
+    signup_box->pack_start(*backButton);
 
-void MyButton::on_button_clicked()
-{
-    std::cout << button_label << " was clicked." << std::endl;
-
-    if (button_label == "SIGN UP") {
-        // Code to open the sign-up page and handle its functionality
-        openSignUpPage();
+    // Clear existing content of the window
+    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
+    if (window) {
+        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
+        if (container) {
+            // Remove all existing content
+            auto children = container->get_children();
+            for (auto& child : children) {
+                container->remove(*child);
+            }
+            container->add(*signup_box); // Add sign-up page content
+            window->show_all();
+        }
     }
-
-    int napSpotID = 100;
-    int userId = 1200;
-    std::string userName = "summer";
-    int time = 30;
-    std::string status = "booked";
-
-    Reservations tester(napSpotID, userId, time, status);
-
-    tester.getNapSpotId();
-        //this is where i change the page or code what happens after clicking a button
 }

@@ -1,6 +1,6 @@
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.cpp \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyButton.h \
+CMakeFiles/PurrrfectSpots.dir/Button.cpp.o: \
+  /Users/summerfaliero/coral/PurrrfectSpots/Button.cpp \
+  /Users/summerfaliero/coral/PurrrfectSpots/Button.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/button.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4/glibmm/ustring.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include/glibmmconfig.h \
@@ -1288,6 +1288,8 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/activatable.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/action.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelgroup.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/WidgetStack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stack \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/application.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actiongroup.h \
@@ -1335,9 +1337,4 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menumodel.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menu.h \
   /opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4/giomm/menuitem.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/windowgroup.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/box.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbox.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h \
-  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h
+  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/windowgroup.h
