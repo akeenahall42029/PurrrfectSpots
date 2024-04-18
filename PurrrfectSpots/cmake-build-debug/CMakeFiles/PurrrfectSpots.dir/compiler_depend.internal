@@ -1603,6 +1603,8 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/dragcontext.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/event.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbuf.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufanimation.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufanimationiter.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/pixbufformat.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/rectangle.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/rgba.h
@@ -1613,9 +1615,11 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0/gdkmm/window.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelgroup.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accelkey.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/accellabel.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/action.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/actiongroup.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/activatable.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/adjustment.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/application.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/base.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/bin.h
@@ -1623,15 +1627,31 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/box.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/buildable.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/button.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/celleditable.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/celllayout.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderer.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderer_generation.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendereraccel.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrendererpixbuf.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderertext.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cellrenderertoggle.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/childpropertyproxy_base.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/clipboard.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/container.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/editable.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entry.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entrybuffer.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entrycompletion.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/enums.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/hvbox.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconset.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/iconsource.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/image.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/label.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menu.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menuitem.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/menushell.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/misc.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/object.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/orientable.h
@@ -1642,6 +1662,9 @@ CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/styleprovider.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/targetentry.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/targetlist.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treeiter.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodel.h
+ /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/treemodelcolumn.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widget.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/widgetpath.h
  /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/window.h
