@@ -21,6 +21,11 @@ add_executable(coral1
         PurrrfectSpots/MyValue.cpp
         PurrrfectSpots/MyValue.h
         PurrrfectSpots/Reservations.cpp
-        PurrrfectSpots/Reservations.h
-        "unit_tests/Reservations Tests.cpp")
+        PurrrfectSpots/Reservations.h)
+add_executable(unittest
+        unit_tests/ReservationsTests.cpp
+)
+include_directories(googletest googletest/include googletest/include/gtest)
+add_executable(unittests googletest/src/gtest-all.cc)
+target_link_libraries(unittests sqlite3 gtest gtest_main )
 target_link_libraries(coral1 sqlite3 ${GTKMM_LIBRARIES})
