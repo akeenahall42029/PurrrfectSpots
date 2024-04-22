@@ -14,7 +14,11 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/hallake/cs205_v2/coral/PurrrfectSpots/MyValue.cpp" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d"
   "/home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.cpp" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o.d"
   "/home/hallake/cs205_v2/coral/PurrrfectSpots/Users.cpp" "CMakeFiles/PurrrfectSpots.dir/Users.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Users.cpp.o.d"
+  "/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.cpp" "CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o.d"
+  "/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.cpp" "CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o.d"
   "/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o.d"
+  "/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp" "CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o.d"
+  "/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserManager.cpp" "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o.d"
   )
 
 # Targets to which this target links.

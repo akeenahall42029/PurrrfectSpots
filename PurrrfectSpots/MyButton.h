@@ -18,6 +18,8 @@ protected:
 
 private:
     Glib::ustring button_label;
+
+    void openLoginPage();
 };
 
 

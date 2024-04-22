@@ -273,6 +273,54 @@ Users.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Users.cpp.s
 .PHONY : Users.cpp.s
 
+database/Database.o: database/Database.cpp.o
+.PHONY : database/Database.o
+
+# target to build an object file
+database/Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o
+.PHONY : database/Database.cpp.o
+
+database/Database.i: database/Database.cpp.i
+.PHONY : database/Database.i
+
+# target to preprocess a source file
+database/Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.i
+.PHONY : database/Database.cpp.i
+
+database/Database.s: database/Database.cpp.s
+.PHONY : database/Database.s
+
+# target to generate assembly for a file
+database/Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.s
+.PHONY : database/Database.cpp.s
+
+database/UserDB.o: database/UserDB.cpp.o
+.PHONY : database/UserDB.o
+
+# target to build an object file
+database/UserDB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o
+.PHONY : database/UserDB.cpp.o
+
+database/UserDB.i: database/UserDB.cpp.i
+.PHONY : database/UserDB.i
+
+# target to preprocess a source file
+database/UserDB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.i
+.PHONY : database/UserDB.cpp.i
+
+database/UserDB.s: database/UserDB.cpp.s
+.PHONY : database/UserDB.s
+
+# target to generate assembly for a file
+database/UserDB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.s
+.PHONY : database/UserDB.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -296,6 +344,54 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+user/UserAccount.o: user/UserAccount.cpp.o
+.PHONY : user/UserAccount.o
+
+# target to build an object file
+user/UserAccount.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o
+.PHONY : user/UserAccount.cpp.o
+
+user/UserAccount.i: user/UserAccount.cpp.i
+.PHONY : user/UserAccount.i
+
+# target to preprocess a source file
+user/UserAccount.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.i
+.PHONY : user/UserAccount.cpp.i
+
+user/UserAccount.s: user/UserAccount.cpp.s
+.PHONY : user/UserAccount.s
+
+# target to generate assembly for a file
+user/UserAccount.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.s
+.PHONY : user/UserAccount.cpp.s
+
+user/UserManager.o: user/UserManager.cpp.o
+.PHONY : user/UserManager.o
+
+# target to build an object file
+user/UserManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o
+.PHONY : user/UserManager.cpp.o
+
+user/UserManager.i: user/UserManager.cpp.i
+.PHONY : user/UserManager.i
+
+# target to preprocess a source file
+user/UserManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.i
+.PHONY : user/UserManager.cpp.i
+
+user/UserManager.s: user/UserManager.cpp.s
+.PHONY : user/UserManager.s
+
+# target to generate assembly for a file
+user/UserManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.s
+.PHONY : user/UserManager.cpp.s
 
 # Help Target
 help:
@@ -324,9 +420,21 @@ help:
 	@echo "... Users.o"
 	@echo "... Users.i"
 	@echo "... Users.s"
+	@echo "... database/Database.o"
+	@echo "... database/Database.i"
+	@echo "... database/Database.s"
+	@echo "... database/UserDB.o"
+	@echo "... database/UserDB.i"
+	@echo "... database/UserDB.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... user/UserAccount.o"
+	@echo "... user/UserAccount.i"
+	@echo "... user/UserAccount.s"
+	@echo "... user/UserManager.o"
+	@echo "... user/UserManager.i"
+	@echo "... user/UserManager.s"
 .PHONY : help
 
 

@@ -194,7 +194,31 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Users.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserManager.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserManager.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/CMakeLists.txt">
