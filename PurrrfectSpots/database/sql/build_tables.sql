@@ -2,8 +2,9 @@ create table users
 (
     id             INT  NOT NULL UNIQUE,
     name           TEXT NOT NULL,
-    reservation_id INT  NOT NULL,
-    review_id      INT  NOT NULL,
+    password TEXT NOT NULL,
+     -- reservation_id INT  NOT NULL,
+   -- review_id      INT  NOT NULL,
     primary key (id),
     foreign key (id) references reports (userId),
     foreign key (reservation_id) references reservations (id)
@@ -26,6 +27,7 @@ create table reservations
     napSpotId INT  NOT NULL,
     userId    INT   NOT NULL,
     userName TEXT NOT NULL,
+    -- userName TEXT, MIGHT NEED TO CHANGE THIS CONSTRAINT, the goal is to store the reservation
     time      INT NOT NULL, -- will be the hour
     status    TEXT  NOT NULL,
     primary key (id),

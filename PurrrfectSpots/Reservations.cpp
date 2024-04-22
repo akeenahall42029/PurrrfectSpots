@@ -14,7 +14,7 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
 
     //location and name of the datbase
     std::string db_name = "example.sqlite";
-    std::string db_location = "./database";
+    std::string db_location = "../database";
 
 
     std::string full_name = db_location + "/" + db_name;
@@ -33,6 +33,7 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
     }
 
     id = generateID(); // generate a random 9 digit ID number
+    storeData();
 
 }
 
@@ -101,14 +102,17 @@ void Reservations::storeData() {
     // Construct the SQL query for INSERT INTO reservations
     //std::string
     sql = "INSERT INTO reservations";
-    sql += " (id, napSpotId, userId, time, status) ";
+    sql += "(id, napSpotId, userId, time, status) ";
     sql += "VALUES (";
     sql += std::to_string(id);
     sql += ", ";
+    // add userName
     sql += std::to_string(napSpotId);
     sql += ", ";
     sql += std::to_string(userId);
-    sql += "', ";
+    sql += ", ";
+    sql += userName;
+    sql += ", ";
     sql += std::to_string(time);
     sql += ", '";
     sql += status;

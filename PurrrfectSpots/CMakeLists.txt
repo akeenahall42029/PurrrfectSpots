@@ -23,6 +23,8 @@ add_executable(PurrrfectSpots main.cpp
         MyValue.h
         MyDisplayBuffer.cpp
         MyDisplayBuffer.h
+        Users.cpp
+        Users.h
 )
 
 #target_link_libraries(PurrrfectSpots sqlite3)
