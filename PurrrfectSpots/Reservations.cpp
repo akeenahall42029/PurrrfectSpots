@@ -69,7 +69,9 @@ int Reservations::getID() const {
 int Reservations::getUserId()  const{
     return userId;
 }
-
+int Reservations::getRetCode() const {
+    return retCode; // Return the value of retCode
+}
 
 std::string Reservations::getStatus() const {
     return status;
@@ -83,6 +85,12 @@ void Reservations::setNapSpotId(int napSpotId)  {
 
 void Reservations::setUserId(std::string userId) {
     userId = userId;
+}
+void Reservations::setTime(int time) {
+   time=time;
+}
+void Reservations::setStatus(std::string status)  {
+   status=status;
 }
 
 /* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
