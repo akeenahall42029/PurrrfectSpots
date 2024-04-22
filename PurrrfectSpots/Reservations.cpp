@@ -14,25 +14,27 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
 
     //location and name of the database
     std::string db_name = "example.sqlite";
-    std::string db_location = "./database";
+    std::string db_location = "../database";
 
 
     std::string full_name = db_location + "/" + db_name;
 
     // open the database and check return codes
 
-//    retCode = sqlite3_open(full_name.c_str(),&curr_db);
-//    if( retCode ){
-//        std::cerr << "Database does not open -- "
-//                  << sqlite3_errmsg(curr_db)
-//                  << std::endl;
-//        std::cerr << " File -- " << full_name << std::endl;
-//        exit(0);
-//    }else{
-//        std::cerr << "Opened database successfully\n";
-//    }
-//
-//    id = generateID(); // generate a random 9 digit ID number
+    retCode = sqlite3_open(full_name.c_str(),&curr_db);
+    if( retCode ){
+        std::cerr << "Database does not open -- "
+                  << sqlite3_errmsg(curr_db)
+                  << std::endl;
+        std::cerr << " File -- " << full_name << std::endl;
+        exit(0);
+    }else{
+        std::cerr << "Opened database successfully\n";
+    }
+
+    id = generateID(); // generate a random 9 digit ID number
+    storeData();
+
 
 }
 
@@ -50,7 +52,7 @@ int Reservations::generateID() {
 }
 
 int Reservations::getNapSpotId() const {
-    std::cout << "\033[1;95mYour nap spot ID is: \033[0m" << napSpotId << std::endl;
+    // std::cout << "\033[1;95mYour nap spot ID is: \033[0m" << napSpotId << std::endl;
     return napSpotId;
 }
 
@@ -109,14 +111,17 @@ void Reservations::storeData() {
     // Construct the SQL query for INSERT INTO reservations
     //std::string
     sql = "INSERT INTO reservations";
-    sql += " (id, napSpotId, userId, time, status) ";
+    sql += "(id, napSpotId, userId, time, status) ";
     sql += "VALUES (";
     sql += std::to_string(id);
     sql += ", ";
+    // add userName
     sql += std::to_string(napSpotId);
     sql += ", ";
     sql += std::to_string(userId);
-    sql += "', ";
+    sql += ", ";
+    sql += userName;
+    sql += ", ";
     sql += std::to_string(time);
     sql += ", '";
     sql += status;
