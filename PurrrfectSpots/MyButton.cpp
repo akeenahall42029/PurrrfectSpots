@@ -3,42 +3,78 @@
 //
 
 #include "MyButton.h"
-#include "Reservations.h"
+#include <gtkmm/window.h>  // Add this include for Gtk::Window
+#include <gtkmm/container.h>  // Add this include for Gtk::Container
+#include <gtkmm/box.h>
+#include <gtkmm/label.h>
+#include <gtkmm/button.h>
+#include <gtkmm/entry.h>
 
-MyButton::MyButton(Glib::ustring s) {
-    button_label = s;
-// This function will add a label to the button using the passed value.
-    add_label(s);
-// This connects the button widget (referenced by this) to a pointer of
-// the on_button_clicked method.
-    signal_clicked().connect(
-            sigc::mem_fun(*this, &MyButton::on_button_clicked) );
+
+MyButton::MyButton(const Glib::ustring& label) : button_label(label) {
+    set_label(label);
+    signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 }
-MyButton::MyButton()
-{
-    button_label = "test Button";
-// This function will add a label to the button using a default value.
-    add_label(button_label);
-// This connects the button widget (referenced by this) to a pointer of
-// the on_button_clicked method.
-    signal_clicked().connect(
-            sigc::mem_fun(*this, &MyButton::on_button_clicked) );
+
+MyButton::~MyButton() {
+    // destructor implementation
 }
-// This is a destructor that does nothing in this case.
-MyButton::~MyButton() { }
-// A method that connected to the button by the command above.
-void MyButton::on_button_clicked()
-{
-    std::cout << button_label << " was clicked." << std::endl;
-    int napSpotID = 100;
-    int userId = 1200;
-    std::string userName = "summer";
-    int time = 30;
-    std::string status = "booked";
 
-    Reservations tester(napSpotID, userId, time, status);
+void MyButton::on_button_clicked() {
+    if (button_label == "SIGN UP") {
+        openSignUpPage();
+    } else if (button_label == "BACK") {
+        // implement going back
+    }
+}
 
-    // Call the storeData method on the created Reservations object
-    tester.getNapSpotId();
-        //this is where i change the page or code what happens after clicking a button
+void MyButton::openSignUpPage() {
+
+    // creating sign up page content!
+
+    //creating the sign-up page content container
+    Gtk::Box* signup_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+
+    // creating and add the back button to the top-left corner -- its centered :(
+    Gtk::Button* backButton = Gtk::manage(new Gtk::Button("BACK"));
+    backButton->set_size_request(30, 30); // Set button size
+    signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
+
+    //creating and add the sign-up label to the center of the container
+    Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
+    signup_label->set_halign(Gtk::ALIGN_CENTER); // Center-align the label
+    signup_label->set_margin_top(50); // Add top margin for spacing
+    signup_label->set_margin_bottom(50); // Add bottom margin for spacing
+    signup_box->pack_start(*signup_label, Gtk::PACK_START, 0);
+
+    //creating and add the username entry centered within the container
+    Gtk::Entry* username_entry = Gtk::manage(new Gtk::Entry());
+    username_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
+    username_entry->set_placeholder_text("Username"); // Set placeholder text
+    username_entry->set_margin_bottom(20); // Add bottom margin for spacing
+    signup_box->pack_start(*username_entry, Gtk::PACK_START, 0);
+
+
+    // connecting back button click event
+    backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
+
+    // adding widgets to the sign-up page content
+    signup_box->pack_start(*signup_label);
+    signup_box->pack_start(*username_entry); // adding the username entry field
+    signup_box->pack_start(*backButton);
+
+    // clearing existing content of the window
+    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
+    if (window) {
+        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
+        if (container) {
+            // Remove all existing content
+            auto children = container->get_children();
+            for (auto& child : children) {
+                container->remove(*child);
+            }
+            container->add(*signup_box); // adding sign-up page content
+            window->show_all();
+        }
+    }
 }

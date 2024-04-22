@@ -12,7 +12,7 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
     // open the database to prepare to pass queries
 
 
-    //location and name of the datbase
+    //location and name of the database
     std::string db_name = "example.sqlite";
     std::string db_location = "../database";
 
@@ -35,6 +35,7 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
     id = generateID(); // generate a random 9 digit ID number
     storeData();
 
+
 }
 
 
@@ -51,7 +52,7 @@ int Reservations::generateID() {
 }
 
 int Reservations::getNapSpotId() const {
-    std::cout << "\033[1;95mYour nap spot ID is: \033[0m" << napSpotId << std::endl;
+    // std::cout << "\033[1;95mYour nap spot ID is: \033[0m" << napSpotId << std::endl;
     return napSpotId;
 }
 
