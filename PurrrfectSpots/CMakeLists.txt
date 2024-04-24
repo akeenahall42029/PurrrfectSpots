@@ -48,7 +48,9 @@ link_directories(/usr/lib)
 add_executable(Profilescreen ui/Profile.cpp ui/Profile.h )
 
 include_directories(googletest googletest/include googletest/include/gtest)
-add_executable(unittests googletest/src/gtest-all.cc)
+add_executable(unittests googletest/src/gtest-all.cc
+        unit_tests/ReservationTests.cpp
+        unit_tests/ReservationTests.h)
 
 #include_directories(googletest googletest/include googletest/include/gtest)
 #add_executable(unittests googletest/src/gtest-all.cc

@@ -137,12 +137,12 @@ CMakeFiles/Profilescreen.dir/clean:
 CMakeFiles/unittests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target unittests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=16,17,18 "Built target unittests"
 .PHONY : CMakeFiles/unittests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/unittests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/unittests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/unittests.dir/rule

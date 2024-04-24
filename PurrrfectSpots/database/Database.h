@@ -21,7 +21,9 @@ public:
      * Returns the results of the query
      * @return
      */
-    std::vector<std::string> results();
+    // std::vector<std::string> results();
+
+    std::vector<std::string> results(const std::string &query);
 };
 
 

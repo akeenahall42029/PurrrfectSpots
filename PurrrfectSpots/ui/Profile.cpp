@@ -40,18 +40,18 @@
         window->show_all_children();
     }
 
-int main(int argc, char* argv[]) {
-    auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
-
-    std::vector<std::string> reviews = {"Great place!", "Beautiful view!"};
-    std::vector<std::string> createdNapspots = {"Park", "Beach"};
-
-    Profile profilePage = Profile("User123", reviews, createdNapspots);
-
-    // Run the application
-    int result = 0;
-            //app->run(profilePage);
-
-
-    return result;
-}
+//int main(int argc, char* argv[]) {
+//    auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
+//
+//    std::vector<std::string> reviews = {"Great place!", "Beautiful view!"};
+//    std::vector<std::string> createdNapspots = {"Park", "Beach"};
+//
+//    Profile profilePage = Profile("User123", reviews, createdNapspots);
+//
+//    // Run the application
+//    int result = 0;
+//            //app->run(profilePage);
+//
+//
+//    return result;
+//}

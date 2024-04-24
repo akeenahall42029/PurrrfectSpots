@@ -422,6 +422,30 @@ ui/Profile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.s
 .PHONY : ui/Profile.cpp.s
 
+unit_tests/ReservationTests.o: unit_tests/ReservationTests.cpp.o
+.PHONY : unit_tests/ReservationTests.o
+
+# target to build an object file
+unit_tests/ReservationTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/ReservationTests.cpp.o
+.PHONY : unit_tests/ReservationTests.cpp.o
+
+unit_tests/ReservationTests.i: unit_tests/ReservationTests.cpp.i
+.PHONY : unit_tests/ReservationTests.i
+
+# target to preprocess a source file
+unit_tests/ReservationTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/ReservationTests.cpp.i
+.PHONY : unit_tests/ReservationTests.cpp.i
+
+unit_tests/ReservationTests.s: unit_tests/ReservationTests.cpp.s
+.PHONY : unit_tests/ReservationTests.s
+
+# target to generate assembly for a file
+unit_tests/ReservationTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/ReservationTests.cpp.s
+.PHONY : unit_tests/ReservationTests.cpp.s
+
 user/UserAccount.o: user/UserAccount.cpp.o
 .PHONY : user/UserAccount.o
 
@@ -514,6 +538,9 @@ help:
 	@echo "... ui/Profile.o"
 	@echo "... ui/Profile.i"
 	@echo "... ui/Profile.s"
+	@echo "... unit_tests/ReservationTests.o"
+	@echo "... unit_tests/ReservationTests.i"
+	@echo "... unit_tests/ReservationTests.s"
 	@echo "... user/UserAccount.o"
 	@echo "... user/UserAccount.i"
 	@echo "... user/UserAccount.s"

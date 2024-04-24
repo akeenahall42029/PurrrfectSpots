@@ -29,11 +29,14 @@ UserManager::UserManager(UserDB *db) : db(db){}
     * @return Returns 1 if the verification is successful, 0 otherwise.
     */
 int UserManager::verify(UserAccount &a, std::string password) {
+    // Construct thr SQL query to verify user credentials
+    std::string query = "SELECT id FROM users WHERE username = '" + a.get_username() + "' AND password = '" + password + "';";
+
     // Verify user credentials with the database
     db->verify_user(a.get_username(), password);
 
     // Check if the database query returned any results
-    std::vector<std::string> results = db->results();
+    std::vector<std::string> results = db->results(query);
     if (!results.empty()) {
         // Extract the user ID from the results and set it in the UserAccount object
         a.set_id(std::stoi(results[0])); // Assuming the user ID is the first result

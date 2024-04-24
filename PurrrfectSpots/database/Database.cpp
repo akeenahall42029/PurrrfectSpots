@@ -28,10 +28,19 @@ Database::Database() {
     }
 }
 
-std::vector<std::string> Database::results() {
+std::vector<std::string> Database::results(const std::string& query) {
     std::vector<std::vector<std::string>> resultSet;
 
-    while ((retCode = sqlite3_step(stmt)) == SQLITE_ROW) {
+    // Prepare the SQL statement
+    retCode = sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr);
+    if (retCode != SQLITE_OK) {
+        std::cerr << "SQL error: " << sqlite3_errmsg(curr_db) << std::endl;
+        return {};
+    }
+
+    // Execute the SQL statement
+    retCode = sqlite3_step(stmt);
+    while (retCode == SQLITE_ROW) {
         std::vector<std::string> row;
         int numColumns = sqlite3_column_count(stmt);
         for (int i = 0; i < numColumns; ++i) {
@@ -40,13 +49,19 @@ std::vector<std::string> Database::results() {
         }
         resultSet.push_back(row);
 
-        // Convert resultSet to a vector of strings and return
-        std::vector<std::string> resultStrings;
-        for (const auto& row : resultSet) {
-            for (const auto& value : row) {
-                resultStrings.push_back(value);
-            }
-        }
-        return resultStrings;
+        // Retrieve the next row
+        retCode = sqlite3_step(stmt);
     }
+
+    // Finalize the statement
+    sqlite3_finalize(stmt);
+
+    // Convert resultSet to a vector of strings and return
+    std::vector<std::string> resultStrings;
+    for (const auto& row : resultSet) {
+        for (const auto& value : row) {
+            resultStrings.push_back(value);
+        }
+    }
+    return resultStrings;
 }
