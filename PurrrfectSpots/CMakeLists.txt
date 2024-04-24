@@ -33,8 +33,20 @@ add_executable(PurrrfectSpots main.cpp
         user/UserManager.h
         user/UserAccount.cpp
         user/UserAccount.h
+
 )
 
+include_directories(googletest googletest/include googletest/include/gtest)
+add_executable(unittests googletest/src/gtest-all.cc)
+
+#include_directories(googletest googletest/include googletest/include/gtest)
+#add_executable(unittests googletest/src/gtest-all.cc
+#        unit_tests/ReservationsTests.cpp
+#        Reservations.h
+#        Reservations.cpp
+#
+#
+#)
 #target_link_libraries(PurrrfectSpots sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 

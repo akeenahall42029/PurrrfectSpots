@@ -129,6 +129,19 @@ PurrrfectSpots/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/build
 .PHONY : PurrrfectSpots/fast
 
+#=============================================================================
+# Target rules for targets named unittests
+
+# Build rule for target.
+unittests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unittests
+.PHONY : unittests
+
+# fast build rule for target.
+unittests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/build
+.PHONY : unittests/fast
+
 Demo.o: Demo.cpp.o
 .PHONY : Demo.o
 
@@ -321,6 +334,30 @@ database/UserDB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.s
 .PHONY : database/UserDB.cpp.s
 
+googletest/src/gtest-all.o: googletest/src/gtest-all.cc.o
+.PHONY : googletest/src/gtest-all.o
+
+# target to build an object file
+googletest/src/gtest-all.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/googletest/src/gtest-all.cc.o
+.PHONY : googletest/src/gtest-all.cc.o
+
+googletest/src/gtest-all.i: googletest/src/gtest-all.cc.i
+.PHONY : googletest/src/gtest-all.i
+
+# target to preprocess a source file
+googletest/src/gtest-all.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/googletest/src/gtest-all.cc.i
+.PHONY : googletest/src/gtest-all.cc.i
+
+googletest/src/gtest-all.s: googletest/src/gtest-all.cc.s
+.PHONY : googletest/src/gtest-all.s
+
+# target to generate assembly for a file
+googletest/src/gtest-all.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/googletest/src/gtest-all.cc.s
+.PHONY : googletest/src/gtest-all.cc.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -402,6 +439,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... PurrrfectSpots"
+	@echo "... unittests"
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
@@ -426,6 +464,9 @@ help:
 	@echo "... database/UserDB.o"
 	@echo "... database/UserDB.i"
 	@echo "... database/UserDB.s"
+	@echo "... googletest/src/gtest-all.o"
+	@echo "... googletest/src/gtest-all.i"
+	@echo "... googletest/src/gtest-all.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
