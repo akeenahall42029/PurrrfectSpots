@@ -1110,7 +1110,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
  /usr/include/gtkmm-3.0/gtkmm/box.h \
  /usr/include/gtkmm-3.0/gtkmm/orientable.h \
  /usr/include/gtkmm-3.0/gtkmm/hvbox.h \
- /home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.h \
  /usr/include/gtkmm-3.0/gtkmm/button.h \
  /usr/include/gtkmm-3.0/gtkmm/activatable.h \
  /usr/include/gtkmm-3.0/gtkmm.h /usr/include/glibmm-2.4/glibmm.h \

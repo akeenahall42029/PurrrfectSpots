@@ -17,8 +17,8 @@ add_executable(PurrrfectSpots main.cpp
         Demo.h
         Reservations.cpp
         Reservations.h
-        MyButton.cpp
-        MyButton.h
+        ui/MyButton.cpp
+        ui/MyButton.h
         MyValue.cpp
         MyValue.h
         MyDisplayBuffer.cpp
@@ -33,8 +33,19 @@ add_executable(PurrrfectSpots main.cpp
         user/UserManager.h
         user/UserAccount.cpp
         user/UserAccount.h
+        ui/Profile.cpp
+        ui/Profile.h
 
 )
+
+find_package(PkgConfig)
+pkg_check_modules(GTKMM gtkmm-3.0)
+include_directories(${GTKMM_INCLUDE_DIRS})
+link_directories(${GTKMM_LIBRARY_DIRS})
+
+include_directories(/user/include)
+link_directories(/usr/lib)
+add_executable(Profilescreen ui/Profile.cpp ui/Profile.h )
 
 include_directories(googletest googletest/include googletest/include/gtest)
 add_executable(unittests googletest/src/gtest-all.cc)
@@ -49,4 +60,5 @@ add_executable(unittests googletest/src/gtest-all.cc)
 #)
 #target_link_libraries(PurrrfectSpots sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
+target_link_libraries(Profilescreen ${GTKMM_LIBRARIES})
 

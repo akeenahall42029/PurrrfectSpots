@@ -1,7 +1,7 @@
 #include <gtkmm/application.h>
 #include <gtkmm/window.h>
 #include <gtkmm/box.h>
-#include "MyButton.h"
+#include "ui/MyButton.h"
 #include <gtkmm.h>
 
 
@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
 
     Gtk::Window window;
-    window.set_default_size(700, 500); // can we make this bigger
+    window.set_default_size(1000, 1000); // made the window bigger
     window.set_border_width(10);
     window.set_resizable(false);
     window.override_background_color(Gdk::RGBA("#B0E0E6"));

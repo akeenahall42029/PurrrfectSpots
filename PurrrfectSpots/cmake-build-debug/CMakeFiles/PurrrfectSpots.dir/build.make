@@ -111,19 +111,19 @@ CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.cpp -o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: ../MyButton.cpp
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o -c /home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.cpp
+CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: ../ui/MyButton.cpp
+CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o -c /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp
 
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.cpp > CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.i
+CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp > CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.i
 
-CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.cpp -o CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s
+CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp -o CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s
 
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: ../MyValue.cpp
@@ -223,19 +223,34 @@ CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp -o CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.s
 
+CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: ../ui/Profile.cpp
+CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o -c /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp
+
+CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp > CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.i
+
+CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp -o CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s
+
 # Object files for target PurrrfectSpots
 PurrrfectSpots_OBJECTS = \
 "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/Users.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o"
+"CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o"
 
 # External object files for target PurrrfectSpots
 PurrrfectSpots_EXTERNAL_OBJECTS =
@@ -243,7 +258,7 @@ PurrrfectSpots_EXTERNAL_OBJECTS =
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/main.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Users.cpp.o
@@ -251,9 +266,10 @@ PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/build.make
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable PurrrfectSpots"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable PurrrfectSpots"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PurrrfectSpots.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

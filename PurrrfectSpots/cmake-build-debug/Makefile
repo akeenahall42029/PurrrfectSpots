@@ -130,6 +130,19 @@ PurrrfectSpots/fast:
 .PHONY : PurrrfectSpots/fast
 
 #=============================================================================
+# Target rules for targets named Profilescreen
+
+# Build rule for target.
+Profilescreen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Profilescreen
+.PHONY : Profilescreen
+
+# fast build rule for target.
+Profilescreen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/build
+.PHONY : Profilescreen/fast
+
+#=============================================================================
 # Target rules for targets named unittests
 
 # Build rule for target.
@@ -165,30 +178,6 @@ Demo.s: Demo.cpp.s
 Demo.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s
 .PHONY : Demo.cpp.s
-
-MyButton.o: MyButton.cpp.o
-.PHONY : MyButton.o
-
-# target to build an object file
-MyButton.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.o
-.PHONY : MyButton.cpp.o
-
-MyButton.i: MyButton.cpp.i
-.PHONY : MyButton.i
-
-# target to preprocess a source file
-MyButton.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.i
-.PHONY : MyButton.cpp.i
-
-MyButton.s: MyButton.cpp.s
-.PHONY : MyButton.s
-
-# target to generate assembly for a file
-MyButton.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyButton.cpp.s
-.PHONY : MyButton.cpp.s
 
 MyDisplayBuffer.o: MyDisplayBuffer.cpp.o
 .PHONY : MyDisplayBuffer.o
@@ -382,6 +371,57 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+ui/MyButton.o: ui/MyButton.cpp.o
+.PHONY : ui/MyButton.o
+
+# target to build an object file
+ui/MyButton.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o
+.PHONY : ui/MyButton.cpp.o
+
+ui/MyButton.i: ui/MyButton.cpp.i
+.PHONY : ui/MyButton.i
+
+# target to preprocess a source file
+ui/MyButton.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.i
+.PHONY : ui/MyButton.cpp.i
+
+ui/MyButton.s: ui/MyButton.cpp.s
+.PHONY : ui/MyButton.s
+
+# target to generate assembly for a file
+ui/MyButton.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s
+.PHONY : ui/MyButton.cpp.s
+
+ui/Profile.o: ui/Profile.cpp.o
+.PHONY : ui/Profile.o
+
+# target to build an object file
+ui/Profile.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.o
+.PHONY : ui/Profile.cpp.o
+
+ui/Profile.i: ui/Profile.cpp.i
+.PHONY : ui/Profile.i
+
+# target to preprocess a source file
+ui/Profile.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.i
+.PHONY : ui/Profile.cpp.i
+
+ui/Profile.s: ui/Profile.cpp.s
+.PHONY : ui/Profile.s
+
+# target to generate assembly for a file
+ui/Profile.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.s
+.PHONY : ui/Profile.cpp.s
+
 user/UserAccount.o: user/UserAccount.cpp.o
 .PHONY : user/UserAccount.o
 
@@ -438,14 +478,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Profilescreen"
 	@echo "... PurrrfectSpots"
 	@echo "... unittests"
 	@echo "... Demo.o"
 	@echo "... Demo.i"
 	@echo "... Demo.s"
-	@echo "... MyButton.o"
-	@echo "... MyButton.i"
-	@echo "... MyButton.s"
 	@echo "... MyDisplayBuffer.o"
 	@echo "... MyDisplayBuffer.i"
 	@echo "... MyDisplayBuffer.s"
@@ -470,6 +508,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... ui/MyButton.o"
+	@echo "... ui/MyButton.i"
+	@echo "... ui/MyButton.s"
+	@echo "... ui/Profile.o"
+	@echo "... ui/Profile.i"
+	@echo "... ui/Profile.s"
 	@echo "... user/UserAccount.o"
 	@echo "... user/UserAccount.i"
 	@echo "... user/UserAccount.s"

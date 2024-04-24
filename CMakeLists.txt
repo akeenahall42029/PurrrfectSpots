@@ -14,8 +14,8 @@ add_executable(coral1
         PurrrfectSpots/Demo.cpp
         PurrrfectSpots/Demo.h
         PurrrfectSpots/main.cpp
-        PurrrfectSpots/MyButton.cpp
-        PurrrfectSpots/MyButton.h
+        PurrrfectSpots/ui/MyButton.cpp
+        PurrrfectSpots/ui/MyButton.h
         PurrrfectSpots/MyDisplayBuffer.cpp
         PurrrfectSpots/MyDisplayBuffer.h
         PurrrfectSpots/MyValue.cpp

@@ -9,31 +9,31 @@
 Reservations::Reservations(int napSpotID, int userId, int time,  std::string status)
         : napSpotId(napSpotID), userId(userId), time(time), status(status) {
 
-    // open the database to prepare to pass queries
-
-
-    //location and name of the database
-    std::string db_name = "example.sqlite";
-    std::string db_location = "../database";
-
-
-    std::string full_name = db_location + "/" + db_name;
-
-    // open the database and check return codes
-
-    retCode = sqlite3_open(full_name.c_str(),&curr_db);
-    if( retCode ){
-        std::cerr << "Database does not open -- "
-                  << sqlite3_errmsg(curr_db)
-                  << std::endl;
-        std::cerr << " File -- " << full_name << std::endl;
-        exit(0);
-    }else{
-        std::cerr << "Opened database successfully\n";
-    }
-
-    id = generateID(); // generate a random 9 digit ID number
-    storeData();
+//    // open the database to prepare to pass queries
+//
+//
+//    //location and name of the database
+//    std::string db_name = "example.sqlite";
+//    std::string db_location = "../database";
+//
+//
+//    std::string full_name = db_location + "/" + db_name;
+//
+//    // open the database and check return codes
+//
+//    retCode = sqlite3_open(full_name.c_str(),&curr_db);
+//    if( retCode ){
+//        std::cerr << "Database does not open -- "
+//                  << sqlite3_errmsg(curr_db)
+//                  << std::endl;
+//        std::cerr << " File -- " << full_name << std::endl;
+//        exit(0);
+//    }else{
+//        std::cerr << "Opened database successfully\n";
+//    }
+//
+//    id = generateID(); // generate a random 9 digit ID number
+//    storeData();
 
 
 }

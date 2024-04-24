@@ -143,6 +143,132 @@
 					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="Profilescreen">
+				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/gtkmm-3.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
+					<Add directory="/usr/include/atkmm-1.6"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
+					<Add directory="/usr/include/gtk-3.0/unix-print"/>
+					<Add directory="/usr/include/gdkmm-3.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
+					<Add directory="/usr/include/giomm-2.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pangomm-1.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
+					<Add directory="/usr/include/glibmm-2.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
+					<Add directory="/usr/include/cairomm-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
+					<Add directory="/usr/include/sigc++-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/user/include"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Profilescreen/fast">
+				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/gtkmm-3.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
+					<Add directory="/usr/include/atkmm-1.6"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
+					<Add directory="/usr/include/gtk-3.0/unix-print"/>
+					<Add directory="/usr/include/gdkmm-3.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
+					<Add directory="/usr/include/giomm-2.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
+					<Add directory="/usr/include/gtk-3.0"/>
+					<Add directory="/usr/include/at-spi2-atk/2.0"/>
+					<Add directory="/usr/include/at-spi-2.0"/>
+					<Add directory="/usr/include/dbus-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
+					<Add directory="/usr/include/gio-unix-2.0"/>
+					<Add directory="/usr/include/cairo"/>
+					<Add directory="/usr/include/atk-1.0"/>
+					<Add directory="/usr/include/pangomm-1.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
+					<Add directory="/usr/include/glibmm-2.4"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
+					<Add directory="/usr/include/cairomm-1.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
+					<Add directory="/usr/include/sigc++-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
+					<Add directory="/usr/include/pango-1.0"/>
+					<Add directory="/usr/include/harfbuzz"/>
+					<Add directory="/usr/include/fribidi"/>
+					<Add directory="/usr/include/pixman-1"/>
+					<Add directory="/usr/include/uuid"/>
+					<Add directory="/usr/include/freetype2"/>
+					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
+					<Add directory="/usr/include/libpng16"/>
+					<Add directory="/usr/include/libmount"/>
+					<Add directory="/usr/include/blkid"/>
+					<Add directory="/usr/include/glib-2.0"/>
+					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/user/include"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen/fast"/>
+					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="unittests">
 				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/unittests" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
@@ -296,12 +422,6 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Demo.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyButton.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
@@ -343,6 +463,20 @@
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp">
 			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp">
+			<Option target="PurrrfectSpots"/>
+			<Option target="Profilescreen"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.h">
+			<Option target="PurrrfectSpots"/>
+			<Option target="Profilescreen"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp">
 			<Option target="PurrrfectSpots"/>
