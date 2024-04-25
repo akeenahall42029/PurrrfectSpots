@@ -11,7 +11,7 @@
 #include <gtkmm/entry.h>
 
 
-MyButton::MyButton(const Glib::ustring& label) : button_label(label) {
+MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 }
@@ -42,6 +42,11 @@ void MyButton::openSignUpPage() {
     backButton->set_size_request(30, 30); // Set button size
     signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
 
+    //submit button
+    Gtk::Button* submitButton = Gtk::manage(new Gtk::Button("SUBMIT"));
+    submitButton->set_size_request(100, 30); // Set appropriate width and height
+    submitButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the submit button
+
     //creating and add the sign-up label to the center of the container
     Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
     signup_label->set_halign(Gtk::ALIGN_CENTER); // Center-align the label
@@ -56,14 +61,23 @@ void MyButton::openSignUpPage() {
     username_entry->set_margin_bottom(20); // Add bottom margin for spacing
     signup_box->pack_start(*username_entry, Gtk::PACK_START, 0);
 
+    Gtk::Entry* password_entry = Gtk::manage(new Gtk::Entry());
+    password_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
+    password_entry->set_placeholder_text("Password"); // Set placeholder text
+    password_entry->set_visibility(false); // Hide the password text
+    password_entry->set_margin_bottom(20); // Add bottom margin for spacing
+    signup_box->pack_start(*password_entry, Gtk::PACK_START, 0);
 
     // connecting back button click event
     backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 
     // adding widgets to the sign-up page content
-    signup_box->pack_start(*signup_label);
-    signup_box->pack_start(*username_entry); // adding the username entry field
-    signup_box->pack_start(*backButton);
+    signup_box->pack_start(*signup_label, Gtk::PACK_START, 10);
+    signup_box->pack_start(*password_entry, Gtk::PACK_START, 10); // adding the username entry field
+    signup_box->pack_start(*username_entry, Gtk::PACK_START, 10); // adding the username entry field
+    signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
+    signup_box->pack_end(*submitButton, static_cast<Gtk::PackOptions>(10)); // Packing the submit button at the bottom with margin
+
 
     // clearing existing content of the window
     Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
@@ -143,3 +157,4 @@ void MyButton::openLoginPage() {
         }
     }
 }
+

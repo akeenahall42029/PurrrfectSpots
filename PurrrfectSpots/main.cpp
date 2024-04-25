@@ -1,16 +1,15 @@
 #include <gtkmm/application.h>
 #include <gtkmm/window.h>
-#include <gtkmm/box.h>
+#include <gtkmm/stack.h>
+#include <vector>
 #include "ui/MyButton.h"
-#include <gtkmm.h>
-
 
 int main(int argc, char *argv[]) {
     auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
 
 
     Gtk::Window window;
-    window.set_default_size(1000, 1000); // made the window bigger
+    window.set_default_size(1440, 788); // made the window bigger
     window.set_border_width(10);
     window.set_resizable(false);
     window.override_background_color(Gdk::RGBA("#B0E0E6"));

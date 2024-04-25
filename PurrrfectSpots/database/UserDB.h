@@ -9,6 +9,8 @@
 
 class UserDB: public Database{
 public:
+    UserDB(const std::string &db_path);
+
     void fetch_userName();
     void fetch_userPassword();
     void fetch_user();
