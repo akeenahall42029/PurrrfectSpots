@@ -6,20 +6,31 @@
 #define PURRRFECTSPOTS_MYBUTTON_H
 
 #include <gtkmm/button.h>
+#include <gtkmm/box.h>
+#include <gtkmm/label.h>
+#include <gtkmm/stack.h>
+#include <vector>
+#include <string>
 
 class MyButton : public Gtk::Button {
 public:
-    MyButton(const Glib::ustring& label);
+    // Constructor to initialize with a label and optional reference to a stack and history
+    MyButton(const Glib::ustring &label);
+
+    // Destructor
     virtual ~MyButton();
 
 protected:
+    // Event handler for button clicks
     void on_button_clicked();
+
+    // Methods to open the respective pages
     void openSignUpPage();
+    void openLoginPage();
 
 private:
-    Glib::ustring button_label;
-
-    void openLoginPage();
+    // Member variables for button label and window/stack handling
+    Glib::ustring button_label;  // Label for the button
 };
 
 
