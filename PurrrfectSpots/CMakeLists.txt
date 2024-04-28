@@ -35,6 +35,16 @@ add_executable(PurrrfectSpots main.cpp
         user/UserAccount.h
         ui/Profile.cpp
         ui/Profile.h
+        Napspots.cpp
+        Napspots.h
+        Napspots.h
+        Napspots.h
+        Reviews.cpp
+        Reviews.h
+        Reviews.h
+        Admins.cpp
+        Admins.h
+        Admins.h
 
 )
 
