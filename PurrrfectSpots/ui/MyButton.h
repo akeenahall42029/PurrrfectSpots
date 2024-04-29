@@ -14,22 +14,28 @@
 
 class MyButton : public Gtk::Button {
 public:
-    // Constructor to initialize with a label and optional reference to a stack and history
+    // constructor to initialize with a label and optional reference to a stack and history
     MyButton(const Glib::ustring &label);
 
-    // Destructor
+    // destructor
     virtual ~MyButton();
 
 protected:
-    // Event handler for button clicks
+    // event handler for button clicks
     void on_button_clicked();
 
-    // Methods to open the respective pages
+    // methods to open the respective pages
     void openSignUpPage();
     void openLoginPage();
 
+    // creating tabbed structure once logged in
+    void createNotebook();
+
+    //helper
+    void clear_container();
+
 private:
-    // Member variables for button label and window/stack handling
+    // member variables for button label and window/stack handling
     Glib::ustring button_label;  // Label for the button
 };
 

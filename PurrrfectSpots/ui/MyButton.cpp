@@ -3,12 +3,15 @@
 //
 
 #include "MyButton.h"
-#include <gtkmm/window.h>  // Add this include for Gtk::Window
-#include <gtkmm/container.h>  // Add this include for Gtk::Container
+#include <gtkmm/window.h>
+#include <gtkmm/container.h>
 #include <gtkmm/box.h>
 #include <gtkmm/label.h>
 #include <gtkmm/button.h>
 #include <gtkmm/entry.h>
+#include <gtkmm/notebook.h>
+#include <gtkmm/scrolledwindow.h>
+#include <gtkmm/button.h>
 
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -130,6 +133,7 @@ void MyButton::openLoginPage() {
 
     // Create and add the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
+    loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 
@@ -158,3 +162,43 @@ void MyButton::openLoginPage() {
     }
 }
 
+// helper function to clear all children from a container
+void clear_container(Gtk::Container* container) {
+    if (container) {
+        auto children = container->get_children();
+        for (auto& child : children) {
+            container->remove(*child);
+        }
+    }
+}
+
+void MyButton::createNotebook() {
+    Gtk::Notebook* notebook = Gtk::manage(new Gtk::Notebook());
+
+    // Create the "Profile" tab content
+    Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Profile Information"));
+    profile_tab->pack_start(*profile_label);
+
+    // Create the "Scrollable Page" tab content
+    Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow());
+    Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    for (int i = 0; i < 20; ++i) {
+        Gtk::Label* label = Gtk::manage(new Gtk::Label("Scrollable Content " + std::to_string(i)));
+        scrollable_content->pack_start(*label);
+    }
+    scroll_tab->add(*scrollable_content);
+
+    notebook->append_page(*profile_tab, "Profile");
+    notebook->append_page(*scroll_tab, "Scrollable Page");
+
+    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
+    if (window) {
+        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
+        if (container) {
+            ::clear_container(container);  // Use helper function to clear all child widgets
+            container->add(*notebook);
+            window->show_all();
+        }
+    }
+}
