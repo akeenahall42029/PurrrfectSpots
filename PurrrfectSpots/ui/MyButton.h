@@ -26,6 +26,7 @@ public:
 protected:
     // event handler for button clicks
     void on_button_clicked();
+    void on_submit_button_clicked();
 
     // methods to open the respective pages
     void openSignUpPage();

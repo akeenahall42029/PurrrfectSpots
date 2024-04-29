@@ -12,7 +12,6 @@
 #include <gtkmm/notebook.h>
 #include <gtkmm/scrolledwindow.h>
 
-
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
@@ -32,6 +31,18 @@ void MyButton::on_button_clicked() {
     }
 }
 
+bool check_credentials(const std::string& username, const std::string& password) {
+    // Sample database check. Replace with actual database connection and query.
+    // For demonstration, let's say the valid credentials are "admin" and "password123".
+
+    // In a real-world scenario, you'd use a database library to query your database.
+    if (username == "admin" && password == "password123") {
+        return true;
+    }
+    return false;
+}
+
+
 void MyButton::openSignUpPage() {
 
     // creating sign up page content!
@@ -44,10 +55,14 @@ void MyButton::openSignUpPage() {
     backButton->set_size_request(30, 30); // set button size
     signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
 
-    //submit button
+    // Create the "SUBMIT" button and add it to the sign-up box
     Gtk::Button* submitButton = Gtk::manage(new Gtk::Button("SUBMIT"));
-    submitButton->set_size_request(100, 30); // set appropriate width and height
-    submitButton->set_halign(Gtk::ALIGN_CENTER); // center-align the submit button
+    submitButton->set_size_request(100, 30);
+    submitButton->set_halign(Gtk::ALIGN_CENTER);
+    submitButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_submit_button_clicked)); // Connect the signal
+    signup_box->pack_end(*submitButton, Gtk::PACK_EXPAND_PADDING);
+
+    // Get the top-level window and add the sign-up box
 
     //creating and add the sign-up label to the center of the container
     Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
@@ -93,6 +108,30 @@ void MyButton::openSignUpPage() {
             }
             container->add(*signup_box); // adding sign-up page content
             window->show_all();
+        }
+    }
+}
+
+void MyButton::on_submit_button_clicked() {
+    // not working. want to have it generate a message when submit is pressed, saying:
+    // "Credentials have been verified and stored.
+    // Please rerun the application and sign in with your new credentials."
+
+    g_print("generating message\n");
+    // When "SUBMIT" is clicked, show a verification message
+    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
+    if (window) {
+        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
+        if (container) {
+            // Add a label with the verification message
+            //creating and add the sign-up label to the center of the container
+            Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
+            signup_label->set_halign(Gtk::ALIGN_CENTER); // center-align the label
+            signup_label->set_margin_top(50); // add top margin for spacing
+            signup_label->set_margin_bottom(50); // add bottom margin for spacing
+
+            container->add(*signup_label); // Add the label to the existing content
+            window->show_all(); // Refresh the GUI
         }
     }
 }
@@ -186,15 +225,45 @@ void MyButton::createNotebook() {
     Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
     profile_tab->pack_start(*Gtk::manage(new Gtk::Label("Profile Information")));
 
-    Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow());
+    // Create the "Scrollable Page" tab
+    Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow()); // ScrolledWindow
     Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    for (int i = 0; i < 20; i++) {
-        scrollable_content->pack_start(*Gtk::manage(new Gtk::Label("Scrollable Content " + std::to_string(i))));
+
+    for (int i = 0; i < 5; i++) { // Reduce the number of items for simplicity
+        Gtk::Button* image_button = Gtk::manage(new Gtk::Button());
+
+        // Use Gtk::Image to load the photo
+        Gtk::Image* image = Gtk::manage(new Gtk::Image("images/risc.png")); // Correct path to the image
+        image->set_pixel_size(200); // Set the desired size for the image
+
+        Gtk::Label* title = Gtk::manage(new Gtk::Label("RISC " + std::to_string(i)));
+
+        // Use a Gtk::Box for layout inside the button
+        Gtk::Box* button_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+        button_content->pack_start(*image, Gtk::PACK_EXPAND_WIDGET); // Add the larger image
+        button_content->pack_start(*title, Gtk::PACK_EXPAND_PADDING); // Add the title
+
+        image_button->add(*button_content); // Add the box to the button
+        image_button->set_size_request(220, 250); // Set a size to accommodate the image and label
+
+        // Connect the click event to a function
+        image_button->signal_clicked().connect([=] {
+            // Handle the click event, such as navigating to another tab or displaying more details
+            g_print("Image %d clicked. Navigating...\n", i);
+            notebook->set_current_page(1); // Change to another tab, for example
+        });
+
+        scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING); // Add the button to the scrollable content
     }
+
+
+    // Add the scrollable content to the ScrolledWindow
     scroll_tab->add(*scrollable_content);
 
-    notebook->append_page(*scroll_tab, "Scrollable Page");
+    // Append the profile and scrollable tabs to the notebook
+    notebook->append_page(*scroll_tab, "Home Page");
     notebook->append_page(*profile_tab, "Profile");
+
 
     new_window->add(*notebook); // adding notebook to the new window
     new_window->show_all(); // displaying the new window with notebook
