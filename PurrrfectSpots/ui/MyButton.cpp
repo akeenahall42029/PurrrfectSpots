@@ -18,6 +18,7 @@
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
 #include "../Reservations.h"
+#include "Rating.h"
 
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -267,6 +268,15 @@ void MyButton::createNotebook() {
             Gtk::Image* tab_image = Gtk::manage(new Gtk::Image(tab_pixbuf));
 
             new_tab->add(*tab_image);
+
+
+
+//            // Create the star rating widget and add it to the tab
+//            Rating* star_rating = Gtk::manage(new Rating());
+//            star_rating->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
+//            star_rating->set_valign(Gtk::ALIGN_END);    // Align towards the bottom
+//            star_rating->set_size_request(30, 30); // Keep it small
+//            new_tab->add_overlay(*star_rating); // Overlay the star rating
 
             // Create the "Favorite this spot" button and add it to the overlay
             Gtk::Button* favorite_button = Gtk::manage(new Gtk::Button("⭐favorite me!⭐"));

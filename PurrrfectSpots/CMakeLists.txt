@@ -48,6 +48,8 @@ add_executable(PurrrfectSpots main.cpp
         Admins.h
         ui/SpotStructure.cpp
         ui/SpotStructure.h
+        ui/Rating.cpp
+        ui/Rating.h
 
 )
 
