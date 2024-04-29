@@ -9,7 +9,7 @@ int main(int argc, char *argv[]) {
 
 
     Gtk::Window window;
-    window.set_default_size(1440, 788); // made the window bigger
+    window.set_default_size(800, 600); // made the window bigger
     window.set_border_width(10);
     window.set_resizable(false);
     window.override_background_color(Gdk::RGBA("#B0E0E6"));
