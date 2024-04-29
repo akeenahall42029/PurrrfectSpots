@@ -14,7 +14,7 @@ public:
     void fetch_userName();
     void fetch_userPassword();
     void fetch_user();
-    void verify_user(std::string userName, std::string password);
+    bool verify_user(std::string userName, std::string password);
 
 };
 
