@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.22)
-set(CMAKE_OSX_ARCHITECTURES arm64)
+#set(CMAKE_OSX_ARCHITECTURES arm64)
+#remeber to comment out-Sanaa
 project(PurrrfectSpots)
 
 set(CMAKE_CXX_STANDARD 17)
