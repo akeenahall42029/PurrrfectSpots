@@ -494,6 +494,30 @@ ui/Profile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.s
 .PHONY : ui/Profile.cpp.s
 
+ui/SpotStructure.o: ui/SpotStructure.cpp.o
+.PHONY : ui/SpotStructure.o
+
+# target to build an object file
+ui/SpotStructure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o
+.PHONY : ui/SpotStructure.cpp.o
+
+ui/SpotStructure.i: ui/SpotStructure.cpp.i
+.PHONY : ui/SpotStructure.i
+
+# target to preprocess a source file
+ui/SpotStructure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.i
+.PHONY : ui/SpotStructure.cpp.i
+
+ui/SpotStructure.s: ui/SpotStructure.cpp.s
+.PHONY : ui/SpotStructure.s
+
+# target to generate assembly for a file
+ui/SpotStructure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.s
+.PHONY : ui/SpotStructure.cpp.s
+
 unit_tests/ReservationTests.o: unit_tests/ReservationTests.cpp.o
 .PHONY : unit_tests/ReservationTests.o
 
@@ -619,6 +643,9 @@ help:
 	@echo "... ui/Profile.o"
 	@echo "... ui/Profile.i"
 	@echo "... ui/Profile.s"
+	@echo "... ui/SpotStructure.o"
+	@echo "... ui/SpotStructure.i"
+	@echo "... ui/SpotStructure.s"
 	@echo "... unit_tests/ReservationTests.o"
 	@echo "... unit_tests/ReservationTests.i"
 	@echo "... unit_tests/ReservationTests.s"

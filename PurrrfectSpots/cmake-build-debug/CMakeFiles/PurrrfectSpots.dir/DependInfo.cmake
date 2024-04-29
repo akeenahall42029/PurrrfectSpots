@@ -21,6 +21,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/summerfaliero/coral/PurrrfectSpots/main.cpp" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/user/UserAccount.cpp" "CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/user/UserManager.cpp" "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o.d"
   )

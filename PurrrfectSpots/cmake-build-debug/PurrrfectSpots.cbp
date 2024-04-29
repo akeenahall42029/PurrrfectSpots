@@ -556,6 +556,12 @@
 			<Option target="PurrrfectSpots"/>
 			<Option target="Profilescreen"/>
 		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/ReservationTests.cpp">
 			<Option target="unittests"/>
 		</Unit>

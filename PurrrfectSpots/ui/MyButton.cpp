@@ -13,6 +13,8 @@
 #include <gtkmm/entry.h>
 #include <gtkmm/notebook.h>
 #include <gtkmm/scrolledwindow.h>
+#include "SpotStructure.h"
+
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
@@ -258,11 +260,11 @@ void MyButton::createNotebook() {
             new_tab->pack_start(*new_image, Gtk::PACK_EXPAND_WIDGET); // adding the image
 
             // add additional information - ADD TO THIS WITH INFO AB SPECIFIC NAP SPOTS
-            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about Napspot " + std::to_string(i+1)));
+            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about NapSpot " + std::to_string(i+1)));
             new_tab->pack_start(*new_label);
 
             // appending the new tab to the notebook
-            int new_page_index = notebook->append_page(*new_tab, "Napspot " + std::to_string(i+1));
+            int new_page_index = notebook->append_page(*new_tab, "NapSpot " + std::to_string(i+1));
 
             if (new_page_index >= 0) { // ensuring the tab was successfully created
                 notebook->set_current_page(new_page_index); // navigating to the new tab
@@ -270,7 +272,7 @@ void MyButton::createNotebook() {
                 g_print("Error: New tab creation failed.\n");
             }
 
-            g_print("Navigated to Napspot %d.\n", i);
+            g_print("Navigated to SpotStructure %d.\n", i);
             notebook->set_current_page(new_page_index); // navigating to the new tab
             new_window->show_all(); // refreshing window
         });
