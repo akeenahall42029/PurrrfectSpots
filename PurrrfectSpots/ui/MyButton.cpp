@@ -218,11 +218,11 @@ void clear_container(Gtk::Container* container) {
     }
 }
 std::vector<SpotStructure> spot_structures = {
-        SpotStructure("Napspot 1", "Description of Napspot 1", "../images/cloud.jpeg"),
-        SpotStructure("Napspot 2", "Description of Napspot 2", "../images/pod.jpeg"),
-        SpotStructure("Napspot 3", "Description of Napspot 3", "../images/treehouse.jpeg"),
-        SpotStructure("Napspot 4", "Description of Napspot 4", "../images/treebed.jpeg"),
-        SpotStructure("Napspot 5", "Description of Napspot 5", "../images/strawberry.jpeg")
+        SpotStructure("Cloud-9", "Description of Napspot 1", "../images/cloud.jpeg"),
+        SpotStructure("Dream Pod", "Description of Napspot 2", "../images/pod.jpeg"),
+        SpotStructure("Sleepy Canopy", "Description of Napspot 3", "../images/treehouse.jpeg"),
+        SpotStructure("Honk Shoo Pad", "Description of Napspot 4", "../images/treebed.jpeg"),
+        SpotStructure("Strawberry Siesta", "Description of Napspot 5", "../images/strawberry.jpeg")
 
 };
 
