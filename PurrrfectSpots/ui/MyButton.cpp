@@ -225,6 +225,9 @@ void MyButton::createNotebook() {
     Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
     profile_tab->pack_start(*Gtk::manage(new Gtk::Label("Profile Information")));
 
+//    Gtk::Box* napspot_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+//    napspot_tab->pack_start(*Gtk::manage(new Gtk::Label(" ")));
+
     // Create the "Scrollable Page" tab
     Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow()); // ScrolledWindow
     Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
@@ -233,10 +236,10 @@ void MyButton::createNotebook() {
         Gtk::Button* image_button = Gtk::manage(new Gtk::Button());
 
         // Use Gtk::Image to load the photo
-        Gtk::Image* image = Gtk::manage(new Gtk::Image("images/risc.png")); // Correct path to the image
+        Gtk::Image* image = Gtk::manage(new Gtk::Image("images/pod.jpg")); // Relative or absolute path
         image->set_pixel_size(200); // Set the desired size for the image
 
-        Gtk::Label* title = Gtk::manage(new Gtk::Label("RISC " + std::to_string(i)));
+        Gtk::Label* title = Gtk::manage(new Gtk::Label("nap spot " + std::to_string(i+1)));
 
         // Use a Gtk::Box for layout inside the button
         Gtk::Box* button_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
@@ -248,9 +251,32 @@ void MyButton::createNotebook() {
 
         // Connect the click event to a function
         image_button->signal_clicked().connect([=] {
-            // Handle the click event, such as navigating to another tab or displaying more details
-            g_print("Image %d clicked. Navigating...\n", i);
-            notebook->set_current_page(1); // Change to another tab, for example
+
+        //    notebook->set_current_page(2); // Change to another tab, for example
+            g_print("Nap Spot %d clicked. Navigating...\n", i);
+
+            Gtk::Box* new_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+
+            // Add the image associated with the napspot
+            Gtk::Image* new_image = Gtk::manage(new Gtk::Image("download.jpg")); // Check the image path
+            new_tab->pack_start(*new_image, Gtk::PACK_EXPAND_WIDGET); // Add the image
+
+            // Add additional information
+            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about Napspot " + std::to_string(i)));
+            new_tab->pack_start(*new_label);
+
+            // Append the new tab to the notebook
+            int new_page_index = notebook->append_page(*new_tab, "Napspot " + std::to_string(i+1));
+
+            if (new_page_index >= 0) { // Ensure the tab was successfully created
+                notebook->set_current_page(new_page_index); // Navigate to the new tab
+            } else {
+                g_print("Error: New tab creation failed.\n");
+            }
+
+            g_print("Navigated to Napspot %d.\n", i);
+            notebook->set_current_page(new_page_index); // Navigate to the new tab
+            new_window->show_all(); // Refresh t
         });
 
         scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING); // Add the button to the scrollable content
@@ -263,6 +289,8 @@ void MyButton::createNotebook() {
     // Append the profile and scrollable tabs to the notebook
     notebook->append_page(*scroll_tab, "Home Page");
     notebook->append_page(*profile_tab, "Profile");
+  //  notebook->append_page(*napspot_tab, " ");
+
 
 
     new_window->add(*notebook); // adding notebook to the new window
