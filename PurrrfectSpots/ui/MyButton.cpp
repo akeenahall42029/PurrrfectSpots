@@ -14,6 +14,7 @@
 #include <gtkmm/notebook.h>
 #include <gtkmm/scrolledwindow.h>
 #include "SpotStructure.h"
+#include "../database/UserDB.h"
 
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -235,7 +236,7 @@ void MyButton::createNotebook() {
         Gtk::Button* image_button = Gtk::manage(new Gtk::Button());
 
         // using Gtk::Image to load the photo
-        Gtk::Image* image = Gtk::manage(new Gtk::Image("images/pod.jpg")); //path
+        Gtk::Image* image = Gtk::manage(new Gtk::Image("../images/pod.jpg")); //path
         image->set_pixel_size(200); // setting the desired size for the image
 
         Gtk::Label* title = Gtk::manage(new Gtk::Label("nap spot " + std::to_string(i+1)));
@@ -256,7 +257,7 @@ void MyButton::createNotebook() {
             Gtk::Box* new_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
             // adding the image associated with the napspot
-            Gtk::Image* new_image = Gtk::manage(new Gtk::Image("download.jpg")); // checking the image path
+            Gtk::Image* new_image = Gtk::manage(new Gtk::Image("../images/pod.jpg")); // checking the image path
             new_tab->pack_start(*new_image, Gtk::PACK_EXPAND_WIDGET); // adding the image
 
             // add additional information - ADD TO THIS WITH INFO AB SPECIFIC NAP SPOTS
