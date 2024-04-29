@@ -11,7 +11,6 @@
 #include <gtkmm/entry.h>
 #include <gtkmm/notebook.h>
 #include <gtkmm/scrolledwindow.h>
-#include <gtkmm/button.h>
 
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -42,33 +41,33 @@ void MyButton::openSignUpPage() {
 
     // creating and add the back button to the top-left corner -- its centered :(
     Gtk::Button* backButton = Gtk::manage(new Gtk::Button("BACK"));
-    backButton->set_size_request(30, 30); // Set button size
+    backButton->set_size_request(30, 30); // set button size
     signup_box->pack_start(*backButton, Gtk::PACK_START, 0);
 
     //submit button
     Gtk::Button* submitButton = Gtk::manage(new Gtk::Button("SUBMIT"));
-    submitButton->set_size_request(100, 30); // Set appropriate width and height
-    submitButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the submit button
+    submitButton->set_size_request(100, 30); // set appropriate width and height
+    submitButton->set_halign(Gtk::ALIGN_CENTER); // center-align the submit button
 
     //creating and add the sign-up label to the center of the container
     Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
-    signup_label->set_halign(Gtk::ALIGN_CENTER); // Center-align the label
-    signup_label->set_margin_top(50); // Add top margin for spacing
-    signup_label->set_margin_bottom(50); // Add bottom margin for spacing
+    signup_label->set_halign(Gtk::ALIGN_CENTER); // center-align the label
+    signup_label->set_margin_top(50); // add top margin for spacing
+    signup_label->set_margin_bottom(50); // add bottom margin for spacing
     signup_box->pack_start(*signup_label, Gtk::PACK_START, 0);
 
     //creating and add the username entry centered within the container
     Gtk::Entry* username_entry = Gtk::manage(new Gtk::Entry());
-    username_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
-    username_entry->set_placeholder_text("Username"); // Set placeholder text
-    username_entry->set_margin_bottom(20); // Add bottom margin for spacing
+    username_entry->set_halign(Gtk::ALIGN_CENTER); // center-align the entry
+    username_entry->set_placeholder_text("Username"); // set placeholder text
+    username_entry->set_margin_bottom(20); // add bottom margin for spacing
     signup_box->pack_start(*username_entry, Gtk::PACK_START, 0);
 
     Gtk::Entry* password_entry = Gtk::manage(new Gtk::Entry());
-    password_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
-    password_entry->set_placeholder_text("Password"); // Set placeholder text
-    password_entry->set_visibility(false); // Hide the password text
-    password_entry->set_margin_bottom(20); // Add bottom margin for spacing
+    password_entry->set_halign(Gtk::ALIGN_CENTER); // center-align the entry
+    password_entry->set_placeholder_text("Password"); // set placeholder text
+    password_entry->set_visibility(false); // hide the password text
+    password_entry->set_margin_bottom(20); // add bottom margin for spacing
     signup_box->pack_start(*password_entry, Gtk::PACK_START, 0);
 
     // connecting back button click event
@@ -87,7 +86,7 @@ void MyButton::openSignUpPage() {
     if (window) {
         Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
         if (container) {
-            // Remove all existing content
+            // removing all existing content
             auto children = container->get_children();
             for (auto& child : children) {
                 container->remove(*child);
@@ -99,31 +98,31 @@ void MyButton::openSignUpPage() {
 }
 
 void MyButton::openLoginPage() {
-    // Create login page content
+    // creating login page content
 
-    // Create login page content container
+    // creating login page content container
     Gtk::Box* login_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
-    // Create and add the back button to the top-left corner
+    // creating and adding the back button to the top-left corner
     Gtk::Button* backButton = Gtk::manage(new Gtk::Button("BACK"));
     backButton->set_size_request(30, 30); // Set button size
     login_box->pack_start(*backButton, Gtk::PACK_START, 0);
 
-    // Create and add the login label to the center of the container
+    // creating and adding the login label to the center of the container
     Gtk::Label* login_label = Gtk::manage(new Gtk::Label("Login Page"));
     login_label->set_halign(Gtk::ALIGN_CENTER); // Center-align the label
     login_label->set_margin_top(50); // Add top margin for spacing
     login_label->set_margin_bottom(50); // Add bottom margin for spacing
     login_box->pack_start(*login_label, Gtk::PACK_START, 0);
 
-    // Create and add the username entry centered within the container
+    // creating and adding the username entry centered within the container
     Gtk::Entry* username_entry = Gtk::manage(new Gtk::Entry());
     username_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
     username_entry->set_placeholder_text("Username"); // Set placeholder text
     username_entry->set_margin_bottom(20); // Add bottom margin for spacing
     login_box->pack_start(*username_entry, Gtk::PACK_START, 0);
 
-    // Create and add the password entry centered within the container
+    // creating and adding the password entry centered within the container
     Gtk::Entry* password_entry = Gtk::manage(new Gtk::Entry());
     password_entry->set_halign(Gtk::ALIGN_CENTER); // Center-align the entry
     password_entry->set_placeholder_text("Password"); // Set placeholder text
@@ -131,32 +130,33 @@ void MyButton::openLoginPage() {
     password_entry->set_margin_bottom(20); // Add bottom margin for spacing
     login_box->pack_start(*password_entry, Gtk::PACK_START, 0);
 
-    // Create and add the login button centered within the container
+    // creating and adding the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 
-    // Connect back button click event
+    // connecting back button click event
     backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
 
-    // Add widgets to the login page content
+    // adding widgets to the login page content
     login_box->pack_start(*login_label);
-    login_box->pack_start(*username_entry); // Add the username entry field
-    login_box->pack_start(*password_entry); // Add the password entry field
-    login_box->pack_start(*loginButton); // Add the login button
+    login_box->pack_start(*username_entry); // adding the username entry field
+    login_box->pack_start(*password_entry); // adding the password entry field
+    login_box->pack_start(*loginButton); // adding the login button
 
-    // Clear existing content of the window
+
+    // clearing existing content of the window
     Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
     if (window) {
         Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
         if (container) {
-            // Remove all existing content
+            // removing all existing content
             auto children = container->get_children();
             for (auto& child : children) {
                 container->remove(*child);
             }
-            container->add(*login_box); // Add login page content
+            container->add(*login_box); // adding login page content
             window->show_all();
         }
     }
@@ -167,38 +167,35 @@ void clear_container(Gtk::Container* container) {
     if (container) {
         auto children = container->get_children();
         for (auto& child : children) {
-            container->remove(*child);
+            container->remove(*child); // ensuring all children are removed
         }
     }
 }
 
 void MyButton::createNotebook() {
+    g_print("Creating a new window with a notebook...\n");
+
+    // creating a new Gtk::Window and add the notebook
+    Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
+    new_window->set_title("Notebook Example");
+    new_window->set_default_size(800, 600);
+
+    // creating the notebook with tabs
     Gtk::Notebook* notebook = Gtk::manage(new Gtk::Notebook());
 
-    // Create the "Profile" tab content
     Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Profile Information"));
-    profile_tab->pack_start(*profile_label);
+    profile_tab->pack_start(*Gtk::manage(new Gtk::Label("Profile Information")));
 
-    // Create the "Scrollable Page" tab content
     Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow());
     Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    for (int i = 0; i < 20; ++i) {
-        Gtk::Label* label = Gtk::manage(new Gtk::Label("Scrollable Content " + std::to_string(i)));
-        scrollable_content->pack_start(*label);
+    for (int i = 0; i < 20; i++) {
+        scrollable_content->pack_start(*Gtk::manage(new Gtk::Label("Scrollable Content " + std::to_string(i))));
     }
     scroll_tab->add(*scrollable_content);
 
-    notebook->append_page(*profile_tab, "Profile");
     notebook->append_page(*scroll_tab, "Scrollable Page");
+    notebook->append_page(*profile_tab, "Profile");
 
-    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
-    if (window) {
-        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
-        if (container) {
-            ::clear_container(container);  // Use helper function to clear all child widgets
-            container->add(*notebook);
-            window->show_all();
-        }
-    }
+    new_window->add(*notebook); // adding notebook to the new window
+    new_window->show_all(); // displaying the new window with notebook
 }

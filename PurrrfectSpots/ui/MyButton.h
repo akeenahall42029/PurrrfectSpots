@@ -20,6 +20,9 @@ public:
     // destructor
     virtual ~MyButton();
 
+    //helper
+    void clear_container();
+
 protected:
     // event handler for button clicks
     void on_button_clicked();
@@ -31,8 +34,6 @@ protected:
     // creating tabbed structure once logged in
     void createNotebook();
 
-    //helper
-    void clear_container();
 
 private:
     // member variables for button label and window/stack handling
