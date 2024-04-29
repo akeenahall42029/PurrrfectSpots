@@ -287,8 +287,14 @@ void MyButton::createNotebook() {
     }
 
     scroll_tab->add(*scrollable_content); // Add the scrollable content to the ScrolledWindow
-    notebook->append_page(*scroll_tab, "Home Page"); // Add the scrollable tab to the notebook
 
+    Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Profile Information"));
+    profile_tab->pack_start(*profile_label, Gtk::PACK_SHRINK); // Add a label to the profile tab
+
+    notebook->append_page(*scroll_tab, "Home Page"); // Append the scrollable tab
+    notebook->append_page(*profile_tab, "Profile"); // Append the "Profile" tab
+    
     new_window->add(*notebook); // Add the notebook to the new window
     new_window->show_all(); // Display the notebook
 }
