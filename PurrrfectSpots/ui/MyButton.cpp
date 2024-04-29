@@ -2,6 +2,8 @@
 // Created by Summer Faliero on 4/1/24.
 //
 
+// work on using a data structure to add unique data to each nap spot
+
 #include "MyButton.h"
 #include <gtkmm/window.h>
 #include <gtkmm/container.h>
