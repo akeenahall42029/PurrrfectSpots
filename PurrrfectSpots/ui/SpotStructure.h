@@ -16,11 +16,14 @@ public:
     std::string get_description() const;
     std::string get_image_path() const;
 
+    int getNapSpotId();
+
 private:
     // Member variables for the name, description, and image path
     std::string name;
     std::string description;
     std::string image_path;
+
 };
 
 #endif //PURRRFECTSPOTS_SPOTSTRUCTURE_H

@@ -13,8 +13,11 @@
 #include <gtkmm/entry.h>
 #include <gtkmm/notebook.h>
 #include <gtkmm/scrolledwindow.h>
+#include <gtkmm/overlay.h>
+#include <gtkmm/comboboxtext.h>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
+#include "../Reservations.h"
 
 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -216,85 +219,130 @@ void clear_container(Gtk::Container* container) {
 std::vector<SpotStructure> spot_structures = {
         SpotStructure("Napspot 1", "Description of Napspot 1", "../images/cloud.jpeg"),
         SpotStructure("Napspot 2", "Description of Napspot 2", "../images/pod.jpeg"),
-        SpotStructure("Napspot 3", "Description of Napspot 3", "../images/treebed.jpeg"),
-        SpotStructure("Napspot 4", "Description of Napspot 4", "../images/treehouse.jpeg"),
-        SpotStructure("Napspot 5", "Description of Napspot 5", "../images/picnic.jpeg")
+        SpotStructure("Napspot 3", "Description of Napspot 3", "../images/treehouse.jpeg"),
+        SpotStructure("Napspot 4", "Description of Napspot 4", "../images/treebed.jpeg"),
+        SpotStructure("Napspot 5", "Description of Napspot 5", "../images/strawberry.jpeg")
+
+};
+
+// New set of images to be displayed when a napspot is clicked
+std::vector<std::string> tab_images = {
+        "../images/cloudpage.png",
+        "../images/cloudpage.png",
+        "../images/cloudpage.png",
+        "../images/cloudpage.png",
+        "../images/cloudpage.png"
 };
 
 void MyButton::createNotebook() {
-    g_print("Creating a new window with a notebook...\n");
-
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
-    new_window->set_title("Notebook Example");
     new_window->set_default_size(800, 600);
 
     Gtk::Notebook* notebook = Gtk::manage(new Gtk::Notebook());
-
     Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow());
     Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
-    // Iterate through the spot_structures to create unique buttons for each napspot
     for (int i = 0; i < spot_structures.size(); i++) {
-        const SpotStructure& spot = spot_structures[i]; // Get the unique data for each napspot
+        const SpotStructure& spot = spot_structures[i];
 
         Gtk::Button* image_button = Gtk::manage(new Gtk::Button());
 
-        // Use Gdk::Pixbuf to scale the image
         Glib::RefPtr<Gdk::Pixbuf> pixbuf = Gdk::Pixbuf::create_from_file(spot.get_image_path());
-        pixbuf = pixbuf->scale_simple(200, 200, Gdk::INTERP_BILINEAR); // Scale the image to 50x50 pixels
-        Gtk::Image* image = Gtk::manage(new Gtk::Image(pixbuf)); // Create the image from the Pixbuf
+        pixbuf = pixbuf->scale_simple(200, 200, Gdk::INTERP_BILINEAR);
+        Gtk::Image* image = Gtk::manage(new Gtk::Image(pixbuf));
 
-        Gtk::Label* title = Gtk::manage(new Gtk::Label(spot.get_name())); // Use the unique name for the title
+        Gtk::Label* title = Gtk::manage(new Gtk::Label(spot.get_name()));
 
         Gtk::Box* button_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-        button_content->pack_start(*image, Gtk::PACK_SHRINK); // Add the smaller image
-        button_content->pack_start(*title, Gtk::PACK_SHRINK); // Add the title
+        button_content->pack_start(*image, Gtk::PACK_SHRINK);
+        button_content->pack_start(*title, Gtk::PACK_SHRINK);
 
-        image_button->add(*button_content); // Add the content to the button
-        image_button->set_size_request(70, 80); // Adjust the button size
-
-        // Connect the button to create a unique tab
+        image_button->add(*button_content);
         image_button->signal_clicked().connect([=] {
-            g_print("Nap Spot %d clicked. Navigating...\n", i);
+            Gtk::Overlay* new_tab = Gtk::manage(new Gtk::Overlay());
 
-            Gtk::Box* new_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL)); // Horizontal layout
+            // Use a different image for the tab
+            Glib::RefPtr<Gdk::Pixbuf> tab_pixbuf = Gdk::Pixbuf::create_from_file(tab_images[i]);
+            tab_pixbuf = tab_pixbuf->scale_simple(800, 600, Gdk::INTERP_BILINEAR);
+            Gtk::Image* tab_image = Gtk::manage(new Gtk::Image(tab_pixbuf));
 
-            // Add the unique image to the side
-            Glib::RefPtr<Gdk::Pixbuf> new_pixbuf = Gdk::Pixbuf::create_from_file(spot.get_image_path());
-            new_pixbuf = new_pixbuf->scale_simple(200, 200, Gdk::INTERP_BILINEAR); // Ensure proper scaling
-            Gtk::Image* new_image = Gtk::manage(new Gtk::Image(new_pixbuf)); // Create the image
-            new_tab->pack_start(*new_image, Gtk::PACK_SHRINK); // Place image on the left side
+            new_tab->add(*tab_image);
 
-            // Add additional information about the napspot
-            Gtk::Box* text_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about " + spot.get_name()));
-            text_box->pack_start(*new_label, Gtk::PACK_SHRINK); // Ensure proper layout
+            // Create the "Favorite this spot" button and add it to the overlay
+            Gtk::Button* favorite_button = Gtk::manage(new Gtk::Button("⭐favorite me!⭐"));
+            favorite_button->set_size_request(30, 30); // Keep it small
+            favorite_button->set_halign(Gtk::ALIGN_END); // Align it to the top-right
+            favorite_button->set_valign(Gtk::ALIGN_START); // Align it to the top-right
+            favorite_button->set_margin_top(85); // Set margin to move the button lower
+            new_tab->add_overlay(*favorite_button); // Add the button on top
+            favorite_button->signal_clicked().connect([=] {
+                g_print("Added to favorites\n"); // This prints to the console
+                // Additional code for handling the "favorite" action
+            });
 
-            new_tab->pack_start(*text_box, Gtk::PACK_EXPAND_WIDGET); // Add the text box
+                // Create the "Reserve Spot" button in the center
+            Gtk::Button* reserve_button = Gtk::manage(new Gtk::Button("reserve spot"));
+            reserve_button->set_size_request(60, 30); // Smaller button
+            reserve_button->set_halign(Gtk::ALIGN_CENTER); // Keep centered horizontally
+            reserve_button->set_valign(Gtk::ALIGN_CENTER); // Keep centered vertically
+            reserve_button->set_margin_bottom(150); // Move downward by 50 pixels
+            reserve_button->set_margin_left(190);
+            reserve_button->signal_clicked().connect([=] {
+                // Open a new window to select a reservation time
+                Gtk::Window* reservation_window = Gtk::manage(new Gtk::Window());
+                reservation_window->set_default_size(300, 200);
+                reservation_window->set_title("Reserve a Time");
 
-            int new_page_index = notebook->append_page(*new_tab, spot.get_name()); // Append the tab with a unique name
+                Gtk::Box* reservation_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
-            if (new_page_index >= 0) { // Ensure successful creation
-                notebook->set_current_page(new_page_index); // Navigate to the new tab
-            } else {
-                g_print("Error: New tab creation failed.\n");
+                Gtk::ComboBoxText* time_dropdown = Gtk::manage(new Gtk::ComboBoxText());
+                time_dropdown->append("Morning");
+                time_dropdown->append("Afternoon");
+                time_dropdown->append("Evening");
+                reservation_box->pack_start(*time_dropdown);
+
+                Gtk::Button* confirm_button = Gtk::manage(new Gtk::Button("Confirm Reservation"));
+                confirm_button->signal_clicked().connect([=] {
+                    // Store the reservation data
+                    std::string selected_time = time_dropdown->get_active_text();
+                    Reservations new_reservation(0, 123, 0, "Reserved");
+                    g_print("you have booked a nap spot!\n");
+
+
+                    // Close the reservation window
+                    reservation_window->close();
+                });
+
+                reservation_box->pack_start(*confirm_button);
+
+                reservation_window->add(*reservation_box);
+                reservation_window->show_all();
+            });
+
+            new_tab->add_overlay(*reserve_button); // Add the reserve button to the overlay
+
+            int new_page_index = notebook->append_page(*new_tab, spot.get_name());
+
+            if (new_page_index >= 0) {
+                notebook->set_current_page(new_page_index);
             }
 
-            new_window->show_all(); // Refresh the window to ensure everything is displayed
+            new_window->show_all(); // Ensure all changes are displayed
         });
 
-        scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING); // Add the button to the scrollable content
+        scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING);
     }
 
-    scroll_tab->add(*scrollable_content); // Add the scrollable content to the ScrolledWindow
+    scroll_tab->add(*scrollable_content);
 
     Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Profile Information"));
-    profile_tab->pack_start(*profile_label, Gtk::PACK_SHRINK); // Add a label to the profile tab
+    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Your Reservations"));
+    profile_tab->pack_start(*profile_label, Gtk::PACK_EXPAND_WIDGET);
 
-    notebook->append_page(*scroll_tab, "Home Page"); // Append the scrollable tab
-    notebook->append_page(*profile_tab, "Profile"); // Append the "Profile" tab
-    
+
+    notebook->append_page(*scroll_tab, "Home Page");
+    notebook->append_page(*profile_tab, "Profile");
+
     new_window->add(*notebook); // Add the notebook to the new window
     new_window->show_all(); // Display the notebook
 }

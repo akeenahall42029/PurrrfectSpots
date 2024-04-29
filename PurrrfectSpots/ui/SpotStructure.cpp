@@ -22,3 +22,7 @@ std::string SpotStructure::get_description() const {
 std::string SpotStructure::get_image_path() const {
     return image_path;
 }
+
+int SpotStructure::getNapSpotId() {
+    return 0;
+}
