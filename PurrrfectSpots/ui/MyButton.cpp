@@ -228,10 +228,10 @@ std::vector<SpotStructure> spot_structures = {
 // New set of images to be displayed when a napspot is clicked
 std::vector<std::string> tab_images = {
         "../images/cloudpage.png",
-        "../images/cloudpage.png",
-        "../images/cloudpage.png",
-        "../images/cloudpage.png",
-        "../images/cloudpage.png"
+        "../images/podpage.png",
+        "../images/treehousepage.png",
+        "../images/picnicpage.png",
+        "../images/strawberrypage.png"
 };
 
 void MyButton::createNotebook() {
