@@ -63,7 +63,16 @@ add_executable(Profilescreen ui/Profile.cpp ui/Profile.h )
 include_directories(googletest googletest/include googletest/include/gtest)
 add_executable(unittests googletest/src/gtest-all.cc
         unit_tests/ReservationTests.cpp
-        unit_tests/ReservationTests.h)
+        unit_tests/ReservationTests.h
+        unit_tests/DatabaseTest.cpp
+        unit_tests/DatabaseTest.h
+        database/Database.cpp
+        database/Database.h
+        database/UserDB.cpp
+        database/UserDB.h
+        unit_tests/UserDBTests.cpp
+
+)
 
 #include_directories(googletest googletest/include googletest/include/gtest)
 #add_executable(unittests googletest/src/gtest-all.cc
@@ -73,7 +82,7 @@ add_executable(unittests googletest/src/gtest-all.cc
 #
 #
 #)
-#target_link_libraries(PurrrfectSpots sqlite3)
+target_link_libraries(unittests sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 target_link_libraries(Profilescreen ${GTKMM_LIBRARIES})
 
