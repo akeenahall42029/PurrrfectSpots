@@ -213,83 +213,82 @@ void clear_container(Gtk::Container* container) {
         }
     }
 }
+std::vector<SpotStructure> spot_structures = {
+        SpotStructure("Napspot 1", "Description of Napspot 1", "../images/cloud.jpeg"),
+        SpotStructure("Napspot 2", "Description of Napspot 2", "../images/pod.jpeg"),
+        SpotStructure("Napspot 3", "Description of Napspot 3", "../images/treebed.jpeg"),
+        SpotStructure("Napspot 4", "Description of Napspot 4", "../images/treehouse.jpeg"),
+        SpotStructure("Napspot 5", "Description of Napspot 5", "../images/picnic.jpeg")
+};
 
 void MyButton::createNotebook() {
     g_print("Creating a new window with a notebook...\n");
 
-    // creating a new Gtk::Window and add the notebook
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
     new_window->set_title("Notebook Example");
     new_window->set_default_size(800, 600);
 
-    // creating the notebook with tabs
     Gtk::Notebook* notebook = Gtk::manage(new Gtk::Notebook());
 
-    Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    profile_tab->pack_start(*Gtk::manage(new Gtk::Label("Profile Information")));
-
-    // creating the "Scrollable Page" tab
     Gtk::ScrolledWindow* scroll_tab = Gtk::manage(new Gtk::ScrolledWindow());
     Gtk::Box* scrollable_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
-    for (int i = 0; i < 5; i++) { // reducing the number of items for simplicity
+    // Iterate through the spot_structures to create unique buttons for each napspot
+    for (int i = 0; i < spot_structures.size(); i++) {
+        const SpotStructure& spot = spot_structures[i]; // Get the unique data for each napspot
+
         Gtk::Button* image_button = Gtk::manage(new Gtk::Button());
 
-        // using Gtk::Image to load the photo
-        Gtk::Image* image = Gtk::manage(new Gtk::Image("../images/pod.jpg")); //path
-        image->set_pixel_size(200); // setting the desired size for the image
+        // Use Gdk::Pixbuf to scale the image
+        Glib::RefPtr<Gdk::Pixbuf> pixbuf = Gdk::Pixbuf::create_from_file(spot.get_image_path());
+        pixbuf = pixbuf->scale_simple(200, 200, Gdk::INTERP_BILINEAR); // Scale the image to 50x50 pixels
+        Gtk::Image* image = Gtk::manage(new Gtk::Image(pixbuf)); // Create the image from the Pixbuf
 
-        Gtk::Label* title = Gtk::manage(new Gtk::Label("nap spot " + std::to_string(i+1)));
+        Gtk::Label* title = Gtk::manage(new Gtk::Label(spot.get_name())); // Use the unique name for the title
 
-        // using a Gtk::Box for layout inside the button
         Gtk::Box* button_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-        button_content->pack_start(*image, Gtk::PACK_EXPAND_WIDGET); // adding the larger image
-        button_content->pack_start(*title, Gtk::PACK_EXPAND_PADDING); // adding the title
+        button_content->pack_start(*image, Gtk::PACK_SHRINK); // Add the smaller image
+        button_content->pack_start(*title, Gtk::PACK_SHRINK); // Add the title
 
-        image_button->add(*button_content); // adding the box to the button
-        image_button->set_size_request(220, 250); // setting a size to accommodate the image and label
+        image_button->add(*button_content); // Add the content to the button
+        image_button->set_size_request(70, 80); // Adjust the button size
 
-        // connecting the click event to a function
+        // Connect the button to create a unique tab
         image_button->signal_clicked().connect([=] {
-
             g_print("Nap Spot %d clicked. Navigating...\n", i);
 
-            Gtk::Box* new_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+            Gtk::Box* new_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_HORIZONTAL)); // Horizontal layout
 
-            // adding the image associated with the napspot
-            Gtk::Image* new_image = Gtk::manage(new Gtk::Image("../images/pod.jpg")); // checking the image path
-            new_tab->pack_start(*new_image, Gtk::PACK_EXPAND_WIDGET); // adding the image
+            // Add the unique image to the side
+            Glib::RefPtr<Gdk::Pixbuf> new_pixbuf = Gdk::Pixbuf::create_from_file(spot.get_image_path());
+            new_pixbuf = new_pixbuf->scale_simple(200, 200, Gdk::INTERP_BILINEAR); // Ensure proper scaling
+            Gtk::Image* new_image = Gtk::manage(new Gtk::Image(new_pixbuf)); // Create the image
+            new_tab->pack_start(*new_image, Gtk::PACK_SHRINK); // Place image on the left side
 
-            // add additional information - ADD TO THIS WITH INFO AB SPECIFIC NAP SPOTS
-            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about NapSpot " + std::to_string(i+1)));
-            new_tab->pack_start(*new_label);
+            // Add additional information about the napspot
+            Gtk::Box* text_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+            Gtk::Label* new_label = Gtk::manage(new Gtk::Label("More information about " + spot.get_name()));
+            text_box->pack_start(*new_label, Gtk::PACK_SHRINK); // Ensure proper layout
 
-            // appending the new tab to the notebook
-            int new_page_index = notebook->append_page(*new_tab, "NapSpot " + std::to_string(i+1));
+            new_tab->pack_start(*text_box, Gtk::PACK_EXPAND_WIDGET); // Add the text box
 
-            if (new_page_index >= 0) { // ensuring the tab was successfully created
-                notebook->set_current_page(new_page_index); // navigating to the new tab
+            int new_page_index = notebook->append_page(*new_tab, spot.get_name()); // Append the tab with a unique name
+
+            if (new_page_index >= 0) { // Ensure successful creation
+                notebook->set_current_page(new_page_index); // Navigate to the new tab
             } else {
                 g_print("Error: New tab creation failed.\n");
             }
 
-            g_print("Navigated to SpotStructure %d.\n", i);
-            notebook->set_current_page(new_page_index); // navigating to the new tab
-            new_window->show_all(); // refreshing window
+            new_window->show_all(); // Refresh the window to ensure everything is displayed
         });
 
-        scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING); // adding the button to the scrollable content
+        scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING); // Add the button to the scrollable content
     }
 
+    scroll_tab->add(*scrollable_content); // Add the scrollable content to the ScrolledWindow
+    notebook->append_page(*scroll_tab, "Home Page"); // Add the scrollable tab to the notebook
 
-    // adding the scrollable content to the ScrolledWindow
-    scroll_tab->add(*scrollable_content);
-
-    // appending the profile and scrollable tabs to the notebook
-    notebook->append_page(*scroll_tab, "Home Page");
-    notebook->append_page(*profile_tab, "Profile");
-
-
-    new_window->add(*notebook); // adding notebook to the new window
-    new_window->show_all(); // displaying the new window with notebook
+    new_window->add(*notebook); // Add the notebook to the new window
+    new_window->show_all(); // Display the notebook
 }
