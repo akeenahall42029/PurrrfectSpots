@@ -24,7 +24,7 @@ void UserDB::fetch_user() {
  *
  * */
 bool UserDB::verify_user(std::string userName, std::string password) {
-    std::string sql = "SELECT id FROM users WHERE userName = " + userName + "' AND password = '" + password + "';";
+    std::string sql = "SELECT id FROM users WHERE userName = '" + userName + "' AND password = '" + password + "';";
 
 
     retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, NULL);

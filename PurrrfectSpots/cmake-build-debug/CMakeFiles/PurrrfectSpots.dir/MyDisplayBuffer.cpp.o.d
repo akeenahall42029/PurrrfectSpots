@@ -1,3 +1,4 @@
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp \
-  /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.h
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.cpp \
+ /usr/include/stdc-predef.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.h

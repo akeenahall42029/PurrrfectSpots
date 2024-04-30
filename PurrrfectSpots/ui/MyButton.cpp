@@ -25,7 +25,11 @@ void MyButton::on_button_clicked() {
     if (button_label == "SIGN UP") {
         openSignUpPage();
     } else if (button_label == "BACK") {
-        // implement going back
+//        if (current_page == "SIGN UP") {
+//            openLoginPage();
+//        } else if (current_page == "LOGIN") {
+//            // Implement navigation to the previous page if needed
+//        }
     } else if(button_label == "LOG IN"){
         openLoginPage();
     }

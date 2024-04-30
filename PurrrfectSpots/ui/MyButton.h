@@ -11,8 +11,12 @@
 #include <gtkmm/stack.h>
 #include <vector>
 #include <string>
+#include "../database/UserDB.h"
 
 class MyButton : public Gtk::Button {
+private:
+    //Glib::ustring currentPage;
+    UserDB userdb;
 public:
     // constructor to initialize with a label and optional reference to a stack and history
     MyButton(const Glib::ustring &label);
