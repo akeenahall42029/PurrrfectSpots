@@ -17,6 +17,7 @@
 #include <gtkmm/comboboxtext.h>
 #include <fstream>
 #include <gtkmm/scale.h>
+#include <gtkmm/cssprovider.h>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
 #include "../Reservations.h"
@@ -284,6 +285,51 @@ void saveReview(const std::string& napSpotName, const std::string& reviewContent
     }
 }
 
+// Function to save a review to a unique file for a given nap spot
+void saveReport(const std::string& napSpotName, const std::string& reviewContent) {
+    // Create a unique filename based on the nap spot name
+    std::string fileName = "reports_" + napSpotName + ".txt";
+    std::string filePath = getAbsolutePath(fileName); // Get the absolute path
+
+    std::ofstream outfile(filePath, std::ios::app); // Open in append mode
+
+    if (outfile.is_open()) {
+        outfile << reviewContent << "\n"; // Write the review content
+        outfile.close(); // Close the file
+        std::cout << "Report saved successfully for " << napSpotName << " at: " << filePath << std::endl;
+    } else {
+        std::cerr << "Error: Could not open the file for writing at: " << filePath << std::endl;
+    }
+}
+
+
+// Function to apply CSS from a file to a GTK widget
+void apply_css(Gtk::Widget& widget, const std::string& css_filename) {
+    Glib::RefPtr<Gtk::CssProvider> css_provider = Gtk::CssProvider::create();
+    try {
+        css_provider->load_from_path(css_filename); // Load the CSS file
+    } catch (const Glib::Error& ex) {
+        std::cerr << "Error loading CSS: " << ex.what() << std::endl;
+        return;
+    }
+
+    Glib::RefPtr<Gtk::StyleContext> style_context = widget.get_style_context();
+    style_context->add_provider(css_provider, GTK_STYLE_PROVIDER_PRIORITY_USER); // Add the CSS provider
+}
+
+// Create a custom slider with CSS applied
+Gtk::Scale* create_custom_slider(const std::string& css_path) {
+    Gtk::Scale* scale = Gtk::manage(new Gtk::Scale(Gtk::ORIENTATION_HORIZONTAL)); // Create the slider
+    scale->set_range(1, 5); // Set range
+    scale->set_increments(1, 1); // Set increments
+    scale->set_value_pos(Gtk::POS_TOP); // Position of the value
+
+    apply_css(*scale, css_path); // Apply the custom CSS
+
+    return scale;
+}
+
+
 void MyButton::createNotebook() {
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
     new_window->set_default_size(800, 600);
@@ -370,6 +416,7 @@ void MyButton::createNotebook() {
             rating_slider->set_valign(Gtk::ALIGN_END); // Align towards the bottom
             rating_slider->set_margin_bottom(250); // Move downward by 50 pixels
             rating_slider->set_margin_left(60);
+            new_tab->add_overlay(*rating_slider); // Add the slider to the overlay
 
             // Create the "Submit Rating" button
             Gtk::Button* submit_rating_button = Gtk::manage(new Gtk::Button("submit rating"));
@@ -438,6 +485,42 @@ void MyButton::createNotebook() {
 
             new_tab->add_overlay(*reserve_button); // Add the reserve button to the overlay
 
+
+
+            // New "Report" button to open a lavender window with a text box
+            Gtk::Button* report_button = Gtk::manage(new Gtk::Button("got an issue?"));
+            report_button->set_size_request(30, 30); // Small size
+            report_button->set_halign(Gtk::ALIGN_CENTER); // Keep centered horizontally
+            report_button->set_valign(Gtk::ALIGN_CENTER); // Keep centered vertically
+            report_button->set_margin_top(555); // Move downward by 50 pixels
+            report_button->set_margin_left(690);
+
+            report_button->signal_clicked().connect([=] {
+                Gtk::Window* report_window = Gtk::manage(new Gtk::Window());
+                report_window->set_default_size(300, 200);
+                report_window->override_background_color(Gdk::RGBA("red")); // Set background color to red
+
+                Gtk::Box* report_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+                Gtk::Entry* report_text = Gtk::manage(new Gtk::Entry()); // Text box for the review
+                report_text->set_placeholder_text("Write your report here..."); // Placeholder text
+
+                Gtk::Button* submit_button_report = Gtk::manage(new Gtk::Button("Submit"));
+                submit_button_report->signal_clicked().connect([=] {
+
+                    std::string review_content = report_text->get_text();
+                    saveReport(spot.get_name(), review_content); // Save with the spot name
+
+                    g_print("Report Submitted for %s: %s\n", spot.get_name().c_str(), review_content.c_str());
+                    report_window->close(); // Close the review window
+                });
+
+            report_box->pack_start(*report_text, Gtk::PACK_EXPAND_PADDING); // Add text box
+                report_box->pack_start(*submit_button_report, Gtk::PACK_EXPAND_PADDING); // Add submit button
+                report_window->add(*report_box); // Add box to the review window
+                report_window->show_all(); // Show all elements in the review window
+            });
+
+            new_tab->add_overlay(*report_button); // Add the review button to the overlay
 
 
 
