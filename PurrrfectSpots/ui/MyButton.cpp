@@ -221,11 +221,11 @@ void clear_container(Gtk::Container* container) {
     }
 }
 std::vector<SpotStructure> spot_structures = {
-        SpotStructure("Cloud-9", "Description of Napspot 1", "../images/cloud.jpeg"),
-        SpotStructure("Dream Pod", "Description of Napspot 2", "../images/pod.jpeg"),
-        SpotStructure("Sleepy Canopy", "Description of Napspot 3", "../images/treehouse.jpeg"),
-        SpotStructure("Honk Shoo Pad", "Description of Napspot 4", "../images/treebed.jpeg"),
-        SpotStructure("Strawberry Siesta", "Description of Napspot 5", "../images/strawberry.jpeg")
+        SpotStructure("Cloud-9", "Markle Admissions Building", "../images/cloud.jpeg"),
+        SpotStructure("Dream Pod", "Outside of Farber Hall", "../images/pod.jpeg"),
+        SpotStructure("Sleepy Canopy", "Oak Tree Outside of Ruef Hall", "../images/treehouse.jpeg"),
+        SpotStructure("Honk Shoo Pad", "Tree on the Academic Quad", "../images/treebed.jpeg"),
+        SpotStructure("Strawberry Siesta", "Second Floor of Skillman Library", "../images/strawberry.jpeg")
 
 };
 
@@ -440,7 +440,8 @@ void MyButton::createNotebook() {
             new_tab->add_overlay(*rating_slider); // Add the slider to the overlay
             new_tab->add_overlay(*submit_rating_button); // Add the submit rating button to the overlay
 
-
+            //adding location given description data from the SpotStructure struct
+            //DO THIS TMM
 
             // Create the "Reserve Spot" button in the center
             Gtk::Button* reserve_button = Gtk::manage(new Gtk::Button("reserve spot"));
