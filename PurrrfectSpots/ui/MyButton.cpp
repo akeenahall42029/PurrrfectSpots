@@ -266,17 +266,15 @@ void MyButton::createNotebook() {
             Glib::RefPtr<Gdk::Pixbuf> tab_pixbuf = Gdk::Pixbuf::create_from_file(tab_images[i]);
             tab_pixbuf = tab_pixbuf->scale_simple(800, 600, Gdk::INTERP_BILINEAR);
             Gtk::Image* tab_image = Gtk::manage(new Gtk::Image(tab_pixbuf));
-
             new_tab->add(*tab_image);
 
 
-
-//            // Create the star rating widget and add it to the tab
+//            // Create star rating
 //            Rating* star_rating = Gtk::manage(new Rating());
 //            star_rating->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
-//            star_rating->set_valign(Gtk::ALIGN_END);    // Align towards the bottom
-//            star_rating->set_size_request(30, 30); // Keep it small
+//            star_rating->set_valign(Gtk::ALIGN_END); // Align towards the bottom
 //            new_tab->add_overlay(*star_rating); // Overlay the star rating
+//
 
             // Create the "Favorite this spot" button and add it to the overlay
             Gtk::Button* favorite_button = Gtk::manage(new Gtk::Button("⭐favorite me!⭐"));
@@ -290,6 +288,7 @@ void MyButton::createNotebook() {
                 // Additional code for handling the "favorite" action
             });
 
+
                 // Create the "Reserve Spot" button in the center
             Gtk::Button* reserve_button = Gtk::manage(new Gtk::Button("reserve spot"));
             reserve_button->set_size_request(60, 30); // Smaller button
@@ -302,6 +301,8 @@ void MyButton::createNotebook() {
                 Gtk::Window* reservation_window = Gtk::manage(new Gtk::Window());
                 reservation_window->set_default_size(300, 200);
                 reservation_window->set_title("Reserve a Time");
+                reservation_window->override_background_color(Gdk::RGBA("lavender")); // Set background color to lavender
+
 
                 Gtk::Box* reservation_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
@@ -330,6 +331,36 @@ void MyButton::createNotebook() {
             });
 
             new_tab->add_overlay(*reserve_button); // Add the reserve button to the overlay
+
+            // New "Review" button to open a lavender window with a text box
+            Gtk::Button* review_button = Gtk::manage(new Gtk::Button("write a review"));
+            review_button->set_size_request(60, 30); // Small size
+            review_button->set_halign(Gtk::ALIGN_END); // Align to the top-right
+            review_button->set_valign(Gtk::ALIGN_END); // Align towards the bottom
+
+            review_button->signal_clicked().connect([=] {
+                Gtk::Window* review_window = Gtk::manage(new Gtk::Window());
+                review_window->set_default_size(300, 200);
+                review_window->override_background_color(Gdk::RGBA("lavender")); // Set background color to lavender
+
+                Gtk::Box* review_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+                Gtk::Entry* review_text = Gtk::manage(new Gtk::Entry()); // Text box for the review
+                review_text->set_placeholder_text("Write your review here..."); // Placeholder text
+
+                Gtk::Button* submit_button = Gtk::manage(new Gtk::Button("Submit"));
+                submit_button->signal_clicked().connect([=] {
+                    std::string review_content = review_text->get_text();
+                    g_print("Review Submitted: %s\n", review_content.c_str());
+                    review_window->close(); // Close the review window
+                });
+
+                review_box->pack_start(*review_text, Gtk::PACK_EXPAND_PADDING); // Add text box
+                review_box->pack_start(*submit_button, Gtk::PACK_EXPAND_PADDING); // Add submit button
+                review_window->add(*review_box); // Add box to the review window
+                review_window->show_all(); // Show all elements in the review window
+            });
+
+            new_tab->add_overlay(*review_button); // Add the review button to the overlay
 
             int new_page_index = notebook->append_page(*new_tab, spot.get_name());
 
