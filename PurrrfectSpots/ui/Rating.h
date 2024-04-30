@@ -4,27 +4,31 @@
 
 #ifndef PURRRFECTSPOTS_RATING_H
 #define PURRRFECTSPOTS_RATING_H
+//
+//#include <gtkmm/box.h>
+//#include <gtkmm/button.h>
+//#include <gtkmm/image.h>
+//#include <gdkmm/pixbuf.h>  // For Gdk::Pixbuf
+//#include <vector>
+//#include <sigc++/sigc++.h>
+//
+//class Rating : public Gtk::Box {
+//public:
+//    Rating();  // Constructor
+//
+//    void set_rating(int rating);  // Set the current rating (1 to 5)
+//    int get_rating() const;  // Get the current rating
+//
+//private:
+//    void update_hearts();  // Update heart images based on the current rating
+//
+//    std::vector<Gtk::Button*> heart_buttons;  // Vector of heart buttons
+//    Gdk::RefPtr<Gdk::Pixbuf> filled_heart;  // Pixbuf for filled heart
+//    Gdk::RefPtr<Gdk::Pixbuf> empty_heart;  // Pixbuf for empty heart
+//
+//    int current_rating;  // Variable to keep track of the current rating
+//};
 
-
-
-#include <gtkmm.h>
-#include <vector>
-
-class Rating : public Gtk::Box {
-public:
-    Rating();
-
-    void set_rating(int rating); // Set the current rating
-    int get_rating() const;      // Get the current rating
-
-private:
-    int current_rating;
-    std::vector<Gtk::Button*> heart_buttons;
-    Glib::RefPtr<Gdk::Pixbuf> filled_heart;
-    Glib::RefPtr<Gdk::Pixbuf> empty_heart;
-
-    void update_hearts(); // Update the star images based on the current rating
-};
 
 
 #endif //PURRRFECTSPOTS_RATING_H

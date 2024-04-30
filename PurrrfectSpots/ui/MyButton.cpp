@@ -269,13 +269,6 @@ void MyButton::createNotebook() {
             new_tab->add(*tab_image);
 
 
-//            // Create star rating
-//            Rating* star_rating = Gtk::manage(new Rating());
-//            star_rating->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
-//            star_rating->set_valign(Gtk::ALIGN_END); // Align towards the bottom
-//            new_tab->add_overlay(*star_rating); // Overlay the star rating
-//
-
             // Create the "Favorite this spot" button and add it to the overlay
             Gtk::Button* favorite_button = Gtk::manage(new Gtk::Button("⭐favorite me!⭐"));
             favorite_button->set_size_request(30, 30); // Keep it small
@@ -287,6 +280,7 @@ void MyButton::createNotebook() {
                 g_print("Added to favorites\n"); // This prints to the console
                 // Additional code for handling the "favorite" action
             });
+
 
 
                 // Create the "Reserve Spot" button in the center
@@ -332,11 +326,16 @@ void MyButton::createNotebook() {
 
             new_tab->add_overlay(*reserve_button); // Add the reserve button to the overlay
 
+
+
+
             // New "Review" button to open a lavender window with a text box
             Gtk::Button* review_button = Gtk::manage(new Gtk::Button("write a review"));
             review_button->set_size_request(60, 30); // Small size
-            review_button->set_halign(Gtk::ALIGN_END); // Align to the top-right
-            review_button->set_valign(Gtk::ALIGN_END); // Align towards the bottom
+            review_button->set_halign(Gtk::ALIGN_CENTER); // Keep centered horizontally
+            review_button->set_valign(Gtk::ALIGN_CENTER); // Keep centered vertically
+            review_button->set_margin_top(67); // Move downward by 50 pixels
+            review_button->set_margin_left(335);
 
             review_button->signal_clicked().connect([=] {
                 Gtk::Window* review_window = Gtk::manage(new Gtk::Window());
@@ -373,6 +372,15 @@ void MyButton::createNotebook() {
 
         scrollable_content->pack_start(*image_button, Gtk::PACK_EXPAND_PADDING);
     }
+
+//    // Create star rating
+//    Rating* heart_rating = Gtk::manage(new Rating());
+//    heart_rating->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
+//    heart_rating->set_valign(Gtk::ALIGN_END); // Align towards the bottom
+//    new_tab->add_overlay(*heart_rating); // Overlay the heart rating
+//
+//    new_tab->add_overlay(*reserve_button); // Add the reserve button to the overlay
+
 
     scroll_tab->add(*scrollable_content);
 
