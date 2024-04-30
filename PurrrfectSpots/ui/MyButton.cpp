@@ -443,10 +443,10 @@ void MyButton::createNotebook() {
 
             // New "Review" button to open a lavender window with a text box
             Gtk::Button* review_button = Gtk::manage(new Gtk::Button("write a review"));
-            review_button->set_size_request(60, 30); // Small size
+            review_button->set_size_request(60, 55); // Small size
             review_button->set_halign(Gtk::ALIGN_CENTER); // Keep centered horizontally
             review_button->set_valign(Gtk::ALIGN_CENTER); // Keep centered vertically
-            review_button->set_margin_top(67); // Move downward by 50 pixels
+            review_button->set_margin_top(110); // Move downward by 50 pixels
             review_button->set_margin_left(335);
 
             review_button->signal_clicked().connect([=] {
