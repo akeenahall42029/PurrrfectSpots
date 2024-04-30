@@ -21,6 +21,7 @@
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
 #include "../Reservations.h"
+#include "../Users.h"
 #include "Rating.h"
 
 
@@ -129,21 +130,7 @@ void MyButton::on_submit_button_clicked() {
     // "Credentials have been verified and stored.
     // Please rerun the application and sign in with your new credentials."
     g_print("generating message\n");
-    // when "SUBMIT" is clicked, show a verification message
-    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
-    if (window) {
-        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
-        if (container) {
-            //creating and add the sign-up label to the center of the container
-            Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
-            signup_label->set_halign(Gtk::ALIGN_CENTER); // center-align the label
-            signup_label->set_margin_top(50); // add top margin for spacing
-            signup_label->set_margin_bottom(50); // add bottom margin for spacing
-
-            container->add(*signup_label); // adding the label to the existing content
-            window->show_all(); // refreshing the GUI
-        }
-    }
+    //need to access user and pass data from signup method to save it to db...
 }
 
 void MyButton::openLoginPage() {
@@ -498,6 +485,9 @@ void MyButton::createNotebook() {
 
                 Gtk::Box* reservation_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
+                // AKEENA --> change this to
+                // 1. pull reservation options to display
+                // 2. remove the option that the user selected
                 Gtk::ComboBoxText* time_dropdown = Gtk::manage(new Gtk::ComboBoxText());
                 time_dropdown->append("Morning");
                 time_dropdown->append("Afternoon");

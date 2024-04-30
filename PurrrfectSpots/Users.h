@@ -27,6 +27,7 @@ private:
 public:
     Users(std::string name, std::string password);
     void storeData();
+    void save_to_database();
     Users(); // default constuctor
 
 

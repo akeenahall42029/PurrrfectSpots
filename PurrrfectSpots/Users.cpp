@@ -4,36 +4,51 @@
 
 #include "Users.h"
 
-Users::Users(std::string name, std::string password) : userName(name), password(password){
+class User {
+public:
+    // Constructor
+    User(const std::string& username, const std::string& password)
+            : username(username), password(password) {}
 
-//    // open the database to prepare to pass queries
-//
-//
-//    //location and name of the datbase
-//    std::string db_name = "example.sqlite";
-//    std::string db_location = "../database";
-//
-//
-//    std::string full_name = db_location + "/" + db_name;
-//
-//    // open the database and check return codes
-//
-//    retCode = sqlite3_open(full_name.c_str(),&curr_db);
-//    if( retCode ){
-//        std::cerr << "Database does not open -- "
-//                  << sqlite3_errmsg(curr_db)
-//                  << std::endl;
-//        std::cerr << " File -- " << full_name << std::endl;
-//        exit(0);
-//    }else{
-//        std::cerr << "Opened database successfully\n";
-//    }
-//
-//    id = generateID(); // generate a random 9 digit ID number
-}
-/* Creates a randomly generated 9-digit id number upon the creation of
- * a new reservation
- * @return randomly generated id number */
+    // Method to save user data to the database
+    bool save_to_database(const std::string& db_path) {
+        sqlite3* db;
+        int rc = sqlite3_open(db_path.c_str(), &db);
+
+        if (rc != SQLITE_OK) {
+            std::cerr << "Error opening database: " << sqlite3_errmsg(db) << std::endl;
+            return false;
+        }
+
+        std::string sql = "INSERT INTO users (username, password) VALUES (?, ?)";
+        sqlite3_stmt* stmt;
+        rc = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
+
+        if (rc == SQLITE_OK) {
+            sqlite3_bind_text(stmt, 1, username.c_str(), -1, SQLITE_TRANSIENT);
+            sqlite3_bind_text(stmt, 2, password.c_str(), -1, SQLITE_TRANSIENT);
+
+            rc = sqlite3_step(stmt);
+            if (rc == SQLITE_DONE) {
+                sqlite3_finalize(stmt);
+                sqlite3_close(db);
+                return true; // Successful insertion
+            } else {
+                std::cerr << "Error inserting user: " << sqlite3_errmsg(db) << std::endl;
+            }
+        } else {
+            std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(db) << std::endl;
+        }
+
+        sqlite3_finalize(stmt);
+        sqlite3_close(db);
+        return false; // Failed insertion
+    }
+
+private:
+    std::string username;
+    std::string password;
+};
 
 int Users::generateID() {
     std::random_device rd;
