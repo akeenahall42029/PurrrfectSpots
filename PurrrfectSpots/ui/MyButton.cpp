@@ -238,6 +238,14 @@ std::vector<std::string> tab_images = {
         "../images/strawberrypage.png"
 };
 
+std::vector<std::string> profile_images = {
+        "../prof1.png"
+        "../prof2.png"
+        "../prof3.png"
+        "../prof4.png"
+        "../prof5.png"
+};
+
 // Helper function to get the absolute path for a given relative path
 std::string getAbsolutePath(const std::string& relativePath) {
     char cwd[PATH_MAX];
@@ -329,6 +337,36 @@ Gtk::Scale* create_custom_slider(const std::string& css_path) {
     return scale;
 }
 
+void createProfileTab(Gtk::Notebook* notebook) {
+    // Create an overlay to set the background image
+    Gtk::Overlay* profile_overlay = Gtk::manage(new Gtk::Overlay());
+
+    // Create an image to use as the background
+    Glib::RefPtr<Gdk::Pixbuf> profile_background_pixbuf = Gdk::Pixbuf::create_from_file("../images/prof1.png");
+    profile_background_pixbuf = profile_background_pixbuf->scale_simple(800, 600, Gdk::INTERP_BILINEAR); // Scale to the desired size
+    Gtk::Image* profile_background_image = Gtk::manage(new Gtk::Image(profile_background_pixbuf));
+
+    // Add the background image to the overlay
+    profile_overlay->add(*profile_background_image);
+
+    // Create a box to hold the content on top of the background
+    Gtk::Box* profile_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    profile_content->set_spacing(10); // Add some spacing between elements
+
+    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Your Reservations"));
+    profile_content->pack_start(*profile_label, Gtk::PACK_SHRINK); // Pack the label
+
+    // Add more content to the profile tab as needed (e.g., list of reservations)
+    // Example: Adding a placeholder for reservation information
+    Gtk::Label* reservation_placeholder = Gtk::manage(new Gtk::Label("Reservation details will be displayed here."));
+    profile_content->pack_start(*reservation_placeholder, Gtk::PACK_EXPAND_WIDGET); // Pack additional content
+
+    // Add the profile content box to the overlay, on top of the background image
+    profile_overlay->add_overlay(*profile_content);
+
+    // Add the profile tab to the notebook
+    notebook->append_page(*profile_overlay, "Profile"); // Add the profile tab with the background
+}
 
 void MyButton::createNotebook() {
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
@@ -583,13 +621,10 @@ void MyButton::createNotebook() {
 
     scroll_tab->add(*scrollable_content);
 
-    Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Your Reservations"));
-    profile_tab->pack_start(*profile_label, Gtk::PACK_EXPAND_WIDGET);
-
 
     notebook->append_page(*scroll_tab, "Home Page");
-    notebook->append_page(*profile_tab, "Profile");
+   // notebook->append_page(*profile_tab, "Profile");
+    createProfileTab(notebook);
 
     new_window->add(*notebook); // Add the notebook to the new window
     new_window->show_all(); // Display the notebook
