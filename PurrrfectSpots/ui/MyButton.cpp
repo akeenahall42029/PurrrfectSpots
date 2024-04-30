@@ -16,6 +16,7 @@
 #include <gtkmm/overlay.h>
 #include <gtkmm/comboboxtext.h>
 #include <fstream>
+#include <gtkmm/scale.h>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
 #include "../Reservations.h"
@@ -357,6 +358,40 @@ void MyButton::createNotebook() {
             });
 
             new_tab->add_overlay(*view_reviews_button); // Add the button to the overlay
+
+
+            // Add the slider (Gtk::Scale) to rate the nap spot
+            Gtk::Scale* rating_slider = Gtk::manage(new Gtk::Scale(Gtk::ORIENTATION_HORIZONTAL));
+            rating_slider->set_range(1, 5); // Range from 1 to 5
+            rating_slider->set_increments(1, 1); // Increment by 1
+            rating_slider->set_value_pos(Gtk::POS_TOP); // Position the value above the slider
+            rating_slider->set_size_request(100, 30); // Set size
+            rating_slider->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
+            rating_slider->set_valign(Gtk::ALIGN_END); // Align towards the bottom
+            rating_slider->set_margin_bottom(250); // Move downward by 50 pixels
+            rating_slider->set_margin_left(60);
+
+            // Create the "Submit Rating" button
+            Gtk::Button* submit_rating_button = Gtk::manage(new Gtk::Button("submit rating"));
+            submit_rating_button->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
+            submit_rating_button->set_valign(Gtk::ALIGN_END); // Align towards the bottom
+            submit_rating_button->set_margin_bottom(215); // Move downward by 50 pixels
+            submit_rating_button->set_margin_left(60);
+            submit_rating_button->signal_clicked().connect([=] {
+                int rating = static_cast<int>(rating_slider->get_value());
+                g_print("Submitted rating for '%s': %d\n", spot.get_name().c_str(), rating);
+                // Code to save the rating to a file or database
+                std::ofstream outfile("../rating_data.txt", std::ios::app); // Open in append mode
+                if (outfile.is_open()) {
+                    outfile << spot.get_name() << ": " << rating << "\n"; // Write the rating to the file
+                    outfile.close();
+                } else {
+                    g_print("Error: Could not open the file for writing.\n");
+                }
+            });
+
+            new_tab->add_overlay(*rating_slider); // Add the slider to the overlay
+            new_tab->add_overlay(*submit_rating_button); // Add the submit rating button to the overlay
 
 
 
