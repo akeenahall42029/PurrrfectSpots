@@ -15,6 +15,7 @@
 #include <gtkmm/scrolledwindow.h>
 #include <gtkmm/overlay.h>
 #include <gtkmm/comboboxtext.h>
+#include <fstream>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
 #include "../Reservations.h"
@@ -235,6 +236,53 @@ std::vector<std::string> tab_images = {
         "../images/strawberrypage.png"
 };
 
+// Helper function to get the absolute path for a given relative path
+std::string getAbsolutePath(const std::string& relativePath) {
+    char cwd[PATH_MAX];
+    if (getcwd(cwd, sizeof(cwd)) != NULL) {
+        return std::string(cwd) + "/" + relativePath;
+    }
+    return relativePath; // Fallback to relative path if error
+}
+
+
+// Function to read reviews from a given file
+std::vector<std::string> readReviews(const std::string& napSpotName) {
+    std::vector<std::string> reviews;
+    std::string fileName = "reviews_" + napSpotName + ".txt";
+    std::string filePath = getAbsolutePath(fileName); // Ensure the file path is correct
+
+    std::ifstream infile(filePath);
+    if (infile.is_open()) {
+        std::string line;
+        while (std::getline(infile, line)) {
+            reviews.push_back(line); // Store each review in the vector
+        }
+        infile.close();
+    } else {
+        std::cerr << "Error: Could not open file: " << filePath << std::endl;
+    }
+    return reviews;
+}
+
+
+// Function to save a review to a unique file for a given nap spot
+void saveReview(const std::string& napSpotName, const std::string& reviewContent) {
+    // Create a unique filename based on the nap spot name
+    std::string fileName = "reviews_" + napSpotName + ".txt";
+    std::string filePath = getAbsolutePath(fileName); // Get the absolute path
+
+    std::ofstream outfile(filePath, std::ios::app); // Open in append mode
+
+    if (outfile.is_open()) {
+        outfile << reviewContent << "\n"; // Write the review content
+        outfile.close(); // Close the file
+        std::cout << "Review saved successfully for " << napSpotName << " at: " << filePath << std::endl;
+    } else {
+        std::cerr << "Error: Could not open the file for writing at: " << filePath << std::endl;
+    }
+}
+
 void MyButton::createNotebook() {
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
     new_window->set_default_size(800, 600);
@@ -281,9 +329,38 @@ void MyButton::createNotebook() {
                 // Additional code for handling the "favorite" action
             });
 
+            // Button to view previous reviews
+            Gtk::Button* view_reviews_button = Gtk::manage(new Gtk::Button("view ratings and reviews"));
+            view_reviews_button->set_size_request(60, 30); // Small size
+            view_reviews_button->set_halign(Gtk::ALIGN_CENTER); // Center horizontally
+            view_reviews_button->set_valign(Gtk::ALIGN_END);    // Align to the bottom
+            view_reviews_button->set_margin_bottom(110); // Set margin to position it at the bottom
+            view_reviews_button->set_margin_left(200); // Set margin to position it at the bottom
+
+            view_reviews_button->signal_clicked().connect([=] {
+                std::vector<std::string> reviews = readReviews(spot.get_name()); // Read the reviews
+
+                // Create a pop-up window to display the reviews
+                Gtk::Window* review_window = Gtk::manage(new Gtk::Window());
+                review_window->set_default_size(300, 200);
+                review_window->override_background_color(Gdk::RGBA("lavender"));
+
+                Gtk::Box* review_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+
+                for (const auto& review : reviews) {
+                    Gtk::Label* review_label = Gtk::manage(new Gtk::Label(review));
+                    review_box->pack_start(*review_label, Gtk::PACK_EXPAND_PADDING); // Add each review
+                }
+
+                review_window->add(*review_box);
+                review_window->show_all(); // Show all elements
+            });
+
+            new_tab->add_overlay(*view_reviews_button); // Add the button to the overlay
 
 
-                // Create the "Reserve Spot" button in the center
+
+            // Create the "Reserve Spot" button in the center
             Gtk::Button* reserve_button = Gtk::manage(new Gtk::Button("reserve spot"));
             reserve_button->set_size_request(60, 30); // Smaller button
             reserve_button->set_halign(Gtk::ALIGN_CENTER); // Keep centered horizontally
@@ -348,8 +425,11 @@ void MyButton::createNotebook() {
 
                 Gtk::Button* submit_button = Gtk::manage(new Gtk::Button("Submit"));
                 submit_button->signal_clicked().connect([=] {
+
                     std::string review_content = review_text->get_text();
-                    g_print("Review Submitted: %s\n", review_content.c_str());
+                    saveReview(spot.get_name(), review_content); // Save with the spot name
+
+                    g_print("Review Submitted for %s: %s\n", spot.get_name().c_str(), review_content.c_str());
                     review_window->close(); // Close the review window
                 });
 
@@ -395,3 +475,4 @@ void MyButton::createNotebook() {
     new_window->add(*notebook); // Add the notebook to the new window
     new_window->show_all(); // Display the notebook
 }
+
