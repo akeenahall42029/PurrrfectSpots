@@ -7,6 +7,7 @@
 #include <gtkmm/messagedialog.h>
 #include "MyButton.h"
 
+
 //// #include "../user/UserAccount.h"
 //#include "../user/UserManager.h"
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
@@ -123,29 +124,8 @@ void MyButton::on_submit_button_clicked() {
     UserManager manager;
     manager.create_user(username, password);
 
-    // Optionally, you can navigate to the next page after successful sign-up
-    // Here, I'm assuming you have a method createNotebook to navigate to the next page
     createNotebook();
 
-    // not working. want to have it generate a message when submit is pressed, saying:
-    // "Credentials have been verified and stored.
-    // Please rerun the application and sign in with your new credentials."
-//    g_print("generating message\n");
-//    // when "SUBMIT" is clicked, show a verification message
-//    Gtk::Window* window = dynamic_cast<Gtk::Window*>(get_toplevel());
-//    if (window) {
-//        Gtk::Container* container = dynamic_cast<Gtk::Container*>(window->get_child());
-//        if (container) {
-//            //creating and add the sign-up label to the center of the container
-//            Gtk::Label* signup_label = Gtk::manage(new Gtk::Label("Sign Up Page"));
-//            signup_label->set_halign(Gtk::ALIGN_CENTER); // center-align the label
-//            signup_label->set_margin_top(50); // add top margin for spacing
-//            signup_label->set_margin_bottom(50); // add bottom margin for spacing
-//
-//            container->add(*signup_label); // adding the label to the existing content
-//            window->show_all(); // refreshing the GUI
-//        }
-//    }
 }
 
 void MyButton::openLoginPage() {
@@ -266,6 +246,14 @@ std::vector<std::string> tab_images = {
         "../images/strawberrypage.png"
 };
 
+std::vector<std::string> profile_images = {
+        "../prof1.png"
+        "../prof2.png"
+        "../prof3.png"
+        "../prof4.png"
+        "../prof5.png"
+};
+
 // Helper function to get the absolute path for a given relative path
 std::string getAbsolutePath(const std::string& relativePath) {
     char cwd[PATH_MAX];
@@ -358,6 +346,36 @@ Gtk::Scale* create_custom_slider(const std::string& css_path) {
     return scale;
 }
 
+void createProfileTab(Gtk::Notebook* notebook) {
+    // Create an overlay to set the background image
+    Gtk::Overlay* profile_overlay = Gtk::manage(new Gtk::Overlay());
+
+    // Create an image to use as the background
+    Glib::RefPtr<Gdk::Pixbuf> profile_background_pixbuf = Gdk::Pixbuf::create_from_file("../images/prof1.png");
+    profile_background_pixbuf = profile_background_pixbuf->scale_simple(800, 600, Gdk::INTERP_BILINEAR); // Scale to the desired size
+    Gtk::Image* profile_background_image = Gtk::manage(new Gtk::Image(profile_background_pixbuf));
+
+    // Add the background image to the overlay
+    profile_overlay->add(*profile_background_image);
+
+    // Create a box to hold the content on top of the background
+    Gtk::Box* profile_content = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
+    profile_content->set_spacing(10); // Add some spacing between elements
+
+    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Your Reservations"));
+    profile_content->pack_start(*profile_label, Gtk::PACK_SHRINK); // Pack the label
+
+    // Add more content to the profile tab as needed (e.g., list of reservations)
+    // Example: Adding a placeholder for reservation information
+    Gtk::Label* reservation_placeholder = Gtk::manage(new Gtk::Label("Reservation details will be displayed here."));
+    profile_content->pack_start(*reservation_placeholder, Gtk::PACK_EXPAND_WIDGET); // Pack additional content
+
+    // Add the profile content box to the overlay, on top of the background image
+    profile_overlay->add_overlay(*profile_content);
+
+    // Add the profile tab to the notebook
+    notebook->append_page(*profile_overlay, "Profile"); // Add the profile tab with the background
+}
 
 void MyButton::createNotebook() {
     Gtk::Window* new_window = Gtk::manage(new Gtk::Window());
@@ -489,6 +507,9 @@ void MyButton::createNotebook() {
 
                 Gtk::Box* reservation_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
 
+                // AKEENA --> change this to
+                // 1. pull reservation options to display
+                // 2. remove the option that the user selected
                 Gtk::ComboBoxText* time_dropdown = Gtk::manage(new Gtk::ComboBoxText());
                 time_dropdown->append("Morning");
                 time_dropdown->append("Afternoon");
@@ -612,13 +633,10 @@ void MyButton::createNotebook() {
 
     scroll_tab->add(*scrollable_content);
 
-    Gtk::Box* profile_tab = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
-    Gtk::Label* profile_label = Gtk::manage(new Gtk::Label("Your Reservations"));
-    profile_tab->pack_start(*profile_label, Gtk::PACK_EXPAND_WIDGET);
-
 
     notebook->append_page(*scroll_tab, "Home Page");
-    notebook->append_page(*profile_tab, "Profile");
+   // notebook->append_page(*profile_tab, "Profile");
+    createProfileTab(notebook);
 
     new_window->add(*notebook); // Add the notebook to the new window
     new_window->show_all(); // Display the notebook

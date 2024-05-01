@@ -1,8 +1,8 @@
 create table users
 (
-    id             INT  NOT NULL UNIQUE,
-    name           TEXT NOT NULL,
-    password TEXT NOT NULL,
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    username TEXT UNIQUE,
+    password TEXT,
     reservation_id INT  NOT NULL,
     review_id      INT  NOT NULL, -- will need multiple review ids, might store in an array in the user object
     primary key (id),
