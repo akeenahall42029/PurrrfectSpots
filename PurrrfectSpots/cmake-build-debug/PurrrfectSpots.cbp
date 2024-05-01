@@ -458,23 +458,21 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Users.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Users.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.cpp">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.h">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.cpp">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.h">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/src/gtest-all.cc">
 			<Option target="unittests"/>
@@ -488,6 +486,12 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/NotebookManager.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/NotebookManager.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp">
 			<Option target="PurrrfectSpots"/>
 			<Option target="Profilescreen"/>
@@ -496,10 +500,31 @@
 			<Option target="PurrrfectSpots"/>
 			<Option target="Profilescreen"/>
 		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Rating.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Rating.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/DatabaseTest.cpp">
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/DatabaseTest.h">
+			<Option target="unittests"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/ReservationTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/ReservationTests.h">
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/UserDBTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp">

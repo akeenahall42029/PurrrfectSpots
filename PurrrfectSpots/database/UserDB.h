@@ -6,17 +6,39 @@
 #define PURRRFECTSPOTS_USERDB_H
 #include <iostream>
 #include "Database.h"
+#include <sqlite3.h>
+#include <string>
+#include <vector> // For std::vector
+#include "../Reservations.h"
 
-class UserDB: public Database{
+class UserDB : public Database{
+private:
+    sqlite3_stmt* stm;
+    int rectCode;
 public:
-    UserDB(const std::string &db_path);
+    // Constructor to initialize the database connection
+    UserDB();
 
-    void fetch_userName();
-    void fetch_userPassword();
+
+
+    // Method to verify a user in the database
+    void verify_user(const std::string& userName, const std::string& password);
+
+    // Fetch user information (dummy methods, could be placeholders for future implementation)
+    void fetch_userName(int user_id);
+    void fetch_userPassword(int user_id);
     void fetch_user();
-    bool verify_user(std::string userName, std::string password);
+
+    std::vector<Reservations> fetch_reservations(int user_id, sqlite3* db); // need to fix this, doesn't match the structure
+    void insert_user(const std::string& userName, const std::string& password);
+
+    // bool verify_user(std::string , userName, std::string password);
+
+
+
+    // Destructor to close the database connection
+    ~UserDB();
 
 };
-
 
 #endif //PURRRFECTSPOTS_USERDB_H

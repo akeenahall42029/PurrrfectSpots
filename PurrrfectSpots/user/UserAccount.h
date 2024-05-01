@@ -11,21 +11,24 @@
 #include "../database/UserDB.h"
 
 class UserAccount {
+
+
     friend class UserManager;
 public:
     UserAccount();
-    UserAccount(std::string username);
-
+    UserAccount(std::string userName,int id);
+    UserAccount(std::string userName);
     ~UserAccount();
 
     int get_id();
-    std::string get_username();
-    void set_username(std::string u);
+    std::string get_userName();
+    void set_userName(std::string u);
     void set_id(int newId);
+    int generateId();
 private:
     int id;
-    int access;
-    std::string username;
+    int access; // change to enum : 0 for cats, 1 for pet owners, 2 for app admin
+    std::string userName;
 };
 
 

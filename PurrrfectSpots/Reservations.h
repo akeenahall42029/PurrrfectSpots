@@ -16,13 +16,13 @@ private:
     std::string userName;
     int time;
     std::string status;
-    int id;
-    sqlite3* curr_db;
-    int retCode;
-    char* zErrMsg;
+    int id{};
+    sqlite3* curr_db{};
+    int retCode{};
+    char* zErrMsg{};
     std::string sql;
 
-    int generateID(); // Declare the method to generate ID
+    // Declare the method to generate ID
 public:
 
     Reservations(int napSpotID, int userId, int time, std::string status);
@@ -40,6 +40,8 @@ public:
     void setTime(int time);
     void setStatus(std::string status);
     void storeData();
+
+    int generateID();
 };
 
 #endif //PURRRFECTSPOTS_RESERVATIONS_H

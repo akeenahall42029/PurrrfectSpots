@@ -323,36 +323,13 @@ Reviews.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.s
 .PHONY : Reviews.cpp.s
 
-Users.o: Users.cpp.o
-.PHONY : Users.o
-
-# target to build an object file
-Users.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Users.cpp.o
-.PHONY : Users.cpp.o
-
-Users.i: Users.cpp.i
-.PHONY : Users.i
-
-# target to preprocess a source file
-Users.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Users.cpp.i
-.PHONY : Users.cpp.i
-
-Users.s: Users.cpp.s
-.PHONY : Users.s
-
-# target to generate assembly for a file
-Users.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Users.cpp.s
-.PHONY : Users.cpp.s
-
 database/Database.o: database/Database.cpp.o
 .PHONY : database/Database.o
 
 # target to build an object file
 database/Database.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/Database.cpp.o
 .PHONY : database/Database.cpp.o
 
 database/Database.i: database/Database.cpp.i
@@ -361,6 +338,7 @@ database/Database.i: database/Database.cpp.i
 # target to preprocess a source file
 database/Database.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/Database.cpp.i
 .PHONY : database/Database.cpp.i
 
 database/Database.s: database/Database.cpp.s
@@ -369,6 +347,7 @@ database/Database.s: database/Database.cpp.s
 # target to generate assembly for a file
 database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/Database.cpp.s
 .PHONY : database/Database.cpp.s
 
 database/UserDB.o: database/UserDB.cpp.o
@@ -377,6 +356,7 @@ database/UserDB.o: database/UserDB.cpp.o
 # target to build an object file
 database/UserDB.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/UserDB.cpp.o
 .PHONY : database/UserDB.cpp.o
 
 database/UserDB.i: database/UserDB.cpp.i
@@ -385,6 +365,7 @@ database/UserDB.i: database/UserDB.cpp.i
 # target to preprocess a source file
 database/UserDB.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/UserDB.cpp.i
 .PHONY : database/UserDB.cpp.i
 
 database/UserDB.s: database/UserDB.cpp.s
@@ -393,6 +374,7 @@ database/UserDB.s: database/UserDB.cpp.s
 # target to generate assembly for a file
 database/UserDB.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/UserDB.cpp.s
 .PHONY : database/UserDB.cpp.s
 
 googletest/src/gtest-all.o: googletest/src/gtest-all.cc.o
@@ -467,6 +449,30 @@ ui/MyButton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s
 .PHONY : ui/MyButton.cpp.s
 
+ui/NotebookManager.o: ui/NotebookManager.cpp.o
+.PHONY : ui/NotebookManager.o
+
+# target to build an object file
+ui/NotebookManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o
+.PHONY : ui/NotebookManager.cpp.o
+
+ui/NotebookManager.i: ui/NotebookManager.cpp.i
+.PHONY : ui/NotebookManager.i
+
+# target to preprocess a source file
+ui/NotebookManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.i
+.PHONY : ui/NotebookManager.cpp.i
+
+ui/NotebookManager.s: ui/NotebookManager.cpp.s
+.PHONY : ui/NotebookManager.s
+
+# target to generate assembly for a file
+ui/NotebookManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.s
+.PHONY : ui/NotebookManager.cpp.s
+
 ui/Profile.o: ui/Profile.cpp.o
 .PHONY : ui/Profile.o
 
@@ -494,6 +500,78 @@ ui/Profile.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/ui/Profile.cpp.s
 .PHONY : ui/Profile.cpp.s
 
+ui/Rating.o: ui/Rating.cpp.o
+.PHONY : ui/Rating.o
+
+# target to build an object file
+ui/Rating.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o
+.PHONY : ui/Rating.cpp.o
+
+ui/Rating.i: ui/Rating.cpp.i
+.PHONY : ui/Rating.i
+
+# target to preprocess a source file
+ui/Rating.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.i
+.PHONY : ui/Rating.cpp.i
+
+ui/Rating.s: ui/Rating.cpp.s
+.PHONY : ui/Rating.s
+
+# target to generate assembly for a file
+ui/Rating.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.s
+.PHONY : ui/Rating.cpp.s
+
+ui/SpotStructure.o: ui/SpotStructure.cpp.o
+.PHONY : ui/SpotStructure.o
+
+# target to build an object file
+ui/SpotStructure.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o
+.PHONY : ui/SpotStructure.cpp.o
+
+ui/SpotStructure.i: ui/SpotStructure.cpp.i
+.PHONY : ui/SpotStructure.i
+
+# target to preprocess a source file
+ui/SpotStructure.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.i
+.PHONY : ui/SpotStructure.cpp.i
+
+ui/SpotStructure.s: ui/SpotStructure.cpp.s
+.PHONY : ui/SpotStructure.s
+
+# target to generate assembly for a file
+ui/SpotStructure.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.s
+.PHONY : ui/SpotStructure.cpp.s
+
+unit_tests/DatabaseTest.o: unit_tests/DatabaseTest.cpp.o
+.PHONY : unit_tests/DatabaseTest.o
+
+# target to build an object file
+unit_tests/DatabaseTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/DatabaseTest.cpp.o
+.PHONY : unit_tests/DatabaseTest.cpp.o
+
+unit_tests/DatabaseTest.i: unit_tests/DatabaseTest.cpp.i
+.PHONY : unit_tests/DatabaseTest.i
+
+# target to preprocess a source file
+unit_tests/DatabaseTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/DatabaseTest.cpp.i
+.PHONY : unit_tests/DatabaseTest.cpp.i
+
+unit_tests/DatabaseTest.s: unit_tests/DatabaseTest.cpp.s
+.PHONY : unit_tests/DatabaseTest.s
+
+# target to generate assembly for a file
+unit_tests/DatabaseTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/DatabaseTest.cpp.s
+.PHONY : unit_tests/DatabaseTest.cpp.s
+
 unit_tests/ReservationTests.o: unit_tests/ReservationTests.cpp.o
 .PHONY : unit_tests/ReservationTests.o
 
@@ -517,6 +595,30 @@ unit_tests/ReservationTests.s: unit_tests/ReservationTests.cpp.s
 unit_tests/ReservationTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/ReservationTests.cpp.s
 .PHONY : unit_tests/ReservationTests.cpp.s
+
+unit_tests/UserDBTests.o: unit_tests/UserDBTests.cpp.o
+.PHONY : unit_tests/UserDBTests.o
+
+# target to build an object file
+unit_tests/UserDBTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/UserDBTests.cpp.o
+.PHONY : unit_tests/UserDBTests.cpp.o
+
+unit_tests/UserDBTests.i: unit_tests/UserDBTests.cpp.i
+.PHONY : unit_tests/UserDBTests.i
+
+# target to preprocess a source file
+unit_tests/UserDBTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/UserDBTests.cpp.i
+.PHONY : unit_tests/UserDBTests.cpp.i
+
+unit_tests/UserDBTests.s: unit_tests/UserDBTests.cpp.s
+.PHONY : unit_tests/UserDBTests.s
+
+# target to generate assembly for a file
+unit_tests/UserDBTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/UserDBTests.cpp.s
+.PHONY : unit_tests/UserDBTests.cpp.s
 
 user/UserAccount.o: user/UserAccount.cpp.o
 .PHONY : user/UserAccount.o
@@ -598,9 +700,6 @@ help:
 	@echo "... Reviews.o"
 	@echo "... Reviews.i"
 	@echo "... Reviews.s"
-	@echo "... Users.o"
-	@echo "... Users.i"
-	@echo "... Users.s"
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
@@ -616,12 +715,27 @@ help:
 	@echo "... ui/MyButton.o"
 	@echo "... ui/MyButton.i"
 	@echo "... ui/MyButton.s"
+	@echo "... ui/NotebookManager.o"
+	@echo "... ui/NotebookManager.i"
+	@echo "... ui/NotebookManager.s"
 	@echo "... ui/Profile.o"
 	@echo "... ui/Profile.i"
 	@echo "... ui/Profile.s"
+	@echo "... ui/Rating.o"
+	@echo "... ui/Rating.i"
+	@echo "... ui/Rating.s"
+	@echo "... ui/SpotStructure.o"
+	@echo "... ui/SpotStructure.i"
+	@echo "... ui/SpotStructure.s"
+	@echo "... unit_tests/DatabaseTest.o"
+	@echo "... unit_tests/DatabaseTest.i"
+	@echo "... unit_tests/DatabaseTest.s"
 	@echo "... unit_tests/ReservationTests.o"
 	@echo "... unit_tests/ReservationTests.i"
 	@echo "... unit_tests/ReservationTests.s"
+	@echo "... unit_tests/UserDBTests.o"
+	@echo "... unit_tests/UserDBTests.i"
+	@echo "... unit_tests/UserDBTests.s"
 	@echo "... user/UserAccount.o"
 	@echo "... user/UserAccount.i"
 	@echo "... user/UserAccount.s"

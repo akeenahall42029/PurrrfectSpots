@@ -5,7 +5,8 @@
 #include "Database.h"
 
 Database::Database() {
-// Open the database
+//    // open the database to prepare to pass queries
+
 
     //location and name of the database
     std::string db_name = "example.sqlite";
@@ -26,42 +27,39 @@ Database::Database() {
     }else{
         std::cerr << "Opened database successfully\n";
     }
+
+
 }
-
+/**
+ * Executes the given SQL query and returns the results as a vector of strings.
+ * Prepares and executes the provided SQL query on the currently open database connection.
+ * It retrieves the results of the query, if any, and stores them in a vector of strings.
+ * Each element in the vector represents a single result from the query.
+ *
+ * @param query The SQL query to execute.
+ * @return A vector of strings containing the results of the query.
+ */
 std::vector<std::string> Database::results(const std::string& query) {
-    std::vector<std::vector<std::string>> resultSet;
+    std::vector<std::string> result_list;
 
-    // Prepare the SQL statement
-    retCode = sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr);
+    if (!curr_db) {
+        std::cerr << "Database not open. Call open() first." << std::endl;
+        return result_list;
+    }
+
+    int retCode = sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr);
     if (retCode != SQLITE_OK) {
-        std::cerr << "SQL error: " << sqlite3_errmsg(curr_db) << std::endl;
-        return {};
+        std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
+        return result_list;
     }
 
-    // Execute the SQL statement
-    retCode = sqlite3_step(stmt);
-    while (retCode == SQLITE_ROW) {
-        std::vector<std::string> row;
-        int numColumns = sqlite3_column_count(stmt);
-        for (int i = 0; i < numColumns; ++i) {
-            const unsigned char* columnValue = sqlite3_column_text(stmt, i);
-            row.push_back(reinterpret_cast<const char*>(columnValue));
-        }
-        resultSet.push_back(row);
-
-        // Retrieve the next row
-        retCode = sqlite3_step(stmt);
-    }
-
-    // Finalize the statement
-    sqlite3_finalize(stmt);
-
-    // Convert resultSet to a vector of strings and return
-    std::vector<std::string> resultStrings;
-    for (const auto& row : resultSet) {
-        for (const auto& value : row) {
-            resultStrings.push_back(value);
+    while (sqlite3_step(stmt) == SQLITE_ROW) {
+        const unsigned char* result = sqlite3_column_text(stmt, 0);
+        if (result) {
+            result_list.push_back(reinterpret_cast<const char*>(result));
         }
     }
-    return resultStrings;
+
+    sqlite3_finalize(stmt); // Finalize the statement
+    return result_list;
 }

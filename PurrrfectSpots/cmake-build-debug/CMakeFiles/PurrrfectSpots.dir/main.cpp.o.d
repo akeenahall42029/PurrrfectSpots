@@ -1114,4 +1114,65 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
  /usr/include/gtkmm-3.0/gtkmm/box.h \
  /usr/include/gtkmm-3.0/gtkmm/orientable.h \
  /usr/include/gtkmm-3.0/gtkmm/hvbox.h \
- /usr/include/gtkmm-3.0/gtkmm/label.h /usr/include/gtkmm-3.0/gtkmm/misc.h
+ /usr/include/gtkmm-3.0/gtkmm/label.h /usr/include/gtkmm-3.0/gtkmm/misc.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../database/UserDB.h \
+ /usr/include/c++/11/iostream \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../database/Database.h \
+ /usr/include/sqlite3.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../database/../Reservations.h \
+ /usr/include/c++/11/random /usr/include/c++/11/bits/random.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/opt_random.h \
+ /usr/include/c++/11/bits/random.tcc /usr/include/c++/11/numeric \
+ /usr/include/c++/11/bits/stl_numeric.h \
+ /usr/include/c++/11/pstl/glue_numeric_defs.h \
+ /usr/include/gtkmm-3.0/gtkmm/entry.h \
+ /usr/include/gtkmm-3.0/gtkmm/editable.h \
+ /usr/include/gtkmm-3.0/gtkmm/menu.h \
+ /usr/include/gtkmm-3.0/gtkmm/menushell.h \
+ /usr/include/gtkmm-3.0/gtkmm/menuitem.h \
+ /usr/include/gtkmm-3.0/gtkmm/accellabel.h \
+ /usr/include/gtkmm-3.0/gtkmm/celleditable.h \
+ /usr/include/gtkmm-3.0/gtkmm/entrycompletion.h \
+ /usr/include/gtkmm-3.0/gtkmm/celllayout.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrenderer.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrenderer_generation.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrenderertext.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrendererpixbuf.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrenderertoggle.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellrendereraccel.h \
+ /usr/include/gtkmm-3.0/gtkmm/treemodel.h \
+ /usr/include/gtkmm-3.0/gtkmm/treeiter.h \
+ /usr/include/gtkmm-3.0/gtkmm/treemodelcolumn.h \
+ /usr/include/gtkmm-3.0/gtkmm/adjustment.h \
+ /usr/include/gtkmm-3.0/gtkmm/image.h \
+ /usr/include/gdkmm-3.0/gdkmm/pixbufanimation.h \
+ /usr/include/gdkmm-3.0/gdkmm/pixbufanimationiter.h \
+ /usr/include/gtkmm-3.0/gtkmm/entrybuffer.h \
+ /usr/include/gtkmm-3.0/gtkmm/notebook.h \
+ /usr/include/gtkmm-3.0/gtkmm/scrolledwindow.h \
+ /usr/include/gtkmm-3.0/gtkmm/overlay.h \
+ /usr/include/gtkmm-3.0/gtkmm/comboboxtext.h \
+ /usr/include/gtkmm-3.0/gtkmm/combobox.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellarea.h \
+ /usr/include/gtkmm-3.0/gtkmm/cellareacontext.h \
+ /usr/include/gtkmm-3.0/gtkmm/treeview.h \
+ /usr/include/gtkmm-3.0/gtkmm/treeviewcolumn.h \
+ /usr/include/gtkmm-3.0/gtkmm/treeselection.h \
+ /usr/include/gtkmm-3.0/gtkmm/treepath.h \
+ /usr/include/gtkmm-3.0/gtkmm/scrollable.h \
+ /usr/include/gtkmm-3.0/gtkmm/tooltip.h /usr/include/c++/11/fstream \
+ /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc \
+ /usr/include/gtkmm-3.0/gtkmm/scale.h \
+ /usr/include/gtkmm-3.0/gtkmm/range.h \
+ /usr/include/gtkmm-3.0/gtkmm/hvscale.h \
+ /usr/include/gtkmm-3.0/gtkmm/cssprovider.h \
+ /usr/include/gtkmm-3.0/gtkmm/csssection.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../Reservations.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Rating.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../user/UserManager.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../user/../database/UserDB.h \
+ /home/hallake/cs205_v2/coral/PurrrfectSpots/ui/../user/UserAccount.h

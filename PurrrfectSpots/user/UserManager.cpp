@@ -1,5 +1,5 @@
 /**
- * The UserManager class handles user verification and database interaction.
+ * The UserManager class handles user verification and database interactions.
  * It provides methods to verify user credentials against a database and update
  * user account information.
  * @author Akeena Hall
@@ -30,10 +30,10 @@ UserManager::UserManager(UserDB *db) : db(db){}
     */
 int UserManager::verify(UserAccount &a, std::string password) {
     // Construct thr SQL query to verify user credentials
-    std::string query = "SELECT id FROM users WHERE username = '" + a.get_username() + "' AND password = '" + password + "';";
+    std::string query = "SELECT id FROM users WHERE username = '" + a.get_userName() + "' AND password = '" + password + "';";
 
     // Verify user credentials with the database
-    db->verify_user(a.get_username(), password);
+    db->verify_user(a.get_userName(), password);
 
     // Check if the database query returned any results
     std::vector<std::string> results = db->results(query);
@@ -45,3 +45,20 @@ int UserManager::verify(UserAccount &a, std::string password) {
         return 0; // Verification failed
     }
 }
+
+// Method to create a new user
+/** Creates a new user by using the UserAccount method. Will call the generateId method
+ * to initilze the id of the user
+ * */
+
+void UserManager::create_user(const std::string &userName, const std::string &password) {
+    // Create a new UserAccount object with the provided username and password
+    UserAccount newUser(userName);
+
+    // Insert the new user into the database using the UserDB object
+    db->insert_user(userName, password);
+
+}
+
+
+

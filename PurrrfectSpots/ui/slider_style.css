@@ -1,0 +1,8 @@
+/* Customize the handle/knob of the Gtk::Scale */
+.scale slider {
+    background-color: #3498db; /* Change the color to a shade of blue */
+    border: 2px solid #2980b9; /* Add a border */
+    border-radius: 50%; /* Make it circular */
+    width: 20px; /* Adjust width */
+    height: 20px; /* Adjust height */
+}
