@@ -4,10 +4,11 @@
 
 #include "UserDB.h"
 
-void UserDB::fetch_userName(int user_id) {
+std::string UserDB::fetch_userName(int user_id) {
+    std::string username;
     if (!curr_db) {
         std::cerr << "Database not open." << std::endl;
-        return;
+        return username;
     }
 
     std::string sql = "SELECT userName FROM users WHERE id = ?;";
@@ -17,7 +18,7 @@ void UserDB::fetch_userName(int user_id) {
 
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
-        return;
+        return username;
     }
 
     // Bind user_id parameter
@@ -29,13 +30,13 @@ void UserDB::fetch_userName(int user_id) {
     if (retCode == SQLITE_ROW) {
         const unsigned char* userName = sqlite3_column_text(stmt, 0);
         if (userName) {
-            std::string username(reinterpret_cast<const char*>(userName));
+            username = reinterpret_cast<const char*>(userName);
             std::cout << "Username for user ID " << user_id << ": " << username << std::endl;
         }
     } else {
         std::cerr << "User ID not found." << std::endl;
     }
-
+    return username;
     // Finalize the statement
     sqlite3_finalize(stmt);
 }

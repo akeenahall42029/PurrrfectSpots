@@ -73,7 +73,8 @@ add_executable(unittests googletest/src/gtest-all.cc
         database/UserDB.cpp
         database/UserDB.h
         unit_tests/UserDBTests.cpp
-
+        Reservations.cpp
+        Reservations.h
 )
 
 #include_directories(googletest googletest/include googletest/include/gtest)

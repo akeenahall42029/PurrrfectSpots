@@ -25,7 +25,7 @@ public:
     void verify_user(const std::string& userName, const std::string& password);
 
     // Fetch user information (dummy methods, could be placeholders for future implementation)
-    void fetch_userName(int user_id);
+    std::string fetch_userName(int user_id);
     void fetch_userPassword(int user_id);
     void fetch_user();
 
