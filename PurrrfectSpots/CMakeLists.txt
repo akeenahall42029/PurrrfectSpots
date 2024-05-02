@@ -16,8 +16,8 @@ link_directories(/usr/lib)
 add_executable(PurrrfectSpots main.cpp
         Demo.cpp
         Demo.h
-        Reservations.cpp
-        Reservations.h
+        reservation/Reservations.cpp
+        reservation/Reservations.h
         ui/MyButton.cpp
         ui/MyButton.h
         MyValue.cpp
@@ -50,6 +50,8 @@ add_executable(PurrrfectSpots main.cpp
         ui/Rating.h
         ui/NotebookManager.cpp
         ui/NotebookManager.h
+        database/ReservationDB.cpp
+        database/ReservationDB.h
 
 )
 
@@ -60,7 +62,9 @@ link_directories(${GTKMM_LIBRARY_DIRS})
 
 include_directories(/user/include)
 link_directories(/usr/lib)
-add_executable(Profilescreen ui/Profile.cpp ui/Profile.h )
+add_executable(Profilescreen ui/Profile.cpp ui/Profile.h
+        reservation/ReservationManager.cpp
+        reservation/ReservationManager.h)
 
 include_directories(googletest googletest/include googletest/include/gtest)
 add_executable(unittests googletest/src/gtest-all.cc
@@ -73,8 +77,8 @@ add_executable(unittests googletest/src/gtest-all.cc
         database/UserDB.cpp
         database/UserDB.h
         unit_tests/UserDBTests.cpp
-        Reservations.cpp
-        Reservations.h
+        reservation/Reservations.cpp
+        reservation/Reservations.h
 )
 
 #include_directories(googletest googletest/include googletest/include/gtest)

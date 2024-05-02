@@ -39,7 +39,7 @@ int Reservations::getTime() const{
     return time;
 }
 
-int Reservations::getID() const {
+int Reservations::getID()  {
     return id; // id is defined as a private variable in the header, return to this if this causes problems
 
 }

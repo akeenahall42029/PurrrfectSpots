@@ -9,7 +9,7 @@
 #include <sqlite3.h>
 #include <string>
 #include <vector> // For std::vector
-#include "../Reservations.h"
+#include "../reservation/Reservations.h"
 
 class UserDB : public Database{
 private:

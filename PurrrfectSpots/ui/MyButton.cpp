@@ -21,14 +21,17 @@ MyButton::~MyButton() {
 
 void MyButton::on_button_clicked() {
     if (button_label == "SIGN UP") {
+        current_page = "SIGN UP";
         openSignUpPage();
     } else if (button_label == "BACK") {
-//        if (current_page == "SIGN UP") {
-//            openLoginPage();
-//        } else if (current_page == "LOGIN") {
-//            // Implement navigation to the previous page if needed
-//        }
+        if (current_page == "SIGN UP") {
+            openLoginPage();
+        } else if (current_page == "LOGIN") {
+            // Implement navigation to the previous page if needed
+            openLoginPage();
+        }
     } else if(button_label == "LOG IN"){
+        current_page = "LOG IN";
         openLoginPage();
     }
 }

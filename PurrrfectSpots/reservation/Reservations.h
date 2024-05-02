@@ -15,6 +15,8 @@ private:
     int userId;
     std::string userName;
     int time;
+    int startTime;
+    int endTime;
     std::string status;
     int id;
     sqlite3* curr_db{};
@@ -27,8 +29,9 @@ public:
 
     Reservations(int napSpotID, int userId, int time, std::string status);
     Reservations(); // default constructor
+
     // Getter functions, will be useful for SQL binding
-    int getID() const; // Change the return type to int
+    int getID(); // Change the return type to int
     int getNapSpotId() const;
     int getUserId() const ;
     int getTime() const;

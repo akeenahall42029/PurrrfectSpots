@@ -46,9 +46,10 @@ std::string UserDB::fetch_userName(int user_id) {
     } else {
         std::cerr << "User ID not found." << std::endl;
     }
-    return username;
     // Finalize the statement
     sqlite3_finalize(stmt);
+    return username;
+
 }
 
 
@@ -103,7 +104,7 @@ void UserDB::verify_user(const std::string& userName, const std::string& passwor
  */
 std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
     std::vector<Reservations> reservations;
-
+        // query changed
     std::string sql = "SELECT id, napSpotId, userId, time, status FROM reservations WHERE userId = " + std::to_string(user_id);
 
     sqlite3_stmt* stmt;
@@ -117,7 +118,7 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
             int time = sqlite3_column_int(stmt, 3);
             std::string status = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4)); // what does this line do
 
-            Reservations reservation(napSpotId, userId, time, status); // creates reservation objectg
+            Reservations reservation(napSpotId, userId, time, status); // creates reservation object --> change this
             reservations.push_back(reservation);
         }
     } else {

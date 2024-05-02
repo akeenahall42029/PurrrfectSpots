@@ -27,7 +27,7 @@
 #include <gtkmm/cssprovider.h>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
-#include "../Reservations.h"
+#include "../reservation/Reservations.h"
 #include "Rating.h"
 // #include "../user/UserAccount.h"
 #include "../user/UserManager.h"
@@ -64,6 +64,7 @@ private:
     Gtk::Entry* username_entry;
     Gtk::Entry* password_entry;
     UserManager user_manager;
+    std::string current_page;
 };
 
 

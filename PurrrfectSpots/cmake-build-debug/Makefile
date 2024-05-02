@@ -275,33 +275,6 @@ Napspots.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.s
 .PHONY : Napspots.cpp.s
 
-Reservations.o: Reservations.cpp.o
-.PHONY : Reservations.o
-
-# target to build an object file
-Reservations.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.o
-.PHONY : Reservations.cpp.o
-
-Reservations.i: Reservations.cpp.i
-.PHONY : Reservations.i
-
-# target to preprocess a source file
-Reservations.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.i
-.PHONY : Reservations.cpp.i
-
-Reservations.s: Reservations.cpp.s
-.PHONY : Reservations.s
-
-# target to generate assembly for a file
-Reservations.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.s
-.PHONY : Reservations.cpp.s
-
 Reviews.o: Reviews.cpp.o
 .PHONY : Reviews.o
 
@@ -352,6 +325,30 @@ database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/Database.cpp.s
 .PHONY : database/Database.cpp.s
+
+database/ReservationDB.o: database/ReservationDB.cpp.o
+.PHONY : database/ReservationDB.o
+
+# target to build an object file
+database/ReservationDB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o
+.PHONY : database/ReservationDB.cpp.o
+
+database/ReservationDB.i: database/ReservationDB.cpp.i
+.PHONY : database/ReservationDB.i
+
+# target to preprocess a source file
+database/ReservationDB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.i
+.PHONY : database/ReservationDB.cpp.i
+
+database/ReservationDB.s: database/ReservationDB.cpp.s
+.PHONY : database/ReservationDB.s
+
+# target to generate assembly for a file
+database/ReservationDB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.s
+.PHONY : database/ReservationDB.cpp.s
 
 database/UserDB.o: database/UserDB.cpp.o
 .PHONY : database/UserDB.o
@@ -427,6 +424,57 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+reservation/ReservationManager.o: reservation/ReservationManager.cpp.o
+.PHONY : reservation/ReservationManager.o
+
+# target to build an object file
+reservation/ReservationManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/reservation/ReservationManager.cpp.o
+.PHONY : reservation/ReservationManager.cpp.o
+
+reservation/ReservationManager.i: reservation/ReservationManager.cpp.i
+.PHONY : reservation/ReservationManager.i
+
+# target to preprocess a source file
+reservation/ReservationManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/reservation/ReservationManager.cpp.i
+.PHONY : reservation/ReservationManager.cpp.i
+
+reservation/ReservationManager.s: reservation/ReservationManager.cpp.s
+.PHONY : reservation/ReservationManager.s
+
+# target to generate assembly for a file
+reservation/ReservationManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/reservation/ReservationManager.cpp.s
+.PHONY : reservation/ReservationManager.cpp.s
+
+reservation/Reservations.o: reservation/Reservations.cpp.o
+.PHONY : reservation/Reservations.o
+
+# target to build an object file
+reservation/Reservations.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/reservation/Reservations.cpp.o
+.PHONY : reservation/Reservations.cpp.o
+
+reservation/Reservations.i: reservation/Reservations.cpp.i
+.PHONY : reservation/Reservations.i
+
+# target to preprocess a source file
+reservation/Reservations.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/reservation/Reservations.cpp.i
+.PHONY : reservation/Reservations.cpp.i
+
+reservation/Reservations.s: reservation/Reservations.cpp.s
+.PHONY : reservation/Reservations.s
+
+# target to generate assembly for a file
+reservation/Reservations.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/reservation/Reservations.cpp.s
+.PHONY : reservation/Reservations.cpp.s
 
 ui/MyButton.o: ui/MyButton.cpp.o
 .PHONY : ui/MyButton.o
@@ -697,15 +745,15 @@ help:
 	@echo "... Napspots.o"
 	@echo "... Napspots.i"
 	@echo "... Napspots.s"
-	@echo "... Reservations.o"
-	@echo "... Reservations.i"
-	@echo "... Reservations.s"
 	@echo "... Reviews.o"
 	@echo "... Reviews.i"
 	@echo "... Reviews.s"
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
+	@echo "... database/ReservationDB.o"
+	@echo "... database/ReservationDB.i"
+	@echo "... database/ReservationDB.s"
 	@echo "... database/UserDB.o"
 	@echo "... database/UserDB.i"
 	@echo "... database/UserDB.s"
@@ -715,6 +763,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... reservation/ReservationManager.o"
+	@echo "... reservation/ReservationManager.i"
+	@echo "... reservation/ReservationManager.s"
+	@echo "... reservation/Reservations.o"
+	@echo "... reservation/Reservations.i"
+	@echo "... reservation/Reservations.s"
 	@echo "... ui/MyButton.o"
 	@echo "... ui/MyButton.i"
 	@echo "... ui/MyButton.s"

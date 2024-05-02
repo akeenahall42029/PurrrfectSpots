@@ -6,7 +6,7 @@
 #define PURRRFECTSPOTS_NOTEBOOKMANAGER_H
 #include <gtkmm.h>
 #include "SpotStructure.h"
-#include "../Reservations.h"
+#include "../reservation/Reservations.h"
 #include "Rating.h"
 
 class NotebookManager {

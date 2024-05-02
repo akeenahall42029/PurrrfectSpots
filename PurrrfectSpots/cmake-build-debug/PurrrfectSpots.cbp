@@ -446,14 +446,6 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Napspots.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.cpp">
-			<Option target="PurrrfectSpots"/>
-			<Option target="unittests"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.h">
-			<Option target="PurrrfectSpots"/>
-			<Option target="unittests"/>
-		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
@@ -468,6 +460,12 @@
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
 		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/ReservationDB.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/ReservationDB.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.cpp">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
@@ -481,6 +479,20 @@
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp">
 			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/ReservationManager.cpp">
+			<Option target="Profilescreen"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/ReservationManager.h">
+			<Option target="Profilescreen"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/Reservations.cpp">
+			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/Reservations.h">
+			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp">
 			<Option target="PurrrfectSpots"/>

@@ -5,7 +5,7 @@
 #include "ReservationTests.h"
 #include <gtest/gtest.h>
 //#include "Reservations.h"
-#include "../Reservations.h"
+#include "../reservation/Reservations.h"
 
 
 // Test fixture for Reservations class

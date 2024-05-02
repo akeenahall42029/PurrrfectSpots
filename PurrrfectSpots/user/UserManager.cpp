@@ -54,8 +54,9 @@ int UserManager::verify(UserAccount &a, std::string password) {
  * */
 
 void UserManager::create_user(const std::string &userName, const std::string &password) {
+
     // Create a new UserAccount object with the provided username and password
-    UserAccount newUser(userName);
+    UserAccount newUser(userName, password);
 
     // Insert the new user into the database using the UserDB object
     db->insert_user(userName, password);

@@ -6,16 +6,39 @@
  */
 #include "UserAccount.h"
 
-/** This constructor will be used to create a new user object
+/** This constructor will be used to create a new standard pet/owner user object with specified id and username
+ * @param id User ID
+ * @param userName User's user name
  * */
 UserAccount::UserAccount(std::string userName, int id) : userName(userName), id(id){
  access = 0; //represents cat user
 
 
 }
+/** Sets the user's username.
+ * */
+UserAccount::UserAccount(std::string userName): userName(userName) {
+    id = generateId();
+
+}
+/** This is the standard constructor to create a user. This constructor will be used
+ * by UserManager to create a new user object upon a new user signing up for our software.
+ * @param userName The user's entered user name
+ * @param password The user's enterd password
+ * */
+UserAccount::UserAccount(std::string userName, std::string password) {
+    id = generateId();
+}
+/** Default constructor for UserAccount.
+*
+* This constructor generates a new user account with a random ID.
+*/
+UserAccount::UserAccount() {
+    id = generateId();
+}
 
 UserAccount::~UserAccount(){
-    id = generateId();
+
 }
 
 //UserAccount::UserAccount(std::string username) : username(username) {}
@@ -46,12 +69,6 @@ int UserAccount::generateId() {
     return distrib(gen);
 }
 
-UserAccount::UserAccount(std::string userName): userName(userName) {
 
-}
-
-UserAccount::UserAccount(std::string userName, std::string password) {
-
-}
 
 

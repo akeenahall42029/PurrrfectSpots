@@ -18,8 +18,8 @@ public:
 
 private:
     std::string username;
-    std::vector<std::string> reviews;
-    std::vector<std::string> createdNapspots;
+    std::vector<std::string> reviews; // this may need to change to a vector of Review objects
+    std::vector<std::string> createdNapspots; // this may need to change to a vector of NapSpot objects
 };
 
 
