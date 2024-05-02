@@ -33,6 +33,7 @@ void MyButton::on_button_clicked() {
     }
 }
 
+// Come back to this
 bool check_credentials(const std::string& username, const std::string& password) {
     // Sample database check. Replace with actual database connection and query.
     // For demonstration, let's say the valid credentials are "admin" and "password123".
@@ -114,6 +115,11 @@ void MyButton::openSignUpPage() {
     }
 }
 
+/**This method is called when the submit button is clicked. It retrieves the username and password
+ * entered by the user from the username and password entry fields, respectively. Then, it calls the
+ * UserManager to create a new user account using the provided username and password. Finally, it
+ * calls the createNotebook method to initialize the notebook for the newly created user.
+ */
 void MyButton::on_submit_button_clicked() {
 
     // Get the username and password entered by the user
@@ -121,8 +127,7 @@ void MyButton::on_submit_button_clicked() {
     std::string password = password_entry->get_text();
 
     // Call UserManager to create a new user account
-    UserManager manager;
-    manager.create_user(username, password);
+    user_manager.create_user(username, password);
 
     createNotebook();
 

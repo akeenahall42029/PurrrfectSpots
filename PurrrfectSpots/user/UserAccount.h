@@ -22,7 +22,7 @@ public:
     UserAccount();
     UserAccount(std::string userName,int id);
     UserAccount(std::string userName);
-    UserAccount(std::string userName, std::string password)
+    UserAccount(std::string userName, std::string password);
     ~UserAccount();
 
     int get_id();

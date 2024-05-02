@@ -281,6 +281,7 @@ Reservations.o: Reservations.cpp.o
 # target to build an object file
 Reservations.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.o
 .PHONY : Reservations.cpp.o
 
 Reservations.i: Reservations.cpp.i
@@ -289,6 +290,7 @@ Reservations.i: Reservations.cpp.i
 # target to preprocess a source file
 Reservations.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.i
 .PHONY : Reservations.cpp.i
 
 Reservations.s: Reservations.cpp.s
@@ -297,6 +299,7 @@ Reservations.s: Reservations.cpp.s
 # target to generate assembly for a file
 Reservations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/Reservations.cpp.s
 .PHONY : Reservations.cpp.s
 
 Reviews.o: Reviews.cpp.o

@@ -63,6 +63,7 @@ private:
     Glib::ustring button_label;  // Label for the button
     Gtk::Entry* username_entry;
     Gtk::Entry* password_entry;
+    UserManager user_manager;
 };
 
 
