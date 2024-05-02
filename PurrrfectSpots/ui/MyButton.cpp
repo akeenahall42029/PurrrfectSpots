@@ -13,6 +13,7 @@
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
+
 }
 
 MyButton::~MyButton() {
@@ -142,8 +143,6 @@ void MyButton::openLoginPage() {
 //
 //    // UserAccount manager object to verify user credentials
 //    UserManager manager(&userDB);
-    UserManager manager;
-    // creating login page content
 
     // creating login page content container
     Gtk::Box* login_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
@@ -178,13 +177,13 @@ void MyButton::openLoginPage() {
     // creating and adding the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     // TRYING TO VERIFY USERNAME
-    loginButton->signal_clicked().connect([this, &manager]() {
+    loginButton->signal_clicked().connect([this]() {
         std::string username = username_entry->get_text(); // Retrieve the username entered by the user
         std::string password = password_entry->get_text(); // Retrieve the password entered by the user
+        // might need to fix this logic 
+        UserAccount user(username, password); // Create a UserAccount object with the entered username
 
-        UserAccount user(username); // Create a UserAccount object with the entered username
-
-        if (manager.verify(user, password) == 1) {
+        if (user_manager.verify(user, password) == 1) {
             // Verification successful
             createNotebook();
         } else {
