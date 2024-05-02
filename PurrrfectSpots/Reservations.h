@@ -16,7 +16,7 @@ private:
     std::string userName;
     int time;
     std::string status;
-    int id{};
+    int id;
     sqlite3* curr_db{};
     int retCode{};
     char* zErrMsg{};

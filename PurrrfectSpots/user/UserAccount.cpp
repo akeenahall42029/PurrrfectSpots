@@ -11,9 +11,12 @@
 UserAccount::UserAccount(std::string userName, int id) : userName(userName), id(id){
  access = 0; //represents cat user
 
+
 }
 
-UserAccount::~UserAccount(){}
+UserAccount::~UserAccount(){
+    id = generateId();
+}
 
 //UserAccount::UserAccount(std::string username) : username(username) {}
 
@@ -47,6 +50,8 @@ UserAccount::UserAccount(std::string userName): userName(userName) {
 
 }
 
-//UserAccount::UserAccount(std::string username, int id) {
-//
-//}
+UserAccount::UserAccount(std::string userName, std::string password) {
+
+}
+
+

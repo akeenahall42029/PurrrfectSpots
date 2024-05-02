@@ -4,6 +4,13 @@
 
 #include "UserDB.h"
 
+UserDB::UserDB() {
+
+}
+
+UserDB::~UserDB() {
+
+}
 void UserDB::fetch_userName(int user_id) {
     if (!curr_db) {
         std::cerr << "Database not open." << std::endl;
@@ -119,13 +126,24 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
     return reservations;
 }
 
-UserDB::UserDB() {
 
+// Fetch user reservations by user ID
+std::vector<int> UserDB::fetchUserReservationsById(int userId) {
+    std::vector<int> reservations;
+    std::string query = "SELECT id FROM reservations WHERE userId = ?;";
+    sqlite3_stmt* stmt;
+
+    if (sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
+        sqlite3_bind_int(stmt, 1, userId);
+        while (sqlite3_step(stmt) == SQLITE_ROW) {
+            reservations.push_back(sqlite3_column_int(stmt, 0));
+        }
+        sqlite3_finalize(stmt);
+    }
+
+    return reservations;
 }
 
-UserDB::~UserDB() {
-
-}
 
 void UserDB::insert_user(const std::string &userName, const std::string &password) {
     if (!curr_db) {

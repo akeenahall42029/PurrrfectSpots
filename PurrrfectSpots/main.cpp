@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
     Gtk::VBox vbox;
     window.add(vbox);
 
-    // Load the original image
+   //  Load the original image
 //    Glib::RefPtr<Gdk::Pixbuf> originalPixbuf = Gdk::Pixbuf::create_from_file("../images/LOGIN.png");
 //
 //    // Resize the image to the desired width and height

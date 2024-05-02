@@ -1,12 +1,11 @@
 create table users
 (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    id  INT NOT NULL UNIQUE ,
     username TEXT UNIQUE,
-    password TEXT,
+    password TEXT NOT NULL,
     reservation_id INT  NOT NULL,
     review_id      INT  NOT NULL, -- will need multiple review ids, might store in an array in the user object
     primary key (id),
-    foreign key (id) references reports (userId),
     foreign key (reservation_id) references reservations (id),
     foreign key (review_id) references  reviews(id) -- need
 
@@ -32,7 +31,7 @@ create table reservations
     time      INT NOT NULL, -- will be the hour
     status    TEXT  NOT NULL,
     primary key (id),
-    foreign key (id) references users(reservation_id),
+    foreign key (napSpotId) references napSpots(id),
     foreign key (userId) references users (id)
 
 );
@@ -45,10 +44,7 @@ create table napSpots
     userId        INT  NOT NULL,
     averageRating INT  NOT NULL,
     primary key (id),
-    foreign key (id) references reports(napSpotId),
-    foreign key (id) references reservations(napSpotId),
     foreign key (userId) references users(id)
-
 
 );
 
@@ -68,6 +64,7 @@ create table admins
 (
     id INT NOT NULL UNIQUE,
     name TEXT NOT NULL,
-    role TEXT NOT NULL
+    role TEXT NOT NULL,
+    primary key (id)
 
 );

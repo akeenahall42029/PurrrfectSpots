@@ -24,12 +24,12 @@ public:
     // Method to verify a user in the database
     void verify_user(const std::string& userName, const std::string& password);
 
-    // Fetch user information (dummy methods, could be placeholders for future implementation)
+    // Fetch user information directly from the DB
     void fetch_userName(int user_id);
-    void fetch_userPassword(int user_id);
     void fetch_user();
 
     std::vector<Reservations> fetch_reservations(int user_id, sqlite3* db); // need to fix this, doesn't match the structure
+    std::vector<int> fetchUserReservationsById(int userId);
     void insert_user(const std::string& userName, const std::string& password);
 
     // bool verify_user(std::string , userName, std::string password);

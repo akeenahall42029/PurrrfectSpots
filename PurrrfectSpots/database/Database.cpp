@@ -23,7 +23,7 @@ Database::Database() {
                   << sqlite3_errmsg(curr_db)
                   << std::endl;
         std::cerr << " File -- " << full_name << std::endl;
-        exit(0);
+
     }else{
         std::cerr << "Opened database successfully\n";
     }
