@@ -10,7 +10,9 @@
 
 #include <utility>
 
-UserManager::UserManager() {}
+UserManager::UserManager() {
+    db = new UserDB();
+}
 
 /**
 * Constructs a new UserManager instance with a specified UserDB object.
