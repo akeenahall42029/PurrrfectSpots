@@ -77,6 +77,9 @@ add_executable(unittests googletest/src/gtest-all.cc
         unit_tests/UserDBTests.cpp
         reservation/Reservations.cpp
         reservation/Reservations.h
+        unit_tests/SpotTests.cpp
+        ui/SpotStructure.h
+        ui/SpotStructure.cpp
 )
 
 #include_directories(googletest googletest/include googletest/include/gtest)

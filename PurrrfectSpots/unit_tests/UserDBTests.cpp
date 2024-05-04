@@ -1,73 +1,78 @@
 ////
 //// Created by Sanaa Hines on 4/29/24.
 ////
-#include <gtest/gtest.h>
-#include "../database/Database.h"
 
-#include <gtest/gtest.h>
 #include "../database/UserDB.h"
-
+#include <gtest/gtest.h>
+#include <sqlite3.h>
 
 class UserDBTest : public ::testing::Test {
 protected:
-    // Member variables for database and UserDB instance
+    void SetUp() override {
+        // Open an in-memory database for testing
+        int rc = sqlite3_open(":memory:", &db);
+        ASSERT_EQ(SQLITE_OK, rc) << "Database connection failed: " << sqlite3_errmsg(db);
+
+        userDB.curr_db = db; // Set the current database connection for testing
+    }
+
+    void TearDown() override {
+        sqlite3_close(db); // Close the database after each test
+    }
+
     sqlite3* db;
     UserDB userDB;
-
-    // Set up the database connection and create necessary tables
-    void SetUp() override {
-        // Open a connection to an in-memory SQLite database
-        sqlite3_open(":memory:", &db);
-
-        // Create tables if needed
-        createTables();
-    }
-
-    // Close the database connection
-    void TearDown() override {
-        // Close the database connection
-        sqlite3_close(db);
-    }
-
-    // Helper function to create necessary tables
-    void createTables() {
-        // Execute SQL statements to create tables
-        sqlite3_exec(db, "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY AUTOINCREMENT, username TEXT UNIQUE, password TEXT, reservation_id INT NOT NULL, review_id INT NOT NULL);", nullptr, nullptr, nullptr);
-
-    }
 };
 
+// Test fetching a username by user ID
+TEST_F(UserDBTest, FetchUsernameByID) {
+    sqlite3_exec(db, "CREATE TABLE users (id INTEGER PRIMARY KEY, userName TEXT);", nullptr, nullptr, nullptr);
+    sqlite3_exec(db, "INSERT INTO users (id, userName) VALUES (1, 'testUser');", nullptr, nullptr, nullptr);
 
+    std::string username = userDB.fetch_userName(1);
 
-// Test case for verify_user method
-TEST_F(UserDBTest, VerifyUser) {
-    // Insert a test user into the database
-    sqlite3_exec(db, "INSERT INTO users (username, password, reservation_id, review_id) VALUES ('test_user', 'password123', 1, 1);", nullptr, nullptr, nullptr);
-
-    // Call the verify_user method with correct username and password
-    userDB.verify_user("test_user", "password123");
-
-    // Add assertions here to check if the user was verified successfully
+    ASSERT_EQ("testUser", username);
 }
 
-// Test case for fetch_reservations method
-TEST_F(UserDBTest, FetchReservations) {
-    // Insert test reservations into the database
-    // Execute SQL statements to insert test reservations
-
-    // Call the fetch_reservations method
-    std::vector<Reservations> reservations = userDB.fetch_reservations(1, db); // Assuming user ID 1 has reservations
-
-    // Add assertions here to check if reservations were fetched correctly
-}
-
-// Test case for insert_user method
+// Test inserting a user
 TEST_F(UserDBTest, InsertUser) {
-    // Call the insert_user method to insert a new user
-    userDB.insert_user("new_user", "password456");
+    sqlite3_exec(db, "CREATE TABLE users (userName TEXT, password TEXT);", nullptr, nullptr, nullptr);
 
-    // Add assertions here to check if the user was inserted successfully
+    userDB.insert_user("testUser", "testPassword");
+
+    sqlite3_stmt* stmt;
+    sqlite3_prepare_v2(db, "SELECT COUNT(*) FROM users WHERE userName = 'testUser'", -1, &stmt, nullptr);
+    int count = 0;
+    if (sqlite3_step(stmt) == SQLITE_ROW) {
+        count = sqlite3_column_int(stmt, 0);
+    }
+    sqlite3_finalize(stmt);
+
+    ASSERT_EQ(1, count);
 }
 
+// Test verifying user credentials
+TEST_F(UserDBTest, VerifyUser) {
+    sqlite3_exec(db, "CREATE TABLE users (id INTEGER PRIMARY KEY, userName TEXT, password TEXT);", nullptr, nullptr, nullptr);
+    sqlite3_exec(db, "INSERT INTO users (userName, password) VALUES ('testUser', 'testPassword');", nullptr, nullptr, nullptr);
 
+    testing::internal::CaptureStdout();
+    userDB.verify_user("testUser", "testPassword");
+    std::string output = testing::internal::GetCapturedStdout();
+
+    ASSERT_NE(std::string::npos, output.find("User verified successfully"));
+}
+
+// Test fetching user reservations by user ID
+TEST_F(UserDBTest, FetchUserReservationsById) {
+    sqlite3_exec(db, "CREATE TABLE reservations (id INTEGER PRIMARY KEY, userId INTEGER);", nullptr, nullptr, nullptr);
+    sqlite3_exec(db, "INSERT INTO reservations (id, userId) VALUES (1, 1);", nullptr, nullptr, nullptr);
+    sqlite3_exec(db, "INSERT INTO reservations (id, userId) VALUES (2, 1);", nullptr, nullptr, nullptr);
+
+    std::vector<int> reservations = userDB.fetchUserReservationsById(1);
+
+    ASSERT_EQ(2, reservations.size());
+    ASSERT_EQ(1, reservations[0]);
+    ASSERT_EQ(2, reservations[1]);
+}
 

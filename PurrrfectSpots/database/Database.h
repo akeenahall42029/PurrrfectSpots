@@ -10,7 +10,6 @@
 
 class Database {
 protected:
-    sqlite3* curr_db;
     int retCode;
     sqlite3_stmt* stmt;
     char* zErrMsg;
@@ -25,6 +24,8 @@ public:
     // std::vector<std::string> results();
 
     std::vector<std::string> results(const std::string &query);
+
+    sqlite3* curr_db;
 };
 
 #endif //PURRRFECTSPOTS_DATABASE_H

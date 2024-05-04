@@ -40,7 +40,7 @@ public:
     int getRetCode() const;
     void setNapSpotId(int napSpotId);
 
-    void setUserId(std::string userId);
+    void setUserId(int userId);
     void setTime(int time);
     void setStatus(std::string status);
     void storeData();

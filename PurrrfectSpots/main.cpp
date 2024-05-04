@@ -20,18 +20,18 @@ int main(int argc, char *argv[]) {
     window.add(vbox);
 
    //  Load the original image
-//    Glib::RefPtr<Gdk::Pixbuf> originalPixbuf = Gdk::Pixbuf::create_from_file("../images/LOGIN.png");
-//
-//    // Resize the image to the desired width and height
-//    int desiredWidth = 300; // Set your desired width
-//    int desiredHeight = 300; // Set your desired height
-//    Glib::RefPtr<Gdk::Pixbuf> resizedPixbuf = originalPixbuf->scale_simple(desiredWidth, desiredHeight, Gdk::INTERP_BILINEAR);
-//
-//
-//
-//    // Create a Gtk::Image widget and set the resized image
-//    Gtk::Image image;
-//    image.set(resizedPixbuf);
+    Glib::RefPtr<Gdk::Pixbuf> originalPixbuf = Gdk::Pixbuf::create_from_file("../images/LOGIN.png");
+
+    // Resize the image to the desired width and height
+    int desiredWidth = 300; // Set your desired width
+    int desiredHeight = 300; // Set your desired height
+    Glib::RefPtr<Gdk::Pixbuf> resizedPixbuf = originalPixbuf->scale_simple(desiredWidth, desiredHeight, Gdk::INTERP_BILINEAR);
+
+
+
+    // Create a Gtk::Image widget and set the resized image
+    Gtk::Image image;
+    image.set(resizedPixbuf);
 
     MyButton button1("LOG IN");
     MyButton button2("SIGN UP");

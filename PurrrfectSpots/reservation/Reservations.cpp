@@ -59,19 +59,19 @@ std::string Reservations::getStatus() const {
 }
 
 void Reservations::setNapSpotId(int napSpotId)  {
-    napSpotId = napSpotId;
+    this->napSpotId = napSpotId;
 }
 
 
 
-void Reservations::setUserId(std::string userId) {
-    userId = userId;
+void Reservations::setUserId(int userId) {
+    this->userId = userId;
 }
 void Reservations::setTime(int time) {
-   time=time;
+    this->time=time;
 }
 void Reservations::setStatus(std::string status)  {
-   status=status;
+    this->status=status;
 }
 
 /* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
