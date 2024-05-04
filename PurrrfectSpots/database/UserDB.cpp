@@ -5,7 +5,7 @@
 #include "UserDB.h"
 
 
-UserDB::UserDB() {
+UserDB::UserDB(): Database() {
 
 }
 
@@ -156,7 +156,7 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     std::string sql = "INSERT INTO users (userName, password) VALUES (?, ?);";
-    int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stm, nullptr);
+    int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
 
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
@@ -164,11 +164,11 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     // Bind parameters
-    sqlite3_bind_text(stm, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(stm, 2, password.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, password.c_str(), -1, SQLITE_TRANSIENT);
 
     // Execute the statement
-    retCode = sqlite3_step(stm);
+    retCode = sqlite3_step(stmt);
     if (retCode != SQLITE_DONE) {
         std::cerr << "Error inserting user: " << sqlite3_errmsg(curr_db) << std::endl;
     } else {
@@ -176,7 +176,7 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     // Reset the statement for future use
-    sqlite3_reset(stm);
+    sqlite3_reset(stmt);
 
 }
 

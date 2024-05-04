@@ -12,12 +12,11 @@
 #include "../reservation/Reservations.h"
 
 class UserDB : public Database{
-private:
-    sqlite3_stmt* stm;
-    int rectCode;
 public:
     // Constructor to initialize the database connection
     UserDB();
+    // Destructor to close the database connection
+    ~UserDB();
 
 
 
@@ -37,8 +36,6 @@ public:
 
 
 
-    // Destructor to close the database connection
-    ~UserDB();
 
 };
 

@@ -7,7 +7,8 @@
 Database::Database() {
 //    // open the database to prepare to pass queries
 
-
+    retCode = 0;
+    zErrMsg = 0;
     //location and name of the database
     std::string db_name = "example.sqlite";
     std::string db_location = "../database";
@@ -29,6 +30,14 @@ Database::Database() {
     }
 
 
+}
+
+Database::~Database() {
+    // Close the database
+    if (curr_db) {
+        sqlite3_close(curr_db);
+        curr_db = nullptr;
+    }
 }
 /**
  * Executes the given SQL query and returns the results as a vector of strings.

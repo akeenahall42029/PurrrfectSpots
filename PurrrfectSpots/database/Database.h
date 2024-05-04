@@ -16,6 +16,7 @@ protected:
     char* zErrMsg;
 public:
     Database(); // default constructor to open database
+    ~Database();
 
     /**
      * Returns the results of the query
@@ -25,6 +26,5 @@ public:
 
     std::vector<std::string> results(const std::string &query);
 };
-
 
 #endif //PURRRFECTSPOTS_DATABASE_H

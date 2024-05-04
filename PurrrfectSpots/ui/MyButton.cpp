@@ -180,7 +180,7 @@ void MyButton::openLoginPage() {
     loginButton->signal_clicked().connect([this]() {
         std::string username = username_entry->get_text(); // Retrieve the username entered by the user
         std::string password = password_entry->get_text(); // Retrieve the password entered by the user
-        // might need to fix this logic 
+        // might need to fix this logic
         UserAccount user(username, password); // Create a UserAccount object with the entered username
 
         if (user_manager.verify(user, password) == 1) {
@@ -188,9 +188,9 @@ void MyButton::openLoginPage() {
             createNotebook();
         } else {
             // Verification failed
-            // Prompt the user to try again
-            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed");
-            dialog.set_secondary_text("Please try again.");
+            // Prompt the user with an error message
+            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed", false, Gtk::MESSAGE_ERROR);
+            dialog.set_secondary_text("Invalid username or password. Please try again.");
             dialog.run();
         }
     });

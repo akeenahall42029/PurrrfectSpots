@@ -16,7 +16,7 @@ public:
 
 
     // Retrive data from the reservations db
-    int fetch_id();
+    int fetch_id(int reservationId);
     int fetch_napSpotID();
     std::string fetch_userName();
     int fetch_startTime();

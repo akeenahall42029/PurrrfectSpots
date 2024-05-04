@@ -3,8 +3,8 @@ create table users
     id  INT NOT NULL UNIQUE ,
     username TEXT UNIQUE,
     password TEXT NOT NULL,
-    reservation_id INT  NOT NULL,
-    review_id      INT  NOT NULL, -- will need multiple review ids, might store in an array in the user object
+    reservation_id INT , -- will delete to restructure classes later
+    review_id      INT , -- will need multiple review ids, might store in an array in the user object
     primary key (id),
     foreign key (reservation_id) references reservations (id),
     foreign key (review_id) references  reviews(id) -- need
