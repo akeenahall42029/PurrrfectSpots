@@ -8,15 +8,15 @@
 #include <random>
 #include <sqlite3.h>
 #include <iostream>
-
+#include <ctime>
 class Reservations {
 private:
     int napSpotId;
     int userId;
     std::string userName;
     int time;
-    int startTime;
-    int endTime;
+    std::time_t startTime;
+    std::time_t endTime;
     std::string status;
     int id;
     sqlite3* curr_db{};
@@ -28,6 +28,7 @@ private:
 public:
 
     Reservations(int napSpotID, int userId, int time, std::string status);
+    Reservations(int napSpotID, int userId, std::time_t startTime, std::time_t endTime, std::string status); // create classes from user account using this one
     Reservations(); // default constructor
 
     // Getter functions, will be useful for SQL binding

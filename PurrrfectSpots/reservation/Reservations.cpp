@@ -15,6 +15,10 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
 
 }
 
+Reservations::Reservations(int napSpotID, int userId, std::time_t startTime, std::time_t endTime, std::string status) {
+    id = generateID(); // generate a random 9 digit ID number
+}
+
 
 /* Creates a randomly generated 9-digit id number upon the creation of
  * a new reservation
@@ -116,6 +120,7 @@ void Reservations::storeData() {
     sqlite3_close(curr_db);
 
 }
+
 
 
 

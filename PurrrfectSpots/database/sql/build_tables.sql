@@ -23,7 +23,7 @@ create table reports
 
 create table reservations
 (
-    id        INT   NOT NULL UNIQUE,
+    id        INT   NOT NULL AUTOINCREMENT, -- did this to prevent issues with creating a db insert without passing an id through before making a reservation object
     napSpotId INT  NOT NULL,
     userId    INT   NOT NULL,
     userName TEXT NOT NULL,
