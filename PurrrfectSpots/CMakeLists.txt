@@ -50,6 +50,12 @@ add_executable(PurrrfectSpots main.cpp
         ui/NotebookManager.h
         database/ReservationDB.cpp
         database/ReservationDB.h
+        napspot/NapspotManager.cpp
+        napspot/NapspotManager.h
+        napspot/NapspotManager.h
+        database/NapspotDB.cpp
+        database/NapspotDB.h
+        database/NapspotDB.h
 
 )
 
@@ -93,4 +99,5 @@ add_executable(unittests googletest/src/gtest-all.cc
 target_link_libraries(unittests sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 target_link_libraries(Profilescreen ${GTKMM_LIBRARIES})
+#file(COPY ${CMAKE_SOURCE_DIR}/images DESTINATION ${CMAKE_BINARY_DIR})
 

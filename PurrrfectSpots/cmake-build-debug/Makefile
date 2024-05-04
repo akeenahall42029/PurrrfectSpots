@@ -254,6 +254,30 @@ database/Database.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/database/Database.cpp.s
 .PHONY : database/Database.cpp.s
 
+database/NapspotDB.o: database/NapspotDB.cpp.o
+.PHONY : database/NapspotDB.o
+
+# target to build an object file
+database/NapspotDB.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o
+.PHONY : database/NapspotDB.cpp.o
+
+database/NapspotDB.i: database/NapspotDB.cpp.i
+.PHONY : database/NapspotDB.i
+
+# target to preprocess a source file
+database/NapspotDB.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.i
+.PHONY : database/NapspotDB.cpp.i
+
+database/NapspotDB.s: database/NapspotDB.cpp.s
+.PHONY : database/NapspotDB.s
+
+# target to generate assembly for a file
+database/NapspotDB.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.s
+.PHONY : database/NapspotDB.cpp.s
+
 database/ReservationDB.o: database/ReservationDB.cpp.o
 .PHONY : database/ReservationDB.o
 
@@ -352,6 +376,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+napspot/NapspotManager.o: napspot/NapspotManager.cpp.o
+.PHONY : napspot/NapspotManager.o
+
+# target to build an object file
+napspot/NapspotManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o
+.PHONY : napspot/NapspotManager.cpp.o
+
+napspot/NapspotManager.i: napspot/NapspotManager.cpp.i
+.PHONY : napspot/NapspotManager.i
+
+# target to preprocess a source file
+napspot/NapspotManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.i
+.PHONY : napspot/NapspotManager.cpp.i
+
+napspot/NapspotManager.s: napspot/NapspotManager.cpp.s
+.PHONY : napspot/NapspotManager.s
+
+# target to generate assembly for a file
+napspot/NapspotManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.s
+.PHONY : napspot/NapspotManager.cpp.s
 
 napspot/Napspots.o: napspot/Napspots.cpp.o
 .PHONY : napspot/Napspots.o
@@ -718,6 +766,9 @@ help:
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
+	@echo "... database/NapspotDB.o"
+	@echo "... database/NapspotDB.i"
+	@echo "... database/NapspotDB.s"
 	@echo "... database/ReservationDB.o"
 	@echo "... database/ReservationDB.i"
 	@echo "... database/ReservationDB.s"
@@ -730,6 +781,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... napspot/NapspotManager.o"
+	@echo "... napspot/NapspotManager.i"
+	@echo "... napspot/NapspotManager.s"
 	@echo "... napspot/Napspots.o"
 	@echo "... napspot/Napspots.i"
 	@echo "... napspot/Napspots.s"

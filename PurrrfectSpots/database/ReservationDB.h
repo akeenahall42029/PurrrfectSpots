@@ -7,7 +7,9 @@
 
 
 #include "Database.h"
-
+#include "../reservation/Reservations.h"
+#include <ctime>
+#include <vector>
 class ReservationDB: public Database {
 private:
 public:
@@ -22,16 +24,17 @@ public:
     int fetch_startTime(int reservation_id);
     int fetch_endTime(int reservation_id);
     std::string fetch_status(int reservation_id);
-
+    bool check_availability(int napSpotID, std::time_t startTime, std::time_t endTime);
 
     // Methods for admin users
     void modifyStatus(int reservation_id,std::string newStatus); // will modify the status entry of the db
-    void deleteNapSpot(int reservation_id); // will remove the entry from the database
+    void deleteReservation(int reservation_id); // will remove the entry from the database
 
     // Methods for regular pet/owner users
     void modifyStartTime(int reservation_id, int newStartTime);
     void modifyEndTime(int reservation_id, int newEndTime);
-    void insert_reservation(int napSpotId, int userId, std::string userName,int startTime, int endTime, std::string status); // stores reservation details into the db, ReservationManager will call this passing parameters to reservation object
+    void insert_reservation(int napSpotId, int userId, std::string userName,std::time_t startTime, std::time_t  endTime, std::string status); // stores reservation details into the db, ReservationManager will call this passing parameters to reservation object
+    std::vector<Reservations> getReservationsForNapSpot(int napSpotID);
 };
 
 
