@@ -7,7 +7,7 @@
 #include <sqlite3.h>
 #include <iostream>
 #include <vector>
-
+#include <ctime>
 class Database {
 protected:
     sqlite3* curr_db;

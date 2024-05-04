@@ -177,26 +177,27 @@ void MyButton::openLoginPage() {
     // creating and adding the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     // TRYING TO VERIFY USERNAME
-    loginButton->signal_clicked().connect([this]() {
-        std::string username = username_entry->get_text(); // Retrieve the username entered by the user
-        std::string password = password_entry->get_text(); // Retrieve the password entered by the user
-        // might need to fix this logic
-        UserAccount user(username, password); // Create a UserAccount object with the entered username
+    // UNCOMMENT TO DEBUG
+//    loginButton->signal_clicked().connect([this]() {
+//        std::string username = username_entry->get_text(); // Retrieve the username entered by the user
+//        std::string password = password_entry->get_text(); // Retrieve the password entered by the user
+//        // might need to fix this logic
+//        UserAccount user(username, password); // Create a UserAccount object with the entered username
+//
+//        if (user_manager.verify(user, password) == 1) {
+//            // Verification successful
+//            createNotebook();
+//        } else {
+//            // Verification failed
+//            // Prompt the user with an error message
+//            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed", false, Gtk::MESSAGE_ERROR);
+//            dialog.set_secondary_text("Invalid username or password. Please try again.");
+//            dialog.run();
+//        }
+//    });
 
-        if (user_manager.verify(user, password) == 1) {
-            // Verification successful
-            createNotebook();
-        } else {
-            // Verification failed
-            // Prompt the user with an error message
-            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed", false, Gtk::MESSAGE_ERROR);
-            dialog.set_secondary_text("Invalid username or password. Please try again.");
-            dialog.run();
-        }
-    });
 
-
-//    loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
+loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 

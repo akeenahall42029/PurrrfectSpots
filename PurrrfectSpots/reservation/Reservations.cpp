@@ -58,6 +58,8 @@ std::string Reservations::getStatus() const {
     return status;
 }
 
+
+
 void Reservations::setNapSpotId(int napSpotId)  {
     napSpotId = napSpotId;
 }
@@ -119,6 +121,21 @@ void Reservations::storeData() {
     // Close the database
     sqlite3_close(curr_db);
 
+}
+
+std::time_t Reservations::getStartTime() {
+    return startTime;
+}
+
+std::time_t Reservations::getEndTime() {
+    return endTime;
+}
+
+void Reservations::setStartTime(std::time_t newStart) {
+   startTime = newStart;
+}
+void Reservations::setEndTime(std::time_t newEnd) {
+    endTime = newEnd;
 }
 
 

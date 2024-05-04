@@ -38,12 +38,17 @@ public:
     int getTime() const;
     std::string getStatus() const;
     int getRetCode() const;
-    void setNapSpotId(int napSpotId);
+    std::time_t getStartTime();
+    std::time_t getEndTime() ;
 
+    // setters
+    void setNapSpotId(int napSpotId);
     void setUserId(std::string userId);
     void setTime(int time);
     void setStatus(std::string status);
     void storeData();
+    void setStartTime(std::time_t newStart);
+    void setEndTime(std::time_t newEnd);
 
     int generateID();
 };

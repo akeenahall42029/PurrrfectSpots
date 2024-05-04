@@ -1,0 +1,14 @@
+//
+// Created by Akeena on 5/4/2024.
+//
+
+#ifndef PURRRFECTSPOTS_NAPSPOTMANAGER_H
+#define PURRRFECTSPOTS_NAPSPOTMANAGER_H
+
+
+class NapspotManager {
+
+};
+
+
+#endif //PURRRFECTSPOTS_NAPSPOTMANAGER_H
