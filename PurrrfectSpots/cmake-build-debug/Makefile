@@ -155,54 +155,6 @@ unittests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/build
 .PHONY : unittests/fast
 
-Admins.o: Admins.cpp.o
-.PHONY : Admins.o
-
-# target to build an object file
-Admins.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o
-.PHONY : Admins.cpp.o
-
-Admins.i: Admins.cpp.i
-.PHONY : Admins.i
-
-# target to preprocess a source file
-Admins.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Admins.cpp.i
-.PHONY : Admins.cpp.i
-
-Admins.s: Admins.cpp.s
-.PHONY : Admins.s
-
-# target to generate assembly for a file
-Admins.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Admins.cpp.s
-.PHONY : Admins.cpp.s
-
-Demo.o: Demo.cpp.o
-.PHONY : Demo.o
-
-# target to build an object file
-Demo.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
-.PHONY : Demo.cpp.o
-
-Demo.i: Demo.cpp.i
-.PHONY : Demo.i
-
-# target to preprocess a source file
-Demo.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.i
-.PHONY : Demo.cpp.i
-
-Demo.s: Demo.cpp.s
-.PHONY : Demo.s
-
-# target to generate assembly for a file
-Demo.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s
-.PHONY : Demo.cpp.s
-
 MyDisplayBuffer.o: MyDisplayBuffer.cpp.o
 .PHONY : MyDisplayBuffer.o
 
@@ -251,53 +203,29 @@ MyValue.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.s
 .PHONY : MyValue.cpp.s
 
-Napspots.o: Napspots.cpp.o
-.PHONY : Napspots.o
+admin/Admins.o: admin/Admins.cpp.o
+.PHONY : admin/Admins.o
 
 # target to build an object file
-Napspots.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o
-.PHONY : Napspots.cpp.o
+admin/Admins.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o
+.PHONY : admin/Admins.cpp.o
 
-Napspots.i: Napspots.cpp.i
-.PHONY : Napspots.i
-
-# target to preprocess a source file
-Napspots.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.i
-.PHONY : Napspots.cpp.i
-
-Napspots.s: Napspots.cpp.s
-.PHONY : Napspots.s
-
-# target to generate assembly for a file
-Napspots.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.s
-.PHONY : Napspots.cpp.s
-
-Reviews.o: Reviews.cpp.o
-.PHONY : Reviews.o
-
-# target to build an object file
-Reviews.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o
-.PHONY : Reviews.cpp.o
-
-Reviews.i: Reviews.cpp.i
-.PHONY : Reviews.i
+admin/Admins.i: admin/Admins.cpp.i
+.PHONY : admin/Admins.i
 
 # target to preprocess a source file
-Reviews.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.i
-.PHONY : Reviews.cpp.i
+admin/Admins.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.i
+.PHONY : admin/Admins.cpp.i
 
-Reviews.s: Reviews.cpp.s
-.PHONY : Reviews.s
+admin/Admins.s: admin/Admins.cpp.s
+.PHONY : admin/Admins.s
 
 # target to generate assembly for a file
-Reviews.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.s
-.PHONY : Reviews.cpp.s
+admin/Admins.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.s
+.PHONY : admin/Admins.cpp.s
 
 database/Database.o: database/Database.cpp.o
 .PHONY : database/Database.o
@@ -425,6 +353,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+napspot/Napspots.o: napspot/Napspots.cpp.o
+.PHONY : napspot/Napspots.o
+
+# target to build an object file
+napspot/Napspots.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o
+.PHONY : napspot/Napspots.cpp.o
+
+napspot/Napspots.i: napspot/Napspots.cpp.i
+.PHONY : napspot/Napspots.i
+
+# target to preprocess a source file
+napspot/Napspots.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.i
+.PHONY : napspot/Napspots.cpp.i
+
+napspot/Napspots.s: napspot/Napspots.cpp.s
+.PHONY : napspot/Napspots.s
+
+# target to generate assembly for a file
+napspot/Napspots.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.s
+.PHONY : napspot/Napspots.cpp.s
+
 reservation/ReservationManager.o: reservation/ReservationManager.cpp.o
 .PHONY : reservation/ReservationManager.o
 
@@ -475,6 +427,30 @@ reservation/Reservations.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/reservation/Reservations.cpp.s
 .PHONY : reservation/Reservations.cpp.s
+
+review/Reviews.o: review/Reviews.cpp.o
+.PHONY : review/Reviews.o
+
+# target to build an object file
+review/Reviews.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o
+.PHONY : review/Reviews.cpp.o
+
+review/Reviews.i: review/Reviews.cpp.i
+.PHONY : review/Reviews.i
+
+# target to preprocess a source file
+review/Reviews.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.i
+.PHONY : review/Reviews.cpp.i
+
+review/Reviews.s: review/Reviews.cpp.s
+.PHONY : review/Reviews.s
+
+# target to generate assembly for a file
+review/Reviews.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.s
+.PHONY : review/Reviews.cpp.s
 
 ui/MyButton.o: ui/MyButton.cpp.o
 .PHONY : ui/MyButton.o
@@ -730,24 +706,15 @@ help:
 	@echo "... Profilescreen"
 	@echo "... PurrrfectSpots"
 	@echo "... unittests"
-	@echo "... Admins.o"
-	@echo "... Admins.i"
-	@echo "... Admins.s"
-	@echo "... Demo.o"
-	@echo "... Demo.i"
-	@echo "... Demo.s"
 	@echo "... MyDisplayBuffer.o"
 	@echo "... MyDisplayBuffer.i"
 	@echo "... MyDisplayBuffer.s"
 	@echo "... MyValue.o"
 	@echo "... MyValue.i"
 	@echo "... MyValue.s"
-	@echo "... Napspots.o"
-	@echo "... Napspots.i"
-	@echo "... Napspots.s"
-	@echo "... Reviews.o"
-	@echo "... Reviews.i"
-	@echo "... Reviews.s"
+	@echo "... admin/Admins.o"
+	@echo "... admin/Admins.i"
+	@echo "... admin/Admins.s"
 	@echo "... database/Database.o"
 	@echo "... database/Database.i"
 	@echo "... database/Database.s"
@@ -763,12 +730,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... napspot/Napspots.o"
+	@echo "... napspot/Napspots.i"
+	@echo "... napspot/Napspots.s"
 	@echo "... reservation/ReservationManager.o"
 	@echo "... reservation/ReservationManager.i"
 	@echo "... reservation/ReservationManager.s"
 	@echo "... reservation/Reservations.o"
 	@echo "... reservation/Reservations.i"
 	@echo "... reservation/Reservations.s"
+	@echo "... review/Reviews.o"
+	@echo "... review/Reviews.i"
+	@echo "... review/Reviews.s"
 	@echo "... ui/MyButton.o"
 	@echo "... ui/MyButton.i"
 	@echo "... ui/MyButton.s"

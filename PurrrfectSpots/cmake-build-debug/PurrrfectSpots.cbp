@@ -416,18 +416,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Admins.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Admins.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Demo.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Demo.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
@@ -440,16 +428,10 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyValue.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Napspots.cpp">
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/admin/Admins.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Napspots.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.h">
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/admin/Admins.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.cpp">
@@ -480,6 +462,12 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/napspot/Napspots.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/napspot/Napspots.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/ReservationManager.cpp">
 			<Option target="Profilescreen"/>
 		</Unit>
@@ -493,6 +481,12 @@
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/reservation/Reservations.h">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/review/Reviews.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/review/Reviews.h">
+			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp">
 			<Option target="PurrrfectSpots"/>

@@ -14,8 +14,6 @@ include_directories(/user/include)
 link_directories(/usr/lib)
 
 add_executable(PurrrfectSpots main.cpp
-        Demo.cpp
-        Demo.h
         reservation/Reservations.cpp
         reservation/Reservations.h
         ui/MyButton.cpp
