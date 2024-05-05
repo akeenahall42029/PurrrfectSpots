@@ -23,7 +23,7 @@ int ReservationDB::fetch_id(int reservationId) {
     std::string sql = "SELECT id FROM reservations WHERE id = " + std::to_string(reservationId) + ";";
 
     // Execute the SQL query
-    sqlite3_stmt* stmt;
+
     int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
     if (retCode == SQLITE_OK) {
         // Fetch the result
@@ -54,7 +54,7 @@ int ReservationDB::fetch_napSpotID(int reservation_id) {
     }
     // find
     std::string sql = "SELECT napSpotId FROM reservations WHERE id = ?;";
-    sqlite3_stmt* stmt;
+
 
     int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
     if (retCode != SQLITE_OK) {
@@ -91,7 +91,7 @@ int ReservationDB::fetch_userId(int reservation_id) {
         return -1;
     }
     std::string sql = "SELECT userId FROM reservations WHERE id = ?";
-    sqlite3_stmt* stmt;
+
 
     int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
     if (retCode != SQLITE_OK) {
@@ -129,7 +129,7 @@ int ReservationDB::fetch_startTime(int reservation_id) {
         return startTime;
     }
     std::string sql = "SELECT startTime FROM reservations WHERE id = ?";
-    sqlite3_stmt* stmt;
+
 
     int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
     if (retCode != SQLITE_OK) {

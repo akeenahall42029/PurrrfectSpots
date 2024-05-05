@@ -4,12 +4,13 @@
 
 #include "ReservationManager.h"
 
-ReservationManager::~ReservationManager() {
 
-}
 
 ReservationManager::ReservationManager() {
     db = new ReservationDB();
+
+}
+ReservationManager::~ReservationManager() {
 
 }
 

@@ -1,5 +1,5 @@
-/Users/sanaa/CS205Final/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/PurrrfectSpots.dir
-/Users/sanaa/CS205Final/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/Profilescreen.dir
-/Users/sanaa/CS205Final/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/unittests.dir
-/Users/sanaa/CS205Final/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/sanaa/CS205Final/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/sanaa/cs_205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/PurrrfectSpots.dir
+/Users/sanaa/cs_205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/Profilescreen.dir
+/Users/sanaa/cs_205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/unittests.dir
+/Users/sanaa/cs_205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/sanaa/cs_205/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles/rebuild_cache.dir

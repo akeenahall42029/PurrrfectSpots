@@ -22,7 +22,7 @@ std::string UserDB::fetch_userName(int user_id) {
     }
 
     std::string sql = "SELECT userName FROM users WHERE id = ?;";
-    sqlite3_stmt* stmt;
+    //sqlite3_stmt* stmt;
 
     int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
 
@@ -107,7 +107,7 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
         // query changed
     std::string sql = "SELECT id, napSpotId, userId, time, status FROM reservations WHERE userId = " + std::to_string(user_id);
 
-    sqlite3_stmt* stmt;
+    //sqlite3_stmt* stmt;
     int retCode = sqlite3_prepare_v2(db, sql.c_str(), -1, &stmt, nullptr);
 
     if (retCode == SQLITE_OK) {
@@ -135,7 +135,7 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
 std::vector<int> UserDB::fetchUserReservationsById(int userId) {
     std::vector<int> reservations;
     std::string query = "SELECT id FROM reservations WHERE userId = ?;";
-    sqlite3_stmt* stmt;
+   // sqlite3_stmt* stmt;
 
     if (sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
         sqlite3_bind_int(stmt, 1, userId);
@@ -156,21 +156,20 @@ bool UserDB::insert_user(int user_id, const std::string &userName, const std::st
     }
 
     std::string check_sql = "SELECT username FROM users WHERE username = ?;";
-    sqlite3_stmt *check_stmt;
-    int retCode = sqlite3_prepare_v2(curr_db, check_sql.c_str(), -1, &check_stmt, nullptr);
+    int retCode = sqlite3_prepare_v2(curr_db, check_sql.c_str(), -1, &stmt, nullptr);
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
         return false;
     }
 
-    sqlite3_bind_text(check_stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
-    retCode = sqlite3_step(check_stmt);
+    sqlite3_bind_text(stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
+    retCode = sqlite3_step(stmt);
     if (retCode == SQLITE_ROW) {
         // Username already exists
-        sqlite3_finalize(check_stmt);
+        sqlite3_finalize(stmt);
         return false;
     }
-    sqlite3_finalize(check_stmt);
+    sqlite3_finalize(stmt);
 
     std::string sql = "INSERT INTO users (id, username, password) VALUES (?, ?, ?);";
     retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);

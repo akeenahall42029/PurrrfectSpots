@@ -36,7 +36,7 @@ int UserManager::verify(UserAccount &a, const std::string &password) {
 
     // Prepare the SQL statement
     sqlite3_stmt* stmt;
-    sqlite3_prepare_v2(reinterpret_cast<sqlite3 *>(db), query.c_str(), -1, &stmt, nullptr);
+    sqlite3_prepare_v2(db->curr_db, query.c_str(), -1, &stmt, nullptr);
 
     // Bind the username and password to the query
     sqlite3_bind_text(stmt, 1, a.get_userName().c_str(), -1, SQLITE_TRANSIENT);
