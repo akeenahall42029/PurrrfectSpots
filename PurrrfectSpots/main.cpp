@@ -51,14 +51,14 @@ int main(int argc, char *argv[]) {
  //   vbox.pack_start(image, Gtk::PACK_EXPAND_PADDING, 10); // Add the image to the VBox
     vbox.pack_start(button1, Gtk::PACK_EXPAND_PADDING, 5);
     vbox.pack_start(button2, Gtk::PACK_EXPAND_PADDING, 5);
-    // files moving
-        std::ifstream file("../images/cloud.jpeg");
-    if (file.is_open()) {
-        std::cout << "File opened successfully!" << std::endl;
-        // Further operations with the file
-    } else {
-        std::cerr << "Failed to open file!" << std::endl;
-    }
+//    // files moving
+//        std::ifstream file("../images/cloud.jpeg");
+//    if (file.is_open()) {
+//        std::cout << "File opened successfully!" << std::endl;
+//        // Further operations with the file
+//    } else {
+//        std::cerr << "Failed to open file!" << std::endl;
+//    }
     window.show_all();
 
     return app->run(window);
