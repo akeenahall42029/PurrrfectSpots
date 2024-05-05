@@ -14,6 +14,7 @@ UserDB* global_db = new UserDB(); // Example initialization, could be elsewhere 
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
+
 }
 
 MyButton::~MyButton() {
@@ -22,18 +23,22 @@ MyButton::~MyButton() {
 
 void MyButton::on_button_clicked() {
     if (button_label == "SIGN UP") {
+        current_page = "SIGN UP";
         openSignUpPage();
     } else if (button_label == "BACK") {
-//        if (current_page == "SIGN UP") {
-//            openLoginPage();
-//        } else if (current_page == "LOGIN") {
-//            // Implement navigation to the previous page if needed
-//        }
+        if (current_page == "SIGN UP") {
+            openLoginPage();
+        } else if (current_page == "LOGIN") {
+            // Implement navigation to the previous page if needed
+            openLoginPage();
+        }
     } else if(button_label == "LOG IN"){
+        current_page = "LOG IN";
         openLoginPage();
     }
 }
 
+// Come back to this
 bool check_credentials(const std::string& username, const std::string& password) {
     // Sample database check. Replace with actual database connection and query.
     // For demonstration, let's say the valid credentials are "admin" and "password123".
@@ -115,6 +120,11 @@ void MyButton::openSignUpPage() {
     }
 }
 
+/**This method is called when the submit button is clicked. It retrieves the username and password
+ * entered by the user from the username and password entry fields, respectively. Then, it calls the
+ * UserManager to create a new user account using the provided username and password. Finally, it
+ * calls the createNotebook method to initialize the notebook for the newly created user.
+ */
 void MyButton::on_submit_button_clicked() {
     try {
         std::string username = username_entry->get_text();
@@ -135,7 +145,8 @@ void MyButton::on_submit_button_clicked() {
 //        dialog.set_secondary_text(e.what());
 //        dialog.run();
         //   createNotebook();
-
+    // Call UserManager to create a new user account
+    // after storing the new user, open the notebook view
     }
 }
 
@@ -182,24 +193,41 @@ void MyButton::openLoginPage() {
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     // TRYING TO VERIFY USERNAME
  //   loginButton->signal_clicked().connect([this, &manager]() {
+    // UNCOMMENT TO DEBUG
+    loginButton->signal_clicked().connect([this]() {
         std::string username = username_entry->get_text(); // Retrieve the username entered by the user
         std::string password = password_entry->get_text(); // Retrieve the password entered by the user
+        // might need to fix this logic
+        UserAccount user(username, password); // Create a UserAccount object with the entered username
 
-//        UserAccount user(username); // Create a UserAccount object with the entered username
-//        if (manager.verify(user, password) == 1) {
-//            // Verification successful
-            //createNotebook();
-//        } else {
-//            // Verification failed
-//            // Prompt the user to try again
-//            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed");
-//            dialog.set_secondary_text("Please try again.");
-//            dialog.run();
-//        }
-//    });
-//
+        UserAccount user(username); // Create a UserAccount object with the entered username
+        if (manager.verify(user, password) == 1) {
+            // Verification successful
+            createNotebook();
+        } else {
+            // Verification failed
+            // Prompt the user to try again
+            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed");
+            dialog.set_secondary_text("Please try again.");
+            dialog.run();
+        }
+    });
 
     loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
+        if (user_manager.verify(user, password) == 1) {
+            // Verification successful
+            createNotebook();
+        } else {
+            // Verification failed
+            // Prompt the user with an error message
+            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed", false, Gtk::MESSAGE_ERROR);
+            dialog.set_secondary_text("Invalid username or password. Please try again.");
+            dialog.run();
+        }
+    });
+
+
+loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 
@@ -442,6 +470,7 @@ void MyButton::createNotebook() {
             view_reviews_button->set_margin_left(200); // Set margin to position it at the bottom
 
             view_reviews_button->signal_clicked().connect([=] {
+                // CHANGE THIS CODE TO USE THE getReviews method of a napSpot
                 std::vector<std::string> reviews = readReviews(spot.get_name()); // Read the reviews
 
                 // Create a pop-up window to display the reviews

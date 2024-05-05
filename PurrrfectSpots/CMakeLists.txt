@@ -14,10 +14,8 @@ include_directories(/user/include)
 link_directories(/usr/lib)
 
 add_executable(PurrrfectSpots main.cpp
-        Demo.cpp
-        Demo.h
-        Reservations.cpp
-        Reservations.h
+        reservation/Reservations.cpp
+        reservation/Reservations.h
         ui/MyButton.cpp
         ui/MyButton.h
         MyValue.cpp
@@ -34,22 +32,30 @@ add_executable(PurrrfectSpots main.cpp
         user/UserAccount.h
         ui/Profile.cpp
         ui/Profile.h
-        Napspots.cpp
-        Napspots.h
-        Napspots.h
-        Napspots.h
-        Reviews.cpp
-        Reviews.h
-        Reviews.h
-        Admins.cpp
-        Admins.h
-        Admins.h
+        napspot/Napspots.cpp
+        napspot/Napspots.h
+        napspot/Napspots.h
+        napspot/Napspots.h
+        review/Reviews.cpp
+        review/Reviews.h
+        review/Reviews.h
+        admin/Admins.cpp
+        admin/Admins.h
+        admin/Admins.h
         ui/SpotStructure.cpp
         ui/SpotStructure.h
         ui/Rating.cpp
         ui/Rating.h
         ui/NotebookManager.cpp
         ui/NotebookManager.h
+        database/ReservationDB.cpp
+        database/ReservationDB.h
+        napspot/NapspotManager.cpp
+        napspot/NapspotManager.h
+        napspot/NapspotManager.h
+        database/NapspotDB.cpp
+        database/NapspotDB.h
+        database/NapspotDB.h
 
 )
 
@@ -60,7 +66,9 @@ link_directories(${GTKMM_LIBRARY_DIRS})
 
 include_directories(/user/include)
 link_directories(/usr/lib)
-add_executable(Profilescreen ui/Profile.cpp ui/Profile.h )
+add_executable(Profilescreen ui/Profile.cpp ui/Profile.h
+        reservation/ReservationManager.cpp
+        reservation/ReservationManager.h)
 
 include_directories(googletest googletest/include googletest/include/gtest)
 add_executable(unittests googletest/src/gtest-all.cc
@@ -73,7 +81,11 @@ add_executable(unittests googletest/src/gtest-all.cc
         database/UserDB.cpp
         database/UserDB.h
         unit_tests/UserDBTests.cpp
-
+        reservation/Reservations.cpp
+        reservation/Reservations.h
+        unit_tests/SpotTests.cpp
+        ui/SpotStructure.h
+        ui/SpotStructure.cpp
 )
 
 #include_directories(googletest googletest/include googletest/include/gtest)
@@ -87,4 +99,5 @@ add_executable(unittests googletest/src/gtest-all.cc
 target_link_libraries(unittests sqlite3)
 target_link_libraries(PurrrfectSpots sqlite3 ${GTKMM_LIBRARIES})
 target_link_libraries(Profilescreen ${GTKMM_LIBRARIES})
+#file(COPY ${CMAKE_SOURCE_DIR}/images DESTINATION ${CMAKE_BINARY_DIR})
 

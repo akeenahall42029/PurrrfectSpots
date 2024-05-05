@@ -9,7 +9,10 @@
 #include "UserManager.h"
 #include <utility>
 
-UserManager::UserManager() : db(nullptr) {} // Default constructor
+//UserManager::UserManager() : db(nullptr) {} // Default constructor
+UserManager::UserManager() {
+    db = new UserDB();
+}
 
 /**
 * Constructs a new UserManager instance with a specified UserDB object.
@@ -58,6 +61,9 @@ int UserManager::verify(UserAccount &a, const std::string &password) {
 void UserManager::create_user(const std::string &userName, const std::string &password) {
     try {
         std::string query = "INSERT INTO users (username, password) VALUES (?, ?);";
+
+    // Create a new UserAccount object with the provided username and password
+    UserAccount newUser(userName, password);
 
         sqlite3_stmt* stmt;
         int result = sqlite3_prepare_v2(reinterpret_cast<sqlite3 *>(db), query.c_str(), -1, &stmt, nullptr);

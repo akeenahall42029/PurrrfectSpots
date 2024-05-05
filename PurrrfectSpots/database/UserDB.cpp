@@ -4,10 +4,21 @@
 
 #include "UserDB.h"
 
-void UserDB::fetch_userName(int user_id) {
+
+UserDB::UserDB(): Database() {
+
+}
+
+UserDB::~UserDB() {
+
+}
+
+std::string UserDB::fetch_userName(int user_id) {
+    std::string username;
+
+
     if (!curr_db) {
         std::cerr << "Database not open." << std::endl;
-        return;
     }
 
     std::string sql = "SELECT userName FROM users WHERE id = ?;";
@@ -17,7 +28,7 @@ void UserDB::fetch_userName(int user_id) {
 
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
-        return;
+
     }
 
     // Bind user_id parameter
@@ -29,21 +40,21 @@ void UserDB::fetch_userName(int user_id) {
     if (retCode == SQLITE_ROW) {
         const unsigned char* userName = sqlite3_column_text(stmt, 0);
         if (userName) {
-            std::string username(reinterpret_cast<const char*>(userName));
+            username = reinterpret_cast<const char*>(userName);
             std::cout << "Username for user ID " << user_id << ": " << username << std::endl;
         }
     } else {
         std::cerr << "User ID not found." << std::endl;
     }
-
     // Finalize the statement
     sqlite3_finalize(stmt);
+    return username;
+
 }
 
 
 
-/** Overloads verify_user method using reference to userName and password variables; passing by reference
- *  Verifies user credentials against the database.
+/**  Verifies user credentials against the database.
  *
  * @param userName The username to verify.
  * @param password The password to verify.
@@ -93,7 +104,7 @@ void UserDB::verify_user(const std::string& userName, const std::string& passwor
  */
 std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
     std::vector<Reservations> reservations;
-
+        // query changed
     std::string sql = "SELECT id, napSpotId, userId, time, status FROM reservations WHERE userId = " + std::to_string(user_id);
 
     sqlite3_stmt* stmt;
@@ -107,7 +118,7 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
             int time = sqlite3_column_int(stmt, 3);
             std::string status = reinterpret_cast<const char*>(sqlite3_column_text(stmt, 4)); // what does this line do
 
-            Reservations reservation(napSpotId, userId, time, status); // creates reservation objectg
+            Reservations reservation(napSpotId, userId, time, status); // creates reservation object --> change this
             reservations.push_back(reservation);
         }
     } else {
@@ -119,13 +130,24 @@ std::vector<Reservations> UserDB::fetch_reservations(int user_id, sqlite3 *db) {
     return reservations;
 }
 
-UserDB::UserDB() {
 
+// Fetch user reservations by user ID
+std::vector<int> UserDB::fetchUserReservationsById(int userId) {
+    std::vector<int> reservations;
+    std::string query = "SELECT id FROM reservations WHERE userId = ?;";
+    sqlite3_stmt* stmt;
+
+    if (sqlite3_prepare_v2(curr_db, query.c_str(), -1, &stmt, nullptr) == SQLITE_OK) {
+        sqlite3_bind_int(stmt, 1, userId);
+        while (sqlite3_step(stmt) == SQLITE_ROW) {
+            reservations.push_back(sqlite3_column_int(stmt, 0));
+        }
+        sqlite3_finalize(stmt);
+    }
+
+    return reservations;
 }
 
-UserDB::~UserDB() {
-
-}
 
 void UserDB::insert_user(const std::string &userName, const std::string &password) {
     if (!curr_db) {
@@ -134,7 +156,7 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     std::string sql = "INSERT INTO users (userName, password) VALUES (?, ?);";
-    int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stm, nullptr);
+    int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
 
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
@@ -142,11 +164,11 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     // Bind parameters
-    sqlite3_bind_text(stm, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(stm, 2, password.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 2, password.c_str(), -1, SQLITE_TRANSIENT);
 
     // Execute the statement
-    retCode = sqlite3_step(stm);
+    retCode = sqlite3_step(stmt);
     if (retCode != SQLITE_DONE) {
         std::cerr << "Error inserting user: " << sqlite3_errmsg(curr_db) << std::endl;
     } else {
@@ -154,7 +176,7 @@ void UserDB::insert_user(const std::string &userName, const std::string &passwor
     }
 
     // Reset the statement for future use
-    sqlite3_reset(stm);
+    sqlite3_reset(stmt);
 
 }
 

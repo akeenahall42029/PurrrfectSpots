@@ -8,15 +8,17 @@
 #include <random>
 #include <sqlite3.h>
 #include <iostream>
-
+#include <ctime>
 class Reservations {
 private:
     int napSpotId;
     int userId;
     std::string userName;
     int time;
+    std::time_t startTime;
+    std::time_t endTime;
     std::string status;
-    int id{};
+    int id;
     sqlite3* curr_db{};
     int retCode{};
     char* zErrMsg{};
@@ -26,20 +28,27 @@ private:
 public:
 
     Reservations(int napSpotID, int userId, int time, std::string status);
+    Reservations(int napSpotID, int userId, std::time_t startTime, std::time_t endTime, std::string status); // create classes from user account using this one
     Reservations(); // default constructor
+
     // Getter functions, will be useful for SQL binding
-    int getID() const; // Change the return type to int
+    int getID(); // Change the return type to int
     int getNapSpotId() const;
     int getUserId() const ;
     int getTime() const;
     std::string getStatus() const;
     int getRetCode() const;
-    void setNapSpotId(int napSpotId);
+    std::time_t getStartTime();
+    std::time_t getEndTime() ;
 
-    void setUserId(std::string userId);
+    // setters
+    void setNapSpotId(int napSpotId);
+    void setUserId(int userId);
     void setTime(int time);
     void setStatus(std::string status);
     void storeData();
+    void setStartTime(std::time_t newStart);
+    void setEndTime(std::time_t newEnd);
 
     int generateID();
 };

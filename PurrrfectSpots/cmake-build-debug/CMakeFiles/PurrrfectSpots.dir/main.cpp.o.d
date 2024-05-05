@@ -1346,7 +1346,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iostream \
   /Users/summerfaliero/coral/PurrrfectSpots/ui/../database/Database.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sqlite3.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/ui/../database/../Reservations.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/ui/../database/../reservation/Reservations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/entry.h \
@@ -1395,7 +1395,7 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.o: \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/cssprovider.h \
   /opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0/gtkmm/csssection.h \
   /Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.h \
-  /Users/summerfaliero/coral/PurrrfectSpots/ui/../Reservations.h \
+  /Users/summerfaliero/coral/PurrrfectSpots/ui/../reservation/Reservations.h \
   /Users/summerfaliero/coral/PurrrfectSpots/ui/Rating.h \
   /Users/summerfaliero/coral/PurrrfectSpots/ui/../user/UserManager.h \
   /Users/summerfaliero/coral/PurrrfectSpots/ui/../user/../database/UserDB.h \

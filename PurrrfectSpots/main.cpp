@@ -19,19 +19,19 @@ int main(int argc, char *argv[]) {
     Gtk::VBox vbox;
     window.add(vbox);
 
-    // Load the original image
-//    Glib::RefPtr<Gdk::Pixbuf> originalPixbuf = Gdk::Pixbuf::create_from_file("../images/LOGIN.png");
-//
-//    // Resize the image to the desired width and height
-//    int desiredWidth = 300; // Set your desired width
-//    int desiredHeight = 300; // Set your desired height
-//    Glib::RefPtr<Gdk::Pixbuf> resizedPixbuf = originalPixbuf->scale_simple(desiredWidth, desiredHeight, Gdk::INTERP_BILINEAR);
-//
-//
-//
-//    // Create a Gtk::Image widget and set the resized image
-//    Gtk::Image image;
-//    image.set(resizedPixbuf);
+   //  Load the original image
+    Glib::RefPtr<Gdk::Pixbuf> originalPixbuf = Gdk::Pixbuf::create_from_file("../images/LOGIN.png");
+
+    // Resize the image to the desired width and height
+    int desiredWidth = 300; // Set your desired width
+    int desiredHeight = 300; // Set your desired height
+    Glib::RefPtr<Gdk::Pixbuf> resizedPixbuf = originalPixbuf->scale_simple(desiredWidth, desiredHeight, Gdk::INTERP_BILINEAR);
+
+
+
+    // Create a Gtk::Image widget and set the resized image
+    Gtk::Image image;
+    image.set(resizedPixbuf);
 
     MyButton button1("LOG IN");
     MyButton button2("SIGN UP");
@@ -41,7 +41,14 @@ int main(int argc, char *argv[]) {
  //   vbox.pack_start(image, Gtk::PACK_EXPAND_PADDING, 10); // Add the image to the VBox
     vbox.pack_start(button1, Gtk::PACK_EXPAND_PADDING, 5);
     vbox.pack_start(button2, Gtk::PACK_EXPAND_PADDING, 5);
-
+    // files moving
+        std::ifstream file("images/cloud.jpeg");
+    if (file.is_open()) {
+        std::cout << "File opened successfully!" << std::endl;
+        // Further operations with the file
+    } else {
+        std::cerr << "Failed to open file!" << std::endl;
+    }
     window.show_all();
 
     return app->run(window);

@@ -8,16 +8,18 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp" "CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o.d"
-  "/Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp" "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp" "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d"
-  "/Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp" "CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o.d"
-  "/Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o.d"
-  "/Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp" "CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp" "CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/database/Database.cpp" "CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp" "CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp" "CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.cpp" "CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/main.cpp" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/main.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp" "CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp" "CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp" "CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o.d"
+  "/Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp" "CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o.d"
   "/Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp" "CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o" "gcc" "CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o.d"

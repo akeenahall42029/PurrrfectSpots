@@ -21,6 +21,7 @@
         Gtk::Label* reviewsLabel = Gtk::manage(new Gtk::Label("Reviews:"));
         mainGrid->attach(*reviewsLabel, 0, 1, 1, 1);
 
+        // MODIFY THIS METHOD TO GO TO THROUGH EACH REVIEW OBJECT AND CALL THEIR GET.
         int row = 2;
         for (const auto& review : reviews) {
             Gtk::Label* reviewLabel = Gtk::manage(new Gtk::Label("- " + review));

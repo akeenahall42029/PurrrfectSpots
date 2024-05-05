@@ -15,6 +15,10 @@ Reservations::Reservations(int napSpotID, int userId, int time,  std::string sta
 
 }
 
+Reservations::Reservations(int napSpotID, int userId, std::time_t startTime, std::time_t endTime, std::string status) {
+    id = generateID(); // generate a random 9 digit ID number
+}
+
 
 /* Creates a randomly generated 9-digit id number upon the creation of
  * a new reservation
@@ -39,7 +43,7 @@ int Reservations::getTime() const{
     return time;
 }
 
-int Reservations::getID() const {
+int Reservations::getID()  {
     return id; // id is defined as a private variable in the header, return to this if this causes problems
 
 }
@@ -54,20 +58,22 @@ std::string Reservations::getStatus() const {
     return status;
 }
 
+
+
 void Reservations::setNapSpotId(int napSpotId)  {
-    napSpotId = napSpotId;
+    this->napSpotId = napSpotId;
 }
 
 
 
-void Reservations::setUserId(std::string userId) {
-    userId = userId;
+void Reservations::setUserId(int userId) {
+    this->userId = userId;
 }
 void Reservations::setTime(int time) {
-   time=time;
+    this->time=time;
 }
 void Reservations::setStatus(std::string status)  {
-   status=status;
+    this->status=status;
 }
 
 /* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
@@ -116,6 +122,22 @@ void Reservations::storeData() {
     sqlite3_close(curr_db);
 
 }
+
+std::time_t Reservations::getStartTime() {
+    return startTime;
+}
+
+std::time_t Reservations::getEndTime() {
+    return endTime;
+}
+
+void Reservations::setStartTime(std::time_t newStart) {
+   startTime = newStart;
+}
+void Reservations::setEndTime(std::time_t newEnd) {
+    endTime = newEnd;
+}
+
 
 
 

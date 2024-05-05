@@ -85,12 +85,12 @@ clean: CMakeFiles/unittests.dir/clean
 CMakeFiles/PurrrfectSpots.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target PurrrfectSpots"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target PurrrfectSpots"
 .PHONY : CMakeFiles/PurrrfectSpots.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PurrrfectSpots.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 18
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 20
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/PurrrfectSpots.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/PurrrfectSpots.dir/rule
@@ -111,12 +111,12 @@ CMakeFiles/PurrrfectSpots.dir/clean:
 CMakeFiles/Profilescreen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Profilescreen.dir/build.make CMakeFiles/Profilescreen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target Profilescreen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target Profilescreen"
 .PHONY : CMakeFiles/Profilescreen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Profilescreen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Profilescreen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/Profilescreen.dir/rule
@@ -137,12 +137,12 @@ CMakeFiles/Profilescreen.dir/clean:
 CMakeFiles/unittests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Built target unittests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33 "Built target unittests"
 .PHONY : CMakeFiles/unittests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/unittests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 7
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/unittests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/unittests.dir/rule

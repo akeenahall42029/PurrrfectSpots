@@ -83,38 +83,24 @@ CMakeFiles/PurrrfectSpots.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/main.cpp -o CMakeFiles/PurrrfectSpots.dir/main.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp
-CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp
+CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp
+CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp
 
-CMakeFiles/PurrrfectSpots.dir/Demo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/Demo.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp > CMakeFiles/PurrrfectSpots.dir/Demo.cpp.i
+CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp > CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.i
 
-CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp -o CMakeFiles/PurrrfectSpots.dir/Demo.cpp.s
-
-CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp
-CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp
-
-CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp > CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.i
-
-CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp -o CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.s
+CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp -o CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.s
 
 CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp
 CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp
 
 CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp
 
 CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp
 
 CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.i: cmake_force
@@ -156,7 +142,7 @@ CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.cpp
 CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.cpp
 
 CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.i: cmake_force
@@ -170,7 +156,7 @@ CMakeFiles/PurrrfectSpots.dir/database/UserDB.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/database/Database.cpp
 CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/database/Database.cpp
 
 CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.i: cmake_force
@@ -184,7 +170,7 @@ CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/user/UserManager.cpp
 CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/user/UserManager.cpp
 
 CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.i: cmake_force
@@ -198,7 +184,7 @@ CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/user/UserAccount.cpp
 CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/user/UserAccount.cpp
 
 CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.i: cmake_force
@@ -212,7 +198,7 @@ CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp
 CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp
 
 CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.i: cmake_force
@@ -223,52 +209,52 @@ CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp -o CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp
-CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp
+CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp
+CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp
 
-CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp > CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.i
+CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp > CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.i
 
-CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp -o CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.s
+CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp -o CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp
-CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp
+CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp
+CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp
 
-CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp > CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.i
+CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp > CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.i
 
-CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp -o CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.s
+CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp -o CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.s
 
-CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
-CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp
-CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp
+CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp
+CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp
 
-CMakeFiles/PurrrfectSpots.dir/Admins.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/Admins.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp > CMakeFiles/PurrrfectSpots.dir/Admins.cpp.i
+CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp > CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.i
 
-CMakeFiles/PurrrfectSpots.dir/Admins.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/Admins.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp -o CMakeFiles/PurrrfectSpots.dir/Admins.cpp.s
+CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp -o CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.s
 
 CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp
 CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp
 
 CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.i: cmake_force
@@ -282,7 +268,7 @@ CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/ui/Rating.cpp
 CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/ui/Rating.cpp
 
 CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.i: cmake_force
@@ -296,7 +282,7 @@ CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.s: cmake_force
 CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
 CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.cpp
 CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.cpp
 
 CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.i: cmake_force
@@ -307,11 +293,52 @@ CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.cpp -o CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.s
 
+CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp
+CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp
+
+CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp > CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.i
+
+CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp -o CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.s
+
+CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp
+CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp
+
+CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp > CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.i
+
+CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp -o CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.s
+
+CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/flags.make
+CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o: /Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp
+CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o: CMakeFiles/PurrrfectSpots.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o -MF CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o.d -o CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o -c /Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp
+
+CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp > CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.i
+
+CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp -o CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.s
+
 # Object files for target PurrrfectSpots
 PurrrfectSpots_OBJECTS = \
 "CMakeFiles/PurrrfectSpots.dir/main.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o" \
@@ -320,19 +347,21 @@ PurrrfectSpots_OBJECTS = \
 "CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o" \
 "CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o" \
-"CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o"
+"CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o" \
+"CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o"
 
 # External object files for target PurrrfectSpots
 PurrrfectSpots_EXTERNAL_OBJECTS =
 
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/main.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Demo.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Reservations.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/reservation/Reservations.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/MyButton.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyValue.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/MyDisplayBuffer.cpp.o
@@ -341,15 +370,18 @@ PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/database/Database.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/user/UserManager.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/user/UserAccount.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/Profile.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Napspots.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Reviews.cpp.o
-PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/Admins.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/napspot/Napspots.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/review/Reviews.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/admin/Admins.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/Rating.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/ui/NotebookManager.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/database/ReservationDB.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/napspot/NapspotManager.cpp.o
+PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/database/NapspotDB.cpp.o
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/build.make
 PurrrfectSpots: CMakeFiles/PurrrfectSpots.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable PurrrfectSpots"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable PurrrfectSpots"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PurrrfectSpots.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

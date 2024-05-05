@@ -476,18 +476,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Admins.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
@@ -500,22 +488,10 @@
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyValue.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Napspots.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reservations.h">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp">
-			<Option target="PurrrfectSpots"/>
-		</Unit>
-		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reviews.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/admin/Admins.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/Database.cpp">
@@ -525,6 +501,18 @@
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/Database.h">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/NapspotDB.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/ReservationDB.h">
+			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.cpp">
 			<Option target="PurrrfectSpots"/>
@@ -538,6 +526,38 @@
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/main.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/napspot/NapspotManager.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/napspot/Napspots.h">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/reservation/ReservationManager.cpp">
+			<Option target="Profilescreen"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/reservation/ReservationManager.h">
+			<Option target="Profilescreen"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.cpp">
+			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/reservation/Reservations.h">
+			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.cpp">
+			<Option target="PurrrfectSpots"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/review/Reviews.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp">
@@ -568,9 +588,11 @@
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.h">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/DatabaseTest.cpp">
 			<Option target="unittests"/>
@@ -582,6 +604,9 @@
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/ReservationTests.h">
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/SpotTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/UserDBTests.cpp">

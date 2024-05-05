@@ -27,7 +27,7 @@
 #include <gtkmm/cssprovider.h>
 #include "SpotStructure.h"
 #include "../database/UserDB.h"
-#include "../Reservations.h"
+#include "../reservation/Reservations.h"
 #include "Rating.h"
 // #include "../user/UserAccount.h"
 #include "../user/UserManager.h"
@@ -63,6 +63,8 @@ private:
     Glib::ustring button_label;  // Label for the button
     Gtk::Entry* username_entry;
     Gtk::Entry* password_entry;
+    UserManager user_manager; // should call default constructor which creates a userDB to open the db
+    std::string current_page;
 };
 
 
