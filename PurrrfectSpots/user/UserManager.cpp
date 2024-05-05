@@ -56,36 +56,16 @@ int UserManager::verify(UserAccount &a, const std::string &password) {
 
 // Method to create a new user
 /** Creates a new user by using the UserAccount method. Will call the generateId method
- * to initilze the id of the user
+ * to intialize the id of the user
+ * @param
  * */
-void UserManager::create_user(const std::string &userName, const std::string &password) {
-    try {
-        std::string query = "INSERT INTO users (username, password) VALUES (?, ?);";
-
+bool UserManager::create_user(const std::string &userName, const std::string &password) {
     // Create a new UserAccount object with the provided username and password
     UserAccount newUser(userName, password);
 
-        sqlite3_stmt* stmt;
-        int result = sqlite3_prepare_v2(reinterpret_cast<sqlite3 *>(db), query.c_str(), -1, &stmt, nullptr);
-        if (result != SQLITE_OK) {
-            throw std::runtime_error("Error preparing SQL statement: " + std::string(sqlite3_errmsg(
-                    reinterpret_cast<sqlite3 *>(db))));
-        }
+    // Get the generated user ID from the UserAccount object
+    int userId = newUser.get_id();
 
-        // Bind parameters
-        sqlite3_bind_text(stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
-        sqlite3_bind_text(stmt, 2, password.c_str(), -1, SQLITE_TRANSIENT);
-
-        result = sqlite3_step(stmt); // Execute the query
-        sqlite3_finalize(stmt); // Finalize the statement
-
-        if (result != SQLITE_DONE) {
-            throw std::runtime_error("Error inserting into the users table");
-        }
-
-    } catch (const std::exception &e) {
-        std::cerr << "Exception during create_user: " << e.what() << std::endl;
-        // Handle the exception or rethrow it
-        throw; // Optional: rethrow the exception for higher-level handling
-    }
+    // Insert the new user into the database using the UserDB object, passing the user_id
+    return db->insert_user(userId, userName, password);
 }

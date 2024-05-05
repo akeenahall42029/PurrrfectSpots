@@ -5,9 +5,19 @@
 #include "ui/MyButton.h"
 #include <gtkmm/image.h>
 #include <gdkmm/pixbuf.h>
-
+#include "user/UserManager.h"
 int main(int argc, char *argv[]) {
     auto app = Gtk::Application::create(argc, argv, "org.gtkmm.example");
+    //Create a UserManager object to testing login functionality
+    UserManager login_tester;
+
+    // Hard-coded user credentials
+    std::string username = "akeena_demo";
+    std::string password = "demo123";
+
+    // Create the user
+    login_tester.create_user(username, password);
+
 
 
     Gtk::Window window;
@@ -42,7 +52,7 @@ int main(int argc, char *argv[]) {
     vbox.pack_start(button1, Gtk::PACK_EXPAND_PADDING, 5);
     vbox.pack_start(button2, Gtk::PACK_EXPAND_PADDING, 5);
     // files moving
-        std::ifstream file("images/cloud.jpeg");
+        std::ifstream file("../images/cloud.jpeg");
     if (file.is_open()) {
         std::cout << "File opened successfully!" << std::endl;
         // Further operations with the file

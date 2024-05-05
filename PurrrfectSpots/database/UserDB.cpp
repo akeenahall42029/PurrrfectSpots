@@ -149,36 +149,54 @@ std::vector<int> UserDB::fetchUserReservationsById(int userId) {
 }
 
 
-void UserDB::insert_user(const std::string &userName, const std::string &password) {
+bool UserDB::insert_user(int user_id, const std::string &userName, const std::string &password) {
     if (!curr_db) {
         std::cerr << "Database not open. Call open() first." << std::endl;
-        return;
+        return false;
     }
 
-    std::string sql = "INSERT INTO users (userName, password) VALUES (?, ?);";
-    int retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
-
+    std::string check_sql = "SELECT username FROM users WHERE username = ?;";
+    sqlite3_stmt *check_stmt;
+    int retCode = sqlite3_prepare_v2(curr_db, check_sql.c_str(), -1, &check_stmt, nullptr);
     if (retCode != SQLITE_OK) {
         std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
-        return;
+        return false;
+    }
+
+    sqlite3_bind_text(check_stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
+    retCode = sqlite3_step(check_stmt);
+    if (retCode == SQLITE_ROW) {
+        // Username already exists
+        sqlite3_finalize(check_stmt);
+        return false;
+    }
+    sqlite3_finalize(check_stmt);
+
+    std::string sql = "INSERT INTO users (id, username, password) VALUES (?, ?, ?);";
+    retCode = sqlite3_prepare_v2(curr_db, sql.c_str(), -1, &stmt, nullptr);
+    if (retCode != SQLITE_OK) {
+        std::cerr << "Error preparing SQL statement: " << sqlite3_errmsg(curr_db) << std::endl;
+        return false;
     }
 
     // Bind parameters
-    sqlite3_bind_text(stmt, 1, userName.c_str(), -1, SQLITE_TRANSIENT);
-    sqlite3_bind_text(stmt, 2, password.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_int(stmt, 1, user_id);
+    sqlite3_bind_text(stmt, 2, userName.c_str(), -1, SQLITE_TRANSIENT);
+    sqlite3_bind_text(stmt, 3, password.c_str(), -1, SQLITE_TRANSIENT);
 
     // Execute the statement
     retCode = sqlite3_step(stmt);
     if (retCode != SQLITE_DONE) {
         std::cerr << "Error inserting user: " << sqlite3_errmsg(curr_db) << std::endl;
-    } else {
-        std::cout << "User inserted successfully!" << std::endl;
+        return false;
     }
 
     // Reset the statement for future use
     sqlite3_reset(stmt);
 
+    return true;
 }
+
 
 
 

@@ -30,7 +30,7 @@ public:
 
     std::vector<Reservations> fetch_reservations(int user_id, sqlite3* db); // need to fix this, doesn't match the structure
     std::vector<int> fetchUserReservationsById(int userId);
-    void insert_user(const std::string& userName, const std::string& password);
+    bool insert_user(int user_id, const std::string& userName, const std::string& password);
 
     // bool verify_user(std::string , userName, std::string password);
 

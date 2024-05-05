@@ -17,12 +17,13 @@ class UserAccount {
 private:
     int id;
     int access; // change to enum : 0 for cats, 1 for pet owners, 2 for app admin
+    std::string password;
     std::string userName;
 public:
     UserAccount();
     UserAccount(std::string userName,int id);
     UserAccount(std::string userName);
-    UserAccount(std::string userName, std::string password);
+    UserAccount(const std::string& userName, const std::string& password);
     ~UserAccount();
 
     int get_id();
@@ -30,6 +31,7 @@ public:
     void set_userName(std::string u);
     void set_id(int newId);
     int generateId();
+
 
 };
 
