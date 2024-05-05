@@ -6,10 +6,11 @@
 
 #include <gtkmm/messagedialog.h>
 #include "MyButton.h"
+#include "../user/UserAccount.h"
+#include "../user/UserManager.h"
 
+UserDB* global_db = new UserDB(); // Example initialization, could be elsewhere in your code
 
-//// #include "../user/UserAccount.h"
-//#include "../user/UserManager.h"
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
@@ -115,17 +116,27 @@ void MyButton::openSignUpPage() {
 }
 
 void MyButton::on_submit_button_clicked() {
+    try {
+        std::string username = username_entry->get_text();
+        std::string password = password_entry->get_text();
 
-    // Get the username and password entered by the user
-    std::string username = username_entry->get_text();
-    std::string password = password_entry->get_text();
+        if (global_db == nullptr) {
+            throw std::runtime_error("Database connection is not initialized");
+        }
 
-    // Call UserManager to create a new user account
-    UserManager manager;
-    manager.create_user(username, password);
+        UserManager manager(global_db); // Ensure valid UserManager
+        manager.create_user(username, password); // Attempt to create user
 
-    createNotebook();
+        createNotebook(); // Only if user creation is successful
+    } catch (const std::exception &e) {
+        std::cerr << "Exception in on_submit_button_clicked: " << e.what() << std::endl;
+        // Display an error message to the user
+       // Gtk::MessageDialog dialog(*this, "An error occurred while creating the user.");
+//        dialog.set_secondary_text(e.what());
+//        dialog.run();
+        //   createNotebook();
 
+    }
 }
 
 void MyButton::openLoginPage() {
@@ -134,7 +145,7 @@ void MyButton::openLoginPage() {
 //
 //    // UserAccount manager object to verify user credentials
 //    UserManager manager(&userDB);
-    UserManager manager;
+  //  UserManager manager;
     // creating login page content
 
     // creating login page content container
@@ -170,26 +181,25 @@ void MyButton::openLoginPage() {
     // creating and adding the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     // TRYING TO VERIFY USERNAME
-    loginButton->signal_clicked().connect([this, &manager]() {
+ //   loginButton->signal_clicked().connect([this, &manager]() {
         std::string username = username_entry->get_text(); // Retrieve the username entered by the user
         std::string password = password_entry->get_text(); // Retrieve the password entered by the user
 
-        UserAccount user(username); // Create a UserAccount object with the entered username
+//        UserAccount user(username); // Create a UserAccount object with the entered username
+//        if (manager.verify(user, password) == 1) {
+//            // Verification successful
+            //createNotebook();
+//        } else {
+//            // Verification failed
+//            // Prompt the user to try again
+//            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed");
+//            dialog.set_secondary_text("Please try again.");
+//            dialog.run();
+//        }
+//    });
+//
 
-        if (manager.verify(user, password) == 1) {
-            // Verification successful
-            createNotebook();
-        } else {
-            // Verification failed
-            // Prompt the user to try again
-            Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Login Failed");
-            dialog.set_secondary_text("Please try again.");
-            dialog.run();
-        }
-    });
-
-
-//    loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
+    loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 

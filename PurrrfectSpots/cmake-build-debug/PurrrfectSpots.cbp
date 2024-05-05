@@ -8,538 +8,598 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PurrrfectSpots">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/PurrrfectSpots" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/PurrrfectSpots" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 PurrrfectSpots"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 PurrrfectSpots"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="PurrrfectSpots/fast">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/PurrrfectSpots" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/PurrrfectSpots" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 PurrrfectSpots/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 PurrrfectSpots/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Profilescreen">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Profilescreen/fast">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Profilescreen" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 Profilescreen/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="unittests">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/unittests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/unittests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 unittests"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 unittests"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="unittests/fast">
-				<Option output="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/unittests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option output="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/unittests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/gtkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gtkmm-3.0/include"/>
-					<Add directory="/usr/include/atkmm-1.6"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/atkmm-1.6/include"/>
-					<Add directory="/usr/include/gtk-3.0/unix-print"/>
-					<Add directory="/usr/include/gdkmm-3.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/gdkmm-3.0/include"/>
-					<Add directory="/usr/include/giomm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/giomm-2.4/include"/>
-					<Add directory="/usr/include/gtk-3.0"/>
-					<Add directory="/usr/include/at-spi2-atk/2.0"/>
-					<Add directory="/usr/include/at-spi-2.0"/>
-					<Add directory="/usr/include/dbus-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/dbus-1.0/include"/>
-					<Add directory="/usr/include/gio-unix-2.0"/>
-					<Add directory="/usr/include/cairo"/>
-					<Add directory="/usr/include/atk-1.0"/>
-					<Add directory="/usr/include/pangomm-1.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/pangomm-1.4/include"/>
-					<Add directory="/usr/include/glibmm-2.4"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glibmm-2.4/include"/>
-					<Add directory="/usr/include/cairomm-1.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/cairomm-1.0/include"/>
-					<Add directory="/usr/include/sigc++-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/sigc++-2.0/include"/>
-					<Add directory="/usr/include/pango-1.0"/>
-					<Add directory="/usr/include/harfbuzz"/>
-					<Add directory="/usr/include/fribidi"/>
-					<Add directory="/usr/include/pixman-1"/>
-					<Add directory="/usr/include/uuid"/>
-					<Add directory="/usr/include/freetype2"/>
-					<Add directory="/usr/include/gdk-pixbuf-2.0"/>
-					<Add directory="/usr/include/libpng16"/>
-					<Add directory="/usr/include/libmount"/>
-					<Add directory="/usr/include/blkid"/>
-					<Add directory="/usr/include/glib-2.0"/>
-					<Add directory="/usr/lib/x86_64-linux-gnu/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gtkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gtkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/include/atkmm-1.6"/>
+					<Add directory="/opt/homebrew/Cellar/atkmm@2.28/2.28.4/lib/atkmm-1.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0/unix-print"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/include/gdkmm-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/gtkmm3/3.24.9/lib/gdkmm-3.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/giomm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/giomm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/gtk+3/3.24.41/include/gtk-3.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/gio-unix-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libepoxy/1.5.10/include"/>
+					<Add directory="/opt/homebrew/Cellar/at-spi2-core/2.52.0/include/atk-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairo/1.18.0/include/cairo"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/include/pangomm-1.4"/>
+					<Add directory="/opt/homebrew/Cellar/pangomm@2.46/2.46.4/lib/pangomm-1.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/include/glibmm-2.4"/>
+					<Add directory="/opt/homebrew/Cellar/glibmm@2.66/2.66.7/lib/glibmm-2.4/include"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/include/cairomm-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/cairomm@1.14/1.14.5/lib/cairomm-1.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/include/sigc++-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/libsigc++@2/2.10.8/lib/sigc++-2.0/include"/>
+					<Add directory="/opt/homebrew/Cellar/pango/1.52.2/include/pango-1.0"/>
+					<Add directory="/opt/homebrew/Cellar/harfbuzz/8.4.0/include/harfbuzz"/>
+					<Add directory="/opt/homebrew/Cellar/fribidi/1.0.13/include/fribidi"/>
+					<Add directory="/opt/homebrew/Cellar/graphite2/1.3.14/include"/>
+					<Add directory="/opt/homebrew/Cellar/fontconfig/2.15.0/include"/>
+					<Add directory="/opt/homebrew/opt/freetype/include/freetype2"/>
+					<Add directory="/opt/homebrew/Cellar/libxext/1.3.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxrender/0.9.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libx11/1.8.8/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxcb/1.16.1/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxau/1.0.11/include"/>
+					<Add directory="/opt/homebrew/Cellar/libxdmcp/1.1.5/include"/>
+					<Add directory="/opt/homebrew/Cellar/pixman/0.42.2/include/pixman-1"/>
+					<Add directory="/opt/homebrew/Cellar/gdk-pixbuf/2.42.10_1/include/gdk-pixbuf-2.0"/>
+					<Add directory="/opt/homebrew/opt/libpng/include/libpng16"/>
+					<Add directory="/opt/homebrew/Cellar/libtiff/4.6.0/include"/>
+					<Add directory="/opt/homebrew/opt/zstd/include"/>
+					<Add directory="/opt/homebrew/Cellar/xz/5.4.6/include"/>
+					<Add directory="/opt/homebrew/Cellar/jpeg-turbo/3.0.2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/include/glib-2.0"/>
+					<Add directory="/opt/homebrew/Cellar/glib/2.80.0_2/lib/glib-2.0/include"/>
+					<Add directory="/opt/homebrew/opt/gettext/include"/>
+					<Add directory="/opt/homebrew/Cellar/pcre2/10.43/include"/>
+					<Add directory="/opt/homebrew/Cellar/xorgproto/2024.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/SDKs/MacOSX12.sdk/usr/include/ffi"/>
 					<Add directory="/user/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include"/>
-					<Add directory="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/include/gtest"/>
-					<Add directory="/usr/include/c++/11"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
-					<Add directory="/usr/include/c++/11/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include"/>
+					<Add directory="/Users/summerfaliero/coral/PurrrfectSpots/googletest/include/gtest"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 unittests/fast"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 unittests/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug"/>
+				<Option working_dir="/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/gmake -j8 -f &quot;/home/hallake/cs205_v2/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/summerfaliero/coral/PurrrfectSpots/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Admins.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Admins.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Admins.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Admins.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Demo.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Demo.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Demo.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyDisplayBuffer.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyDisplayBuffer.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyValue.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyValue.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/MyValue.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/MyValue.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Napspots.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Napspots.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Napspots.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Napspots.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reservations.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reservations.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reservations.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reviews.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/Reviews.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/Reviews.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.cpp">
-			<Option target="PurrrfectSpots"/>
-			<Option target="unittests"/>
-		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/Database.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/Database.cpp">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/Database.h">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/database/UserDB.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.cpp">
 			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/googletest/src/gtest-all.cc">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/database/UserDB.h">
+			<Option target="PurrrfectSpots"/>
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/main.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/googletest/src/gtest-all.cc">
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/main.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/MyButton.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/MyButton.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/NotebookManager.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/NotebookManager.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/NotebookManager.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.cpp">
 			<Option target="PurrrfectSpots"/>
 			<Option target="Profilescreen"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Profile.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/Profile.h">
 			<Option target="PurrrfectSpots"/>
 			<Option target="Profilescreen"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Rating.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/Rating.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/Rating.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/Rating.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/ui/SpotStructure.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/DatabaseTest.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/DatabaseTest.cpp">
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/DatabaseTest.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/DatabaseTest.h">
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/ReservationTests.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/ReservationTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/ReservationTests.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/ReservationTests.h">
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/UserDBTests.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/unit_tests/UserDBTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/user/UserAccount.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserAccount.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/user/UserAccount.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserManager.cpp">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/user/UserManager.cpp">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/user/UserManager.h">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/user/UserManager.h">
 			<Option target="PurrrfectSpots"/>
 		</Unit>
-		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/CMakeLists.txt">
+		<Unit filename="/Users/summerfaliero/coral/PurrrfectSpots/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

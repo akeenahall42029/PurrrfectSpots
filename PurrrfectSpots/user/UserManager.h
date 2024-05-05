@@ -7,17 +7,17 @@
 #include "../database/UserDB.h" // opens the database
 #include "UserAccount.h"
 
-class UserManager{
+class UserManager {
+public:
+    UserManager(); // Default constructor
+    UserManager(UserDB *db = nullptr); // Constructor with optional UserDB parameter
+
+    int verify(UserAccount &a, std::string password);
+    void create_user(const std::string &userName, const std::string &password);
 
 private:
-    UserDB* db;
-public:
-    UserManager();
-    UserManager(UserDB* db);
-
-    int verify(UserAccount& a, std::string username);
-    // Method to insert a new user into the database, call for sign in
-    void create_user(const std::string& userName, const std::string& password);
-
+    UserDB *db; // Ensure this is declared properly in the class
+    int verify(UserAccount &a, const std::string &password);
 };
+
 #endif //PURRRFECTSPOTS_USERMANAGER_H
