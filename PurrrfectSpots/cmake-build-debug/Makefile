@@ -605,6 +605,7 @@ ui/SpotStructure.o: ui/SpotStructure.cpp.o
 # target to build an object file
 ui/SpotStructure.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/ui/SpotStructure.cpp.o
 .PHONY : ui/SpotStructure.cpp.o
 
 ui/SpotStructure.i: ui/SpotStructure.cpp.i
@@ -613,6 +614,7 @@ ui/SpotStructure.i: ui/SpotStructure.cpp.i
 # target to preprocess a source file
 ui/SpotStructure.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/ui/SpotStructure.cpp.i
 .PHONY : ui/SpotStructure.cpp.i
 
 ui/SpotStructure.s: ui/SpotStructure.cpp.s
@@ -621,6 +623,7 @@ ui/SpotStructure.s: ui/SpotStructure.cpp.s
 # target to generate assembly for a file
 ui/SpotStructure.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PurrrfectSpots.dir/build.make CMakeFiles/PurrrfectSpots.dir/ui/SpotStructure.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/ui/SpotStructure.cpp.s
 .PHONY : ui/SpotStructure.cpp.s
 
 unit_tests/DatabaseTest.o: unit_tests/DatabaseTest.cpp.o
@@ -670,6 +673,30 @@ unit_tests/ReservationTests.s: unit_tests/ReservationTests.cpp.s
 unit_tests/ReservationTests.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/ReservationTests.cpp.s
 .PHONY : unit_tests/ReservationTests.cpp.s
+
+unit_tests/SpotTests.o: unit_tests/SpotTests.cpp.o
+.PHONY : unit_tests/SpotTests.o
+
+# target to build an object file
+unit_tests/SpotTests.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/SpotTests.cpp.o
+.PHONY : unit_tests/SpotTests.cpp.o
+
+unit_tests/SpotTests.i: unit_tests/SpotTests.cpp.i
+.PHONY : unit_tests/SpotTests.i
+
+# target to preprocess a source file
+unit_tests/SpotTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/SpotTests.cpp.i
+.PHONY : unit_tests/SpotTests.cpp.i
+
+unit_tests/SpotTests.s: unit_tests/SpotTests.cpp.s
+.PHONY : unit_tests/SpotTests.s
+
+# target to generate assembly for a file
+unit_tests/SpotTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/unittests.dir/build.make CMakeFiles/unittests.dir/unit_tests/SpotTests.cpp.s
+.PHONY : unit_tests/SpotTests.cpp.s
 
 unit_tests/UserDBTests.o: unit_tests/UserDBTests.cpp.o
 .PHONY : unit_tests/UserDBTests.o
@@ -817,6 +844,9 @@ help:
 	@echo "... unit_tests/ReservationTests.o"
 	@echo "... unit_tests/ReservationTests.i"
 	@echo "... unit_tests/ReservationTests.s"
+	@echo "... unit_tests/SpotTests.o"
+	@echo "... unit_tests/SpotTests.i"
+	@echo "... unit_tests/SpotTests.s"
 	@echo "... unit_tests/UserDBTests.o"
 	@echo "... unit_tests/UserDBTests.i"
 	@echo "... unit_tests/UserDBTests.s"

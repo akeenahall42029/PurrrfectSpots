@@ -1,2 +1,31 @@
-README FILE
-Edited!
+# NapSpot Reservation System
+
+The NapSpot Reservation System is a software application designed to facilitate the reservation of nap spots in various locations. Users can browse available nap spots, view details about each spot, read reviews, and make reservations.
+
+## Features
+
+- **User Authentication:** Users can create accounts, log in, and log out securely.
+- **Spot Exploration:** Browse available nap spots, view details, and read reviews.
+- **Reservation Management:** Make, cancel, and modify reservations for nap spots.
+- **Rating System:** Users can rate and review nap spots based on their experiences.
+- **Interactive UI:** User-friendly graphical interface for easy navigation and interaction.
+
+## Technologies Used
+
+- **C++:** Core programming language for backend logic.
+- **SQLite:** Database management system for storing user accounts, nap spot information, and reservations.
+- **GTK+:** Graphical user interface toolkit for creating the desktop application interface.
+
+## Installation
+1. Clone the repository to your local machine:
+  	1. git clone  git@github.com:cs-205-s24/coral.git
+2. Navigate to the project directory:
+1. cd  coral
+Open in Clion
+Make sure your CMakeLists.txt file is properly configured to build your project.
+Click on the play button (usually labeled “PurrrfectSpots”).
+CLion will build your project and execute the generated executable.
+
+
+  
+

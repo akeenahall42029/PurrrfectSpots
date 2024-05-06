@@ -528,9 +528,11 @@
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.cpp">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/ui/SpotStructure.h">
 			<Option target="PurrrfectSpots"/>
+			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/DatabaseTest.cpp">
 			<Option target="unittests"/>
@@ -542,6 +544,9 @@
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/ReservationTests.h">
+			<Option target="unittests"/>
+		</Unit>
+		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/SpotTests.cpp">
 			<Option target="unittests"/>
 		</Unit>
 		<Unit filename="/home/hallake/cs205_v2/coral/PurrrfectSpots/unit_tests/UserDBTests.cpp">

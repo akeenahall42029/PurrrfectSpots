@@ -35,6 +35,12 @@ class MyButton : public Gtk::Button {
 private:
     //Glib::ustring currentPage;
     UserDB userdb;
+    // member variables for button label and window/stack handling
+    Glib::ustring button_label;  // Label for the button
+    Gtk::Entry* username_entry;
+    Gtk::Entry* password_entry;
+    UserManager user_manager; // should call default constructor which creates a userDB to open the db
+    std::string current_page;
 public:
     // constructor to initialize with a label and optional reference to a stack and history
     MyButton(const Glib::ustring &label);
@@ -58,13 +64,7 @@ protected:
     void createNotebook();
 
 
-private:
-    // member variables for button label and window/stack handling
-    Glib::ustring button_label;  // Label for the button
-    Gtk::Entry* username_entry;
-    Gtk::Entry* password_entry;
-    UserManager user_manager; // should call default constructor which creates a userDB to open the db
-    std::string current_page;
+
 };
 
 

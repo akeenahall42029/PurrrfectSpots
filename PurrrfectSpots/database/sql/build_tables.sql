@@ -1,11 +1,10 @@
 create table users
 (
-    id  INT NOT NULL UNIQUE ,
+    id  INT PRIMARY KEY ,
     username TEXT UNIQUE,
     password TEXT NOT NULL,
     reservation_id INT , -- will delete to restructure classes later
     review_id      INT , -- will need multiple review ids, might store in an array in the user object
-    primary key (id),
     foreign key (reservation_id) references reservations (id),
     foreign key (review_id) references  reviews(id) -- need
 
@@ -23,14 +22,13 @@ create table reports
 
 create table reservations
 (
-    id        INT   NOT NULL AUTOINCREMENT, -- did this to prevent issues with creating a db insert without passing an id through before making a reservation object
+    id INT PRIMARY KEY , -- did this to prevent issues with creating a db insert without passing an id through before making a reservation object
     napSpotId INT  NOT NULL,
     userId    INT   NOT NULL,
     userName TEXT NOT NULL,
     startTime      INT NOT NULL, -- will be the hour
     endTime INT NOT NULL,
     status    TEXT  NOT NULL, -- will be modified by admin only, otherwise it will change when the time is up
-    primary key (id),
     foreign key (napSpotId) references napSpots(id),
     foreign key (userId) references users (id)
 
@@ -38,12 +36,10 @@ create table reservations
 
 create table napSpots
 (
-    id            INT  NOT NULL UNIQUE,
+    id            INT PRIMARY KEY ,
     location      TEXT NOT NULL,
-    review        TEXT NOT NULL, -- might not need this
     userId        INT  NOT NULL,
     averageRating INT  NOT NULL,
-    primary key (id),
     foreign key (userId) references users(id)
 
 );

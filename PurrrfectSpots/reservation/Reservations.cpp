@@ -50,9 +50,7 @@ int Reservations::getID()  {
 int Reservations::getUserId()  const{
     return userId;
 }
-int Reservations::getRetCode() const {
-    return retCode; // Return the value of retCode
-}
+
 
 std::string Reservations::getStatus() const {
     return status;
@@ -61,67 +59,21 @@ std::string Reservations::getStatus() const {
 
 
 void Reservations::setNapSpotId(int napSpotId)  {
-    napSpotId = napSpotId;
+    this->napSpotId = napSpotId;
 }
 
 
 
-void Reservations::setUserId(std::string userId) {
-    userId = userId;
+void Reservations::setUserId(int userId) {
+    this->userId = userId;
 }
 void Reservations::setTime(int time) {
-   time=time;
+    this->time=time;
 }
 void Reservations::setStatus(std::string status)  {
-   status=status;
+    this->status=status;
 }
 
-/* Stores reservation info into the SQL database. Binds parameters of the SQL statement to
- * the corresponding values obtained from provided Reservation object and executes statement to
- * create a new entry in the 'reservations' table.
- * @param reservation object reservation
- * */
-
-
-void Reservations::storeData() {
-   // sql = "INSERT INTO reservations(id, napSpotId, userId, userName, time, status) VALUES (?, ?, ?, ?, ?, ? )";
-
-   //Initialize local vars
-   retCode = 0;
-   zErrMsg = 0;
-
-   int size_value = 0;
-    // Construct the SQL query for INSERT INTO reservations
-    //std::string
-    sql = "INSERT INTO reservations";
-    sql += "(id, napSpotId, userId, time, status) ";
-    sql += "VALUES (";
-    sql += std::to_string(id);
-    sql += ", ";
-    // add userName
-    sql += std::to_string(napSpotId);
-    sql += ", ";
-    sql += std::to_string(userId);
-    sql += ", ";
-    sql += userName;
-    sql += ", ";
-    sql += std::to_string(time);
-    sql += ", '";
-    sql += status;
-    sql += "');";
-    // Execute the SQL query
-    retCode = sqlite3_exec(curr_db, sql.c_str(), 0, 0, &zErrMsg);
-    if (retCode != SQLITE_OK) {
-        std::cerr << "SQL error: " << zErrMsg << std::endl;
-        sqlite3_free(zErrMsg);
-    } else {
-        std::cout << "Record inserted successfully!" << std::endl;
-    }
-
-    // Close the database
-    sqlite3_close(curr_db);
-
-}
 
 std::time_t Reservations::getStartTime() {
     return startTime;

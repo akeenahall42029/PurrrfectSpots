@@ -1,45 +1,53 @@
-//
-// Created by Akeena on 4/24/2024.
+////
+//// Created by Akeena on 4/24/2024.
+////
 //
 
-#include "ReservationTests.h"
-#include <gtest/gtest.h>
-//#include "Reservations.h"
 #include "../reservation/Reservations.h"
+#include <gtest/gtest.h>
 
-
-// Test fixture for Reservations class
 class ReservationsTest : public ::testing::Test {
 protected:
     void SetUp() override {
-        reservation = std::make_unique<Reservations>(1, 12345, 1, "Pending");
+        // Set up any state specific to the test fixture
     }
 
     void TearDown() override {
-
+        // Tear down any state specific to the test fixture
     }
 
-    // Declare any variables needed for the tests
-    std::unique_ptr<Reservations> reservation;
 };
 
-// Test case to verify the constructor
+// Test the constructor
 TEST_F(ReservationsTest, Constructor) {
-    // Check if the object is constructed correctly
-    ASSERT_EQ(reservation->getNapSpotId(), 1);
-    ASSERT_EQ(reservation->getUserId(), 12345);
-    ASSERT_EQ(reservation->getTime(), 1);
-    ASSERT_EQ(reservation->getStatus(), "Pending");
-    // Add more assertions as needed
+    Reservations reservation(123, 456, 789, "confirmed");
+    ASSERT_EQ(123, reservation.getNapSpotId());
+    ASSERT_EQ(456, reservation.getUserId());
+    ASSERT_EQ(789, reservation.getTime());
+    ASSERT_EQ("confirmed", reservation.getStatus());
 }
 
-// Test case to verify the generateID method
+// Test the generateID method
 TEST_F(ReservationsTest, GenerateID) {
-    // Check if the generated ID is within the expected range
-    int id = reservation->generateID();
-    ASSERT_GE(id, 100000000);
-    ASSERT_LE(id, 999999999);
+    Reservations reservation(123, 456, 789, "confirmed");
+    int id = reservation.getID();
+    ASSERT_GE(id, 100000000); // Ensure id is at least 9 digits long
+    ASSERT_LE(id, 999999999); // Ensure id is at most 9 digits long
+}
 
+//// Test setters and getters
+TEST_F(ReservationsTest, SettersAndGetters) {
+    Reservations reservation(0, 0, 0, "");
+
+    reservation.setNapSpotId(123);
+    reservation.setUserId(456);
+    reservation.setTime(789);
+    reservation.setStatus("confirmed");
+
+    ASSERT_EQ(123, reservation.getNapSpotId());
+    ASSERT_EQ(456, reservation.getUserId());
+    ASSERT_EQ(789, reservation.getTime());
+    ASSERT_EQ("confirmed", reservation.getStatus());
 }
 
 

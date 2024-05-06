@@ -5,11 +5,13 @@
 // work on using a data structure to add unique data to each nap spot
 
 #include <gtkmm/messagedialog.h>
+#include <gtkmm/main.h>
 #include "MyButton.h"
+#include "../user/UserAccount.h"
+#include "../user/UserManager.h"
 
+UserDB* global_db = new UserDB(); // come back to, idk if this is needed
 
-//// #include "../user/UserAccount.h"
-//#include "../user/UserManager.h"
 MyButton::MyButton(const Glib::ustring &label) : button_label(label) {
     set_label(label);
     signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
@@ -26,8 +28,8 @@ void MyButton::on_button_clicked() {
         openSignUpPage();
     } else if (button_label == "BACK") {
         if (current_page == "SIGN UP") {
-            openLoginPage();
-        } else if (current_page == "LOGIN") {
+            openSignUpPage();
+        } else if (current_page == "LOG IN") {
             // Implement navigation to the previous page if needed
             openLoginPage();
         }
@@ -125,16 +127,42 @@ void MyButton::openSignUpPage() {
  * calls the createNotebook method to initialize the notebook for the newly created user.
  */
 void MyButton::on_submit_button_clicked() {
-
-    // Get the username and password entered by the user
+//    try {
+//        std::string username = username_entry->get_text();
+//        std::string password = password_entry->get_text();
+//
+//        if (global_db == nullptr) {
+//            throw std::runtime_error("Database connection is not initialized");
+//        }
+//
+//        UserManager manager(global_db); // Ensure valid UserManager
+//        manager.create_user(username, password); // Attempt to create user
+//
+//        createNotebook(); // Only if user creation is successful
+//    } catch (const std::exception &e) {
+//        std::cerr << "Exception in on_submit_button_clicked: " << e.what() << std::endl;
+//        // Display an error message to the user
+//       // Gtk::MessageDialog dialog(*this, "An error occurred while creating the user.");
+////        dialog.set_secondary_text(e.what());
+////        dialog.run();
+//        //   createNotebook();
+//    // Call UserManager to create a new user account
+//
+//    // after storing the new user, open the notebook view
+//    }
     std::string username = username_entry->get_text();
     std::string password = password_entry->get_text();
+    bool userCreated = user_manager.create_user(username, password);
 
-    // Call UserManager to create a new user account
-    user_manager.create_user(username, password);
-
-    // after storing the new user, open the notebook view
-    createNotebook();
+    if (userCreated) {
+      createNotebook(); // open the home page
+    } else {
+        // FIX_ME_SUMMER--> causing application to crash
+        Gtk::MessageDialog dialog(*dynamic_cast<Gtk::Window*>(get_toplevel()), "Error", false, Gtk::MESSAGE_ERROR, Gtk::BUTTONS_OK, true);
+        dialog.set_secondary_text("Username already exists.");
+        dialog.show(); // Use show() instead of run()
+        Gtk::Main::run(dialog); // Run the main loop with the dialog
+    }
 
 }
 
@@ -144,6 +172,8 @@ void MyButton::openLoginPage() {
 //
 //    // UserAccount manager object to verify user credentials
 //    UserManager manager(&userDB);
+  //  UserManager manager;
+    // creating login page content
 
     // creating login page content container
     Gtk::Box* login_box = Gtk::manage(new Gtk::Box(Gtk::ORIENTATION_VERTICAL));
@@ -178,13 +208,12 @@ void MyButton::openLoginPage() {
     // creating and adding the login button centered within the container
     Gtk::Button* loginButton = Gtk::manage(new Gtk::Button("LOGIN"));
     // TRYING TO VERIFY USERNAME
+ //   loginButton->signal_clicked().connect([this, &manager]() {
     // UNCOMMENT TO DEBUG
     loginButton->signal_clicked().connect([this]() {
         std::string username = username_entry->get_text(); // Retrieve the username entered by the user
         std::string password = password_entry->get_text(); // Retrieve the password entered by the user
-        // might need to fix this logic
         UserAccount user(username, password); // Create a UserAccount object with the entered username
-
         if (user_manager.verify(user, password) == 1) {
             // Verification successful
             createNotebook();
@@ -198,18 +227,24 @@ void MyButton::openLoginPage() {
     });
 
 
-loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
+
+
+    loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNotebook));
     loginButton->set_halign(Gtk::ALIGN_CENTER); // Center-align the button
     login_box->pack_start(*loginButton, Gtk::PACK_START, 0);
 
+
     // connecting back button click event
     backButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::on_button_clicked));
+
 
     // adding widgets to the login page content
     login_box->pack_start(*login_label);
     login_box->pack_start(*username_entry); // adding the username entry field
     login_box->pack_start(*password_entry); // adding the password entry field
     login_box->pack_start(*loginButton); // adding the login button
+
+
 
 
     // clearing existing content of the window
@@ -227,6 +262,7 @@ loginButton->signal_clicked().connect(sigc::mem_fun(*this, &MyButton::createNote
         }
     }
 }
+
 
 // helper function to clear all children from a container
 void clear_container(Gtk::Container* container) {

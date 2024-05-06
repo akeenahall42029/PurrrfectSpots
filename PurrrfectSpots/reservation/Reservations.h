@@ -19,10 +19,7 @@ private:
     std::time_t endTime;
     std::string status;
     int id;
-    sqlite3* curr_db{};
-    int retCode{};
-    char* zErrMsg{};
-    std::string sql;
+
 
     // Declare the method to generate ID
 public:
@@ -37,16 +34,14 @@ public:
     int getUserId() const ;
     int getTime() const;
     std::string getStatus() const;
-    int getRetCode() const;
     std::time_t getStartTime();
     std::time_t getEndTime() ;
 
     // setters
     void setNapSpotId(int napSpotId);
-    void setUserId(std::string userId);
+    void setUserId(int userId);
     void setTime(int time);
     void setStatus(std::string status);
-    void storeData();
     void setStartTime(std::time_t newStart);
     void setEndTime(std::time_t newEnd);
 

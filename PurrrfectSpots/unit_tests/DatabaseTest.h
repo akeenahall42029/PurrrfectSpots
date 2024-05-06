@@ -10,5 +10,4 @@ class DatabaseTest {
 
 };
 
-
 #endif //PURRRFECTSPOTS_DATABASETEST_H

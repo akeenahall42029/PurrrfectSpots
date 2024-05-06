@@ -26,7 +26,8 @@ UserAccount::UserAccount(std::string userName): userName(userName) {
  * @param userName The user's entered user name
  * @param password The user's enterd password
  * */
-UserAccount::UserAccount(std::string userName, std::string password) {
+UserAccount::UserAccount(const std::string& userName, const std::string& password)
+        : userName(userName), password(password) {
     id = generateId();
 }
 /** Default constructor for UserAccount.
