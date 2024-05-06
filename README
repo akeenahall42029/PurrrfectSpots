@@ -1,6 +1,7 @@
-# NapSpot Reservation System
+##PurrrfectSpots
+PurrrfectSpots is a cat-friendly application designed to help users find the ideal nap spots for their feline companions. 
+This project aims to provide a convenient platform for cat owners to discover and share their favorite relaxation spots for their cats.
 
-The NapSpot Reservation System is a software application designed to facilitate the reservation of nap spots in various locations. Users can browse available nap spots, view details about each spot, read reviews, and make reservations.
 
 ## Features
 
@@ -12,9 +13,25 @@ The NapSpot Reservation System is a software application designed to facilitate 
 
 ## Technologies Used
 
-- **C++:** Core programming language for backend logic.
+- **Frontend:** HTML, CSS , JavaScript, React.js
+- **Backend:** Node.js, Express.js, SQLite 
 - **SQLite:** Database management system for storing user accounts, nap spot information, and reservations.
 - **GTK+:** Graphical user interface toolkit for creating the desktop application interface.
+
+##Checking the Database 
+To check the database directly in the terminal, follow these steps:
+
+1. Navigate to the database directory:
+    ```bash
+    cd PurrrfectSpots/database
+    ```
+2. Open the SQLite example.sqlite file:
+
+    ```bash
+    make 
+    ```
+
+3. Once inside the SQLite shell, you can execute SQL queries to interact with the database.
 
 ## Installation
 1. Clone the repository to your local machine:
@@ -23,7 +40,7 @@ The NapSpot Reservation System is a software application designed to facilitate 
 1. cd  coral
 Open in Clion
 Make sure your CMakeLists.txt file is properly configured to build your project.
-Click on the play button (usually labeled “PurrrfectSpots”).
+Click on the play button ( labeled “PurrrfectSpots”).
 CLion will build your project and execute the generated executable.
 
 
