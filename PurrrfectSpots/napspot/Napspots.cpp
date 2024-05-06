@@ -75,7 +75,7 @@ void Napspots::addReview(std::string review) {
 }
 
 void Napspots::addAvailableTime(std::time_t time) {
-    avaliableTimes.push_back(time); 
+    avaliableTimes.push_back(time);
 
 }
 

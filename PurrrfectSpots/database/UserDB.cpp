@@ -5,7 +5,7 @@
 #include "UserDB.h"
 
 
-UserDB::UserDB(): Database() {
+UserDB::UserDB(){
 
 }
 

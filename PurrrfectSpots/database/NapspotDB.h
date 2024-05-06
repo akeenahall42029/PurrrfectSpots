@@ -11,6 +11,15 @@ public:
     NapspotDB();
     ~NapspotDB();
 
+    // fetchers
+    int fetch_id(int napSpotId);
+    int fetch_userId(int napSpotId);
+    std::string fetch_location(int napSpotId);
+
+    // Methods for admin users
+    void deleteNapSpot(int napSpotId);
+
+
     bool insert_napspot(int napSpotID, std::string location, int userId, int averageRating);
 
 
