@@ -43,6 +43,45 @@ Napspots::Napspots(std::string location, std::string review) : location(location
 
 }
 
+int Napspots::getId() {
+    return id;
+}
+
+std::string Napspots::getLocation() {
+    return location;
+}
+
+std::vector<std::string> Napspots::getReviews() {
+    return reviews;
+}
+
+std::vector<std::time_t> Napspots::getAvailableTimes() {
+    return avaliableTimes;
+}
+
+void Napspots::setId(int id) {
+    id = id;
+
+}
+
+void Napspots::setLocation(std::string location) {
+    location = location;
+
+}
+
+void Napspots::addReview(std::string review) {
+    reviews.push_back(review);
+
+}
+
+void Napspots::addAvailableTime(std::time_t time) {
+    avaliableTimes.push_back(time); 
+
+}
+
+
+
+
 
 
 

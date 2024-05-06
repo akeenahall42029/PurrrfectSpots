@@ -29,17 +29,15 @@ public:
 
     // Getter methods
     int getId();
-    std::string getHostName();
-    std::string getAddress();
+    std::string getLocation();
     std::vector<std::string> getReviews();
-    std::vector<std::string> getAvailableTimes();
+    std::vector<std::time_t> getAvailableTimes();
 
     // Setter methods
     void setId(int id);
-    void setHostName(std::string hostName);
-    void setAddress(std::string address);
+    void setLocation(std::string location);
     void addReview(std::string review);
-    void addAvailableTime(std::string time);
+    void addAvailableTime(std::time_t time);
 
 
 //    Napspots(std::string location, int userId); // constructor to use when a user creates a napspot
