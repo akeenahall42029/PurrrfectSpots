@@ -10,6 +10,7 @@ class NapspotDB: public Database{
 public:
     NapspotDB();
     ~NapspotDB();
+
     bool insert_napspot(int napSpotID, std::string location, int userId, int averageRating);
 
 
